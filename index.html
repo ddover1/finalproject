@@ -1,10 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>WEB234 Final Project</title>
-  </head>
-  <body>
-    <p>This is the second Git commit!!!!!!!</p>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Weather - Short and Sweet</title>
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1> Weather: Short & Sweet</h1>
+      <h2>2:00pm Wednesday, February 17</h2>
+      <h2>Location: Overland Park, KS</h2>
+    </div> <!-- header -->
+    <div id="main">
+      <div id="current" style="color:blue">  
+        <h3> Current Conditions:</h3>
+        <p>Temp:  35     Humidity:  50%</p>
+        <p>Wind:  SW @ 7 mph</p>
+        <p>Sky:  Clear  Precipitation:  None</p>
+      </div> <!-- current -->
+      <table id="forecast">
+        <tr><th>Forecast:</th><th>High</th><th>Low</th><th>Sky</th></tr>
+        <tr><td>Today:</td><td>41</td><td>22</td><td>Clear</td></tr>
+        <tr><td>Tomorrow:</td><td>44</td><td>25</td><td>Scattered Clouds</td></tr>
+        <tr><td>Friday:</td><td>50</td><td>32</td><td>Overcast, Rain - 30%</td></tr>
+        <tr><td>Saturday:</td><td>40</td><td>20</td><td>Partly Cloudy</td></tr>
+        <tr><td>Sunday:</td><td>25</td><td>12</td><td>Mostly Cloudy, Snow - 50%</td></tr>
+      </table><br/>
+    </div> <!-- main -->
+    <div id="buttons">
+      <button>Previous</button> 
+      <button>Next</button> 
+      <button>Add/Edit</button> 
+    </div> <!-- buttons -->
+    <div id="footer">
+    </div> <!-- footer -->
+  </div> <!-- container -->
+</body>
 </html>
