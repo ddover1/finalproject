@@ -1,1 +1,69 @@
-/*  */
+@charset "UTF-8";
+/*   Dave Dover
+	 Final Project
+	 May 11, 2016    */
+.container {
+  max-width: 350px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background-color: azure;
+  }
+.current-weather {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  color: blue;
+  }
+.side-by-side {
+  margin: 0 3rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  }
+.single {
+  margin: 0 3rem;
+  display: -webkit-flex;
+  display: flex;
+  }
+.buttons {
+  margin: 0 3rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  }
+.current-data {
+  margin: .5em;
+  padding: 0;
+  height: 1em;
+  }
+h1, h2, h3 {
+  color: #8a0000;
+  vertical-align: middle; 
+  padding: .2rem 0;
+  text-align: center;
+  }
+h1 {
+  font-family: calibri, Arial, sans-serif;
+  font-size: 200%;
+  font-weight: 900;
+  } 
+h2 {
+  font-weight: 300;
+  font-size: 150%;
+  vertical-align: middle; 
+  } 
+h3 {
+  font-size: 120%;
+  font-weight: 300;
+  font-style: italic;
+  } 
+h4 {
+  font-size: 120%;
+  font-weight: 300;
+  } 
+tr {
+  height: 1.3rem;
+  }
+

@@ -4,23 +4,35 @@
   <meta charset="utf-8">
   <title>Weather - Short and Sweet</title>
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/functions.js"></script>
 </head>
-<body>
-  <div id="container">
-    <div id="header">
-      <h1> Weather: Short & Sweet</h1>
-      <h2>2:00pm Wednesday, February 17</h2>
+<body onload="FormatTime();">
+  <div class="container">
+    <div class="header">
+      <h1>Short & Sweet Weather</h1>
+      <h2 id="DateTime"></h2>
       <h2>Location: Overland Park, KS</h2>
     </div> <!-- header -->
-    <div id="main">
-      <div id="current" style="color:blue">  
-        <h3> Current Conditions:</h3>
-        <p>Temp:  35     Humidity:  50%</p>
-        <p>Wind:  SW @ 7 mph</p>
-        <p>Sky:  Clear  Precipitation:  None</p>
+    <div class="main"><br/>
+      <div class="current-weather">  
+        <h3>Current Conditions:</h3>
+		<div class="side-by-side">
+          <div class="current-data">Temp: 35</div>
+		  <div class="current-data">Humidity: 50%</div>
+		</div>  
+		<div class="single">
+          <div class="current-data">Wind:  SW @ 7 mph</div>
+		</div>  
+		<div class="side-by-side">
+          <div class="current-data">Sky:  Clear</div>
+		  <div class="current-data">Precipitation:  None</div>
+		</div>  
       </div> <!-- current -->
-      <table id="forecast">
-        <tr><th>Forecast:</th><th>High</th><th>Low</th><th>Sky</th></tr>
+      <table class="forecast">
+        <h3>Forecast:</h3>
+        <tr><th></th><th>High</th><th>Low</th><th>Sky - Chance of Precip</th></tr>
         <tr><td>Today:</td><td>41</td><td>22</td><td>Clear</td></tr>
         <tr><td>Tomorrow:</td><td>44</td><td>25</td><td>Scattered Clouds</td></tr>
         <tr><td>Friday:</td><td>50</td><td>32</td><td>Overcast, Rain - 30%</td></tr>
@@ -28,12 +40,12 @@
         <tr><td>Sunday:</td><td>25</td><td>12</td><td>Mostly Cloudy, Snow - 50%</td></tr>
       </table><br/>
     </div> <!-- main -->
-    <div id="buttons">
+    <div class="buttons">
       <button>Previous</button> 
       <button>Next</button> 
       <button>Add/Edit</button> 
     </div> <!-- buttons -->
-    <div id="footer">
+    <div class="footer">
     </div> <!-- footer -->
   </div> <!-- container -->
 </body>
