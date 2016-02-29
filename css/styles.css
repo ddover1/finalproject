@@ -15,19 +15,19 @@
   color: blue;
   }
 .side-by-side {
-  margin: 0 3rem;
+  margin: 0 2rem;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
   }
 .single {
-  margin: 0 3rem;
+  margin: 0 2rem;
   display: -webkit-flex;
   display: flex;
   }
 .buttons {
-  margin: 0 3rem;
+  margin: 0 2rem;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
@@ -37,6 +37,8 @@
   margin: .5em;
   padding: 0;
   height: 1em;
+  font-weight: 300;
+  font-size: 120%;
   }
 h1, h2, h3 {
   color: #8a0000;
@@ -46,17 +48,17 @@ h1, h2, h3 {
   }
 h1 {
   font-family: calibri, Arial, sans-serif;
-  font-size: 200%;
+  font-size: 210%;
   font-weight: 900;
   } 
 h2 {
   font-weight: 300;
-  font-size: 150%;
+  font-size: 140%;
   vertical-align: middle; 
   } 
 h3 {
   font-size: 120%;
-  font-weight: 300;
+  font-weight: 600;
   font-style: italic;
   } 
 h4 {
@@ -66,4 +68,3 @@ h4 {
 tr {
   height: 1.3rem;
   }
-

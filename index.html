@@ -8,36 +8,36 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <script src="js/functions.js"></script>
 </head>
-<body onload="FormatTime();">
+<body onload="Format_Time();">
   <div class="container">
     <div class="header">
       <h1>Short & Sweet Weather</h1>
       <h2 id="DateTime"></h2>
-      <h2>Location: Overland Park, KS</h2>
+      <h2>Overland Park, KS</h2>
     </div> <!-- header -->
     <div class="main"><br/>
       <div class="current-weather">  
         <h3>Current Conditions:</h3>
 		<div class="side-by-side">
-          <div class="current-data">Temp: 35</div>
-		  <div class="current-data">Humidity: 50%</div>
+          <div id="temp" class="current-data"></div>
+		  <div id="humidity" class="current-data"></div>
 		</div>  
 		<div class="single">
-          <div class="current-data">Wind:  SW @ 7 mph</div>
+          <div id="wind" class="current-data"></div>
 		</div>  
 		<div class="side-by-side">
-          <div class="current-data">Sky:  Clear</div>
-		  <div class="current-data">Precipitation:  None</div>
+          <div id="sky" class="current-data"></div>
+		  <div id="precip" class="current-data"></div>
 		</div>  
       </div> <!-- current -->
       <table class="forecast">
         <h3>Forecast:</h3>
         <tr><th></th><th>High</th><th>Low</th><th>Sky - Chance of Precip</th></tr>
-        <tr><td>Today:</td><td>41</td><td>22</td><td>Clear</td></tr>
-        <tr><td>Tomorrow:</td><td>44</td><td>25</td><td>Scattered Clouds</td></tr>
-        <tr><td>Friday:</td><td>50</td><td>32</td><td>Overcast, Rain - 30%</td></tr>
-        <tr><td>Saturday:</td><td>40</td><td>20</td><td>Partly Cloudy</td></tr>
-        <tr><td>Sunday:</td><td>25</td><td>12</td><td>Mostly Cloudy, Snow - 50%</td></tr>
+        <tr><td id="Day1"></td><td>41</td><td>22</td><td>Clear</td></tr>
+        <tr><td id="Day2"></td><td>44</td><td>25</td><td>Scattered Clouds</td></tr>
+        <tr><td id="Day3"></td><td>50</td><td>32</td><td>Overcast, Rain - 30%</td></tr>
+        <tr><td id="Day4"></td><td>40</td><td>20</td><td>Partly Cloudy</td></tr>
+        <tr><td id="Day5"></td><td>25</td><td>12</td><td>Mostly Cloudy, Snow - 50%</td></tr>
       </table><br/>
     </div> <!-- main -->
     <div class="buttons">
