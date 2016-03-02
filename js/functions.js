@@ -2,6 +2,7 @@
   var Month = ["January", "February", "March", "April", "May", "June", "July", "August",
                "September", "October", "November", "December"];
   var weather = new Array; 
+  
 function Format_Time() {
   now = new Date();
   DayToday = now.getDay();
@@ -17,7 +18,8 @@ function Format_Time() {
   strTime = HourNow + ":" + MinutesNow + AmPm;
   document.getElementById("DateTime").innerHTML = strDate + " at " + strTime;
   Set_Forecast_Days (DayToday);
-  Load_Weather()
+  Load_Weather();
+  Load_Forecast();
   }
 
 function Set_Forecast_Days (day1) {
@@ -36,13 +38,25 @@ function Load_Weather() {
 	  Load_Current_Data();
       }
     };
-  url = "http://api.openweathermap.org/data/2.5/weather?id=4276873&appid=cf89da31cbe98e4b2da1dad1458ec4be&units=imperial"
+  url = "http://api.openweathermap.org/data/2.5/weather?id=4276873&appid=cf89da31cbe98e4b2da1dad1458ec4be&units=imperial";
+  xhttp.open("GET", url, true);
+  xhttp.send();
+  }
+
+function Load_Forecast() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+	  forecast = JSON.parse(xhttp.responseText);
+	  Load_Forecast_Data();
+      }
+    };
+  url = "http://api.openweathermap.org/data/2.5/forecast?id=4276873&appid=44db6a862fba0b067b1930da0d769e98&units=imperial";
   xhttp.open("GET", url, true);
   xhttp.send();
   }
 
 function Load_Current_Data () {
-	/*  alert (weather.wind.speed); */
   document.getElementById("temp").innerHTML = "Temp: " + parseInt(weather.main.temp) + "&degF"; 
   document.getElementById("humidity").innerHTML = "Humidity: " + weather.main.humidity + "%";
   if (weather.wind.deg < 23) { direction = "N"; }
@@ -62,5 +76,18 @@ function Load_Current_Data () {
           else if (weather.clouds.all < 93) { skyCondition = "Mostly Cloudy"; }
             else { skyCondition = "Overcast"; } 
   document.getElementById("sky").innerHTML = "Sky: " + skyCondition; 
+  }
+
+  function Load_Forecast_Data () {
+  document.getElementById("High1").innerHTML = parseInt(forecast.list[0].main.temp) + "&deg"; 
+  document.getElementById("High2").innerHTML = parseInt(forecast.list[1].main.temp) + "&deg"; 
+  document.getElementById("High3").innerHTML = parseInt(forecast.list[2].main.temp) + "&deg"; 
+  document.getElementById("High4").innerHTML = parseInt(forecast.list[3].main.temp) + "&deg"; 
+  document.getElementById("High5").innerHTML = parseInt(forecast.list[4].main.temp) + "&deg"; 
+  document.getElementById("Low1").innerHTML = parseInt(forecast.list[5].main.temp) + "&deg"; 
+  document.getElementById("Low2").innerHTML = parseInt(forecast.list[6].main.temp) + "&deg"; 
+  document.getElementById("Low3").innerHTML = parseInt(forecast.list[7].main.temp) + "&deg"; 
+  document.getElementById("Low4").innerHTML = parseInt(forecast.list[8].main.temp) + "&deg"; 
+  document.getElementById("Low5").innerHTML = parseInt(forecast.list[9].main.temp) + "&deg"; 
   }
   

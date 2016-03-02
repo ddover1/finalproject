@@ -4,7 +4,7 @@
 	 May 11, 2016    */
 .container {
   max-width: 350px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 1em auto;
   padding: 0;
   background-color: azure;
   }
@@ -30,6 +30,7 @@
   margin: 0 2rem;
   display: -webkit-flex;
   display: flex;
+  padding: 0 0 1rem 0;
   -webkit-justify-content: space-between;
   justify-content: space-between;
   }
@@ -67,4 +68,8 @@ h4 {
   } 
 tr {
   height: 1.3rem;
+  padding: .2rem;
   }
+td {
+  padding: 0 .3rem;
+  }  
