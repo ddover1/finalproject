@@ -14,25 +14,15 @@
   flex-direction: column;
   color: blue;
   }
-.side-by-side {
+.display-box, .buttons{
   margin: 0 2rem;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  }
-.single {
-  margin: 0 2rem;
-  display: -webkit-flex;
-  display: flex;
   }
 .buttons {
-  margin: 0 2rem;
-  display: -webkit-flex;
-  display: flex;
   padding: 0 0 1rem 0;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
   }
 .current-data {
   margin: .5em;
@@ -61,6 +51,7 @@ h3 {
   font-size: 120%;
   font-weight: 600;
   font-style: italic;
+  padding: .5rem 0 .2rem 0;
   } 
 h4 {
   font-size: 120%;
@@ -72,4 +63,11 @@ tr {
   }
 td {
   padding: 0 .3rem;
-  }  
+  }
+th {
+  padding: 0 0 .4rem 0;
+  font-weight: 600;
+  }
+table {
+  margin: .5rem 0 0 .1rem;
+  }	
