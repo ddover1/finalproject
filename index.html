@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <script src="js/functions.js"></script>
 </head>
-<body onload="Format_Time();">
+<body onload="Load_Display();">
   <div class="container">
     <div class="header">
       <h1>Short & Sweet Weather</h1>
@@ -32,7 +32,8 @@
       </div> <!-- current -->
       <h3>Forecast:</h3>
       <table class="forecast">
-        <tr><th></th><th>HI</th><th>LO</th><th>Sky - Precip Chances</th></tr>
+        <tr><th></th><th>HI</th><th>LO</th><th>Sky - Precip Chance</th></tr>
+		<tr id="row1"></tr>
         <tr><td id="Day1"></td><td id="High1"></td><td id="Low1"></td><td>Clear</td></tr>
         <tr><td id="Day2"></td><td id="High2"></td><td id="Low2"></td><td>Scattered Clouds</td></tr>
         <tr><td id="Day3"></td><td id="High3"></td><td id="Low3"></td><td>Overcast, Rain - 30%</td></tr>
