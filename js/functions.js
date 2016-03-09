@@ -1,17 +1,29 @@
   var DayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   var Month = ["January", "February", "March", "April", "May", "June", "July", "August",
                "September", "October", "November", "December"];
-  var weather = new Array;   var day = new Array;   var high = new Array;   
-  var low = new Array;   var slot = new Array;
-  var DayToday;
+  var weather = new Array;
+  var clouds = new Array;         var DayToday;   
+  var day =  new Array;           var firstHour;
+  var high = new Array;           
+  var low =  new Array;   
+  var slot = new Array;
   
 function Load_Display() {
+/*  Local_Storage(); */
   Display_Date();
   Retrieve_Weather();
   Retrieve_Forecast();
   }
 
-  function Display_Date() {
+function Local_Storage() {
+  if (typeof(Storage) == "undefined") {
+    document.getElementById("temp").innerHTML = "No Local Storage"; }
+  else {
+    localStorage.setItem("location1", "Overland Park, KS"); 
+    localStorage.setItem("cityID1", "4276873"); }
+  } 
+
+function Display_Date() {
   now = new Date();
   DayToday = now.getDay();
   DateToday = now.getDate();
@@ -25,6 +37,7 @@ function Load_Display() {
   strDate = DayOfWeek[DayToday] + ", " + Month[MonthToday] + " " + DateToday;
   strTime = HourNow + ":" + MinutesNow + AmPm;
   document.getElementById("DateTime").innerHTML = strDate + " at " + strTime;
+  document.getElementById("location").innerHTML = localStorage.getItem("location1"); 
   }
 
 function Retrieve_Weather() {
@@ -34,7 +47,7 @@ function Retrieve_Weather() {
 	  weather = JSON.parse(xhttp.responseText);
 	  Load_Current_Data();
       }
-    };
+    }
   url = "http://api.openweathermap.org/data/2.5/weather?id=4276873&appid=cf89da31cbe98e4b2da1dad1458ec4be&units=imperial";
   xhttp.open("GET", url, true);
   xhttp.send();
@@ -46,14 +59,22 @@ function Retrieve_Forecast() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
 	  forecast = JSON.parse(xhttp.responseText);
 	  Examine_Forecast_Data();
-	  Find_High();
-  	  Find_Low();
-	  Load_Forecast_Data();
+	  Create_Forecast_Table(); 
       }
-    };
+    }
   url = "http://api.openweathermap.org/data/2.5/forecast?id=4276873&appid=44db6a862fba0b067b1930da0d769e98&units=imperial";
   xhttp.open("GET", url, true);
   xhttp.send();
+  }
+
+function Determine_Sky_Cover(skyCover) {
+  if (skyCover < 4) { skyCondition = "Clear"; }
+    else if (skyCover < 12) { skyCondition = "Mostly Clear"; }
+      else if (skyCover < 33) { skyCondition = "Scattered Clouds"; }
+        else if (skyCover < 66) { skyCondition = "Partly Cloudy"; }
+          else if (skyCover < 93) { skyCondition = "Mostly Cloudy"; }
+            else { skyCondition = "Overcast"; } 
+  return skyCondition;		
   }
 
 function Load_Current_Data () {
@@ -69,12 +90,7 @@ function Load_Current_Data () {
                 else if (weather.wind.deg < 313) { direction = "NW"; }
                   else { direction = "N"; }
   document.getElementById("wind").innerHTML = "Wind: " + direction + " at " + parseInt(weather.wind.speed) + " mph";
-  if (weather.clouds.all < 4) { skyCondition = "Clear"; }
-    else if (weather.clouds.all < 12) { skyCondition = "Mostly Clear"; }
-      else if (weather.clouds.all < 33) { skyCondition = "Scattered Clouds"; }
-        else if (weather.clouds.all < 66) { skyCondition = "Partly Cloudy"; }
-          else if (weather.clouds.all < 93) { skyCondition = "Mostly Cloudy"; }
-            else { skyCondition = "Overcast"; } 
+  skyCondition = Determine_Sky_Cover(weather.clouds.all);
   document.getElementById("sky").innerHTML = "Sky: " + skyCondition; 
 /*  alert (weather.name); */
   }
@@ -85,12 +101,14 @@ function Examine_Forecast_Data() {
   if (firstHour == "00") { slot = [2,10,18,26,34,39]; }
     else if (firstHour == "03") { slot = [1,9,17,25,33,39]; }
       else if (firstHour == "06") { slot = [0,8,16,24,32,39]; }
-        else if (firstHour == "09") { slot = [0,7,15,23,31,38]; }
-          else if (firstHour == "12") { slot = [0,6,14,22,30,37]; }
+        else if (firstHour == "09") { slot = [0,7,15,23,31,39]; }
+          else if (firstHour == "12") { slot = [0,6,14,22,30,38]; }
             else if (firstHour == "15") { slot = [0,5,13,21,29,37]; }
-              else if (firstHour == "18") { slot = [0,4,13,21,29,37]; }
-                else if (firstHour == "21") { slot = [0,3,13,21,29,37]; }
-				  else { }
+              else if (firstHour == "18") { slot = [0,4,12,20,28,36]; }
+                else if (firstHour == "21") { slot = [0,3,11,19,27,35]; }
+				  else { alert ("Not Avbl"); }
+  for (i = 0; i <= 5; i++) {
+    slot[i] = Math.min(forecast.list.length - 1, slot[i]); }
   if (firstHour < "09") {
     day[0] = "Tomorrow:";
 	day[1] = DayOfWeek[(DayToday + 2) % 7] + ":";
@@ -105,44 +123,22 @@ function Examine_Forecast_Data() {
 	day[4] = DayOfWeek[(DayToday + 4) % 7] + ":"; }
   }
 
-function Find_High() {
+function Create_Forecast_Table() {
+  var y = "<tr><th></th><th>LO</th><th>HI</th><th>Sky - Precip Chance</th></tr>"
   for (i = 0; i <= 4; i++) {
-    highToday = (day[0] == "Today:" && i == 0) ? parseInt(weather.main.temp) : -200;
-    for (j = slot[i]; j < slot[i+1]; j++) {
-	  if (forecast.list[j].main.temp > highToday) {
-	    highToday = forecast.list[j].main.temp;
-		}
-	  high[i] = parseInt(highToday);
-	  }
-    }  
-  }
-
-function Find_Low() {
-  for (i = 0; i <= 4; i++) {
+    highToday = (day[0] == "Today:" && i == 0) ? parseInt(weather.main.temp) : -200; 
     lowToday = (day[0] == "Today:" && i == 0) ? parseInt(weather.main.temp) : 200;
-    for (j = slot[i]; j < slot[i+1]; j++) {
-	  if (forecast.list[j].main.temp < lowToday) {
-	    lowToday = forecast.list[j].main.temp; }
-	  low[i] = parseInt(lowToday);
+    cloudTotal = 0;  num = 0;
+	for (j = slot[i]; j < slot[i+1]; j++) {
+	  if (forecast.list[j].main.temp > highToday) highToday = forecast.list[j].main.temp; 
+      high[i] = parseInt(highToday);
+   	  if (forecast.list[j].main.temp < lowToday) lowToday = forecast.list[j].main.temp; 
+      low[i] = (firstHour > "15" && i == 0) ? "--" : parseInt(lowToday);
+	  cloudTotal = cloudTotal + parseInt(forecast.list[j].clouds.all);
+	  num++;
 	  }
+    clouds[i] = Determine_Sky_Cover(cloudTotal / num);
+    y = y + "<tr><td>" + day[i] + "</td><td>" + low[i] + "</td><td>" + high[i] + "</td><td>" + clouds[i] + "</td></tr>"; 
     }  
+  document.getElementById("forecast").innerHTML = y;
   }
-
-  function Load_Forecast_Data () {
-  document.getElementById("Day1").innerHTML = day[0];
-  document.getElementById("Day2").innerHTML = day[1];
-  document.getElementById("Day3").innerHTML = day[2];
-  document.getElementById("Day4").innerHTML = day[3];
-  document.getElementById("Day5").innerHTML = day[4];
-  document.getElementById("High1").innerHTML = high[0] + "&deg"; 
-  document.getElementById("High2").innerHTML = high[1] + "&deg"; 
-  document.getElementById("High3").innerHTML = high[2] + "&deg"; 
-  document.getElementById("High4").innerHTML = high[3] + "&deg"; 
-  document.getElementById("High5").innerHTML = high[4] + "&deg"; 
-  document.getElementById("Low1").innerHTML = low[0] + "&deg"; 
-  document.getElementById("Low2").innerHTML = low[1] + "&deg"; 
-  document.getElementById("Low3").innerHTML = low[2] + "&deg"; 
-  document.getElementById("Low4").innerHTML = low[3] + "&deg"; 
-  document.getElementById("Low5").innerHTML = low[4] + "&deg"; 
-  }
-  

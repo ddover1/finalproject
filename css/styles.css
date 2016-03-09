@@ -62,10 +62,10 @@ tr {
   padding: .2rem;
   }
 td {
-  padding: 0 .3rem;
+  padding: 0 .5rem;
   }
 th {
-  padding: 0 0 .4rem 0;
+  padding: 0 .4rem .4rem .4rem;
   font-weight: 600;
   }
 table {
