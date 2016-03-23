@@ -9,17 +9,26 @@
   var slot = new Array;
   
 function Load_Display() {
-/*  Local_Storage(); */
+ /* Check_Saved_Locations(); */
   Display_Date();
   Retrieve_Weather();
   Retrieve_Forecast();
   }
+  
+function getLocation() {
+  navigator.geolocation.getCurrentPosition(showPosition); 
+  alert ("Latitude: " + position.coords.latitude); /* + "<br>Longitude: " + position.coords.longitude);	 */
+  }
 
-function Local_Storage() {
+function showPosition(position) {
+  alert ("Hi2"); 
+  }
+
+function Check_Saved_Locations() {
   if (typeof(Storage) == "undefined") {
     document.getElementById("temp").innerHTML = "No Local Storage"; }
   else {
-    localStorage.setItem("location1", "Overland Park, KS"); 
+    localStorage.setItem("location", "Overland Park, KS"); 
     localStorage.setItem("cityID1", "4276873"); }
   } 
 
@@ -37,7 +46,8 @@ function Display_Date() {
   strDate = DayOfWeek[DayToday] + ", " + Month[MonthToday] + " " + DateToday;
   strTime = HourNow + ":" + MinutesNow + AmPm;
   document.getElementById("DateTime").innerHTML = strDate + " at " + strTime;
-  document.getElementById("location").innerHTML = localStorage.getItem("location1"); 
+  document.getElementById("location").innerHTML = "Overland Park, KS"; 
+/*  document.getElementById("location").innerHTML = localStorage.getItem("location");  */
   }
 
 function Retrieve_Weather() {
@@ -62,7 +72,7 @@ function Retrieve_Forecast() {
 	  Create_Forecast_Table(); 
       }
     }
-  url = "http://api.openweathermap.org/data/2.5/forecast?id=4276873&appid=44db6a862fba0b067b1930da0d769e98&units=imperial";
+  url = "http://api.openweathermap.org/data/2.5/forecast?id=4276873&appid=cf89da31cbe98e4b2da1dad1458ec4be&units=imperial";
   xhttp.open("GET", url, true);
   xhttp.send();
   }
