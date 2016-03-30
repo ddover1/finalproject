@@ -10,18 +10,39 @@
   
 function Load_Display() {
  /* Check_Saved_Locations(); */
+  getLocation(); 
   Display_Date();
   Retrieve_Weather();
   Retrieve_Forecast();
   }
   
+function onSuccess (position) {
+  var latitude = position.coords.latitude;
+  alert(latitude);
+}
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            alert("User denied the request for Geolocation.");
+            break;
+        case error.POSITION_UNAVAILABLE:
+            alert("Location information is unavailable.");
+            break;
+        case error.TIMEOUT:
+            alert("The request to get user location timed out.");
+            break;
+        case error.UNKNOWN_ERROR:
+            alert("An unknown error occurred.");
+            break;
+    }
+}
+function onError () {
+  alert("error");
+} 
 function getLocation() {
-  navigator.geolocation.getCurrentPosition(showPosition); 
-  alert ("Latitude: " + position.coords.latitude); /* + "<br>Longitude: " + position.coords.longitude);	 */
-  }
+alert("HI");
+navigator.geolocation.getCurrentPosition(onSuccess, showError);
 
-function showPosition(position) {
-  alert ("Hi2"); 
   }
 
 function Check_Saved_Locations() {
