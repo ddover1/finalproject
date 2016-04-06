@@ -18,8 +18,8 @@
   margin: 0 2rem;
   display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
   -webkit-justify-content: space-between;
+  justify-content: space-between;
   }
 .buttons {
   padding: 0 0 1rem 0;
@@ -39,7 +39,7 @@ h1, h2, h3 {
   }
 h1 {
   font-family: calibri, Arial, sans-serif;
-  font-size: 185%;
+  font-size: 200%;
   font-weight: 900;
   } 
 h2 {

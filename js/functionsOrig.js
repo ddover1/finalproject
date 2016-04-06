@@ -1,30 +1,31 @@
   var DayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   var Month = ["January", "February", "March", "April", "May", "June", "July", "August",
                "September", "October", "November", "December"];
-  var current = new Object;
-  var weather = new Object;
+  var weather = new Array;
   var clouds = new Array;         var DayToday;   
   var day =  new Array;           var firstHour;
   var high = new Array;           var latitude;
   var low =  new Array;           var longitude;
   var slot = new Array;
+  var current = new Array;
   
 function Load_Display() {
  /* Check_Saved_Locations(); */
   Get_Location(); 
   Display_Date();
-/*  Retrieve_Weather(); */
+  Retrieve_Weather();
   Retrieve_Forecast();
   }
   
 function Retrieve_PlaceName (position) {
   latitude = position.coords.latitude;
   longitude = position.coords.longitude;
-/*  latitude = 41.22;
-  longitude = -95.92;   */
+/*  latitude = 39.6;
+  longitude = -94.5;  */
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
-    if (xhttp.status >= 200 && xhttp.status < 400) {
+ /*   if (xhttp.readyState == 4 && xhttp.status == 200) { */
+	 if (xhttp.status >= 200 && xhttp.status < 400) {
 	  current = JSON.parse(xhttp.responseText);
 	  city = current.address.placename != "" ? current.address.placename : current.address.adminName2; 
       document.getElementById("location").innerHTML = city + ", " + current.address.adminCode1;
@@ -33,7 +34,6 @@ function Retrieve_PlaceName (position) {
   url = "http://api.geonames.org/findNearestAddressJSON?lat=" + latitude + "&lng=" + longitude + "&radius= 1&username=ddover1";
   xhttp.open("GET", url, true);
   xhttp.send();
-  Retrieve_LatLon_Weather();
 }
 function Show_Error(error) {
     switch(error.code) {
@@ -82,24 +82,11 @@ function Display_Date() {
   document.getElementById("location").innerHTML = localStorage.getItem("location");  */
   }
 
-function Retrieve_LatLon_Weather() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (xhttp.status >= 200 && xhttp.status < 400) {
-	  weather = JSON.parse(xhttp.responseText);
-	  Load_LatLon_Data();
-      }
-    }
-  url = "http://api.openweathermap.org/data/2.5/find?lat=" + latitude + "&lon=" + longitude;
-  url = url + "&cnt=1&appid=cf89da31cbe98e4b2da1dad1458ec4be&units=imperial";
-  xhttp.open("GET", url, true);
-  xhttp.send();
-  }
-
 function Retrieve_Weather() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
-    if (xhttp.status >= 200 && xhttp.status < 400) {
+/*    if (xhttp.readyState == 4 && xhttp.status == 200) { */
+	 if (xhttp.status >= 200 && xhttp.status < 400) {
 	  weather = JSON.parse(xhttp.responseText);
 	  Load_Current_Data();
       }
@@ -112,7 +99,8 @@ function Retrieve_Weather() {
 function Retrieve_Forecast() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
-    if (xhttp.status >= 200 && xhttp.status < 400) {
+/*    if (xhttp.readyState == 4 && xhttp.status == 200) { */
+	 if (xhttp.status >= 200 && xhttp.status < 400) {
 	  forecast = JSON.parse(xhttp.responseText);
 	  Examine_Forecast_Data();
 	  Create_Forecast_Table(); 
@@ -134,23 +122,6 @@ function Determine_Sky_Cover(skyCover) {
   return skyCondition;		
   }
 
-function Load_LatLon_Data () {
-  document.getElementById("temp").innerHTML = "Temp: " + parseInt(weather.list[0].main.temp) + "&degF"; 
-  document.getElementById("humidity").innerHTML = "Humidity: " + weather.list[0].main.humidity + "%";
-  if (weather.list[0].wind.deg < 23) { direction = "N"; }
-    else if (weather.list[0].wind.deg < 68) { direction = "NE"; }
-      else if (weather.list[0].wind.deg < 113) { direction = "E"; }
-        else if (weather.list[0].wind.deg < 158) { direction = "SE"; }
-          else if (weather.list[0].wind.deg < 203) { direction = "S"; }
-            else if (weather.list[0].wind.deg < 248) { direction = "SW"; }
-              else if (weather.list[0].wind.deg < 293) { direction = "W"; }
-                else if (weather.list[0].wind.deg < 313) { direction = "NW"; }
-                  else { direction = "N"; }
-  document.getElementById("wind").innerHTML = "Wind: " + direction + " at " + parseInt(weather.list[0].wind.speed) + " mph";
-  skyCondition = Determine_Sky_Cover(weather.list[0].clouds.all);
-  document.getElementById("sky").innerHTML = "Sky: " + skyCondition; 
-  }
-
 function Load_Current_Data () {
   document.getElementById("temp").innerHTML = "Temp: " + parseInt(weather.main.temp) + "&degF"; 
   document.getElementById("humidity").innerHTML = "Humidity: " + weather.main.humidity + "%";
@@ -166,6 +137,7 @@ function Load_Current_Data () {
   document.getElementById("wind").innerHTML = "Wind: " + direction + " at " + parseInt(weather.wind.speed) + " mph";
   skyCondition = Determine_Sky_Cover(weather.clouds.all);
   document.getElementById("sky").innerHTML = "Sky: " + skyCondition; 
+/*  alert (weather.name); */
   }
 
 function Examine_Forecast_Data() {

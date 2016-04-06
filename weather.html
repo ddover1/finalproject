@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>Weather - Short and Sweet</title>
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/wxreset.css">
+  <link rel="stylesheet" type="text/css" href="css/wxstyles.css">
   <script src="js/functions.js"></script>
 </head>
 <body onload="Load_Display();">
@@ -33,13 +33,11 @@
       <h3>Forecast:</h3>
 	  <table id="forecast" class="forecast"></table><br/>
     </div> <!-- main -->
-	<form action="index.html">
-      <div class="buttons">
-        <input type="submit" value="Refresh"/>
-        <input type="submit" value="Previous"/> 
-        <input type= "submit" value="Next"/> 
-      </div> <!-- buttons -->
-	</form>
+    <div class="buttons">
+      <button onclick="getLocation()">Previous</button> 
+      <button>Next</button> 
+      <button>Add / Edit</button> 
+    </div> <!-- buttons -->
     <div class="footer">
     </div> <!-- footer -->
   </div> <!-- container -->
