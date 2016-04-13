@@ -1,69 +1,46 @@
   var DayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   var Month = ["January", "February", "March", "April", "May", "June", "July", "August",
                "September", "October", "November", "December"];
-  var current = new Object;
-  var weather = new Object;
-  var clouds = new Array;         var DayToday;   
-  var day =  new Array;           var firstHour;
-  var high = new Array;           var latitude;
-  var low =  new Array;           var longitude;
-  var slot = new Array;
-  
-function Load_Display() {
- /* Check_Saved_Locations(); */
-  Get_Location(); 
+  var DayToday;            var clouds = new Array;         var current = new Object;
+  var firstHour;           var day =  new Array;           var weather = new Object;      
+  var latitude;            var high = new Array;           var data = new Object;
+  var longitude;           var low =  new Array;           
+  var locationIndex;       var slot = new Array;       
+  var numLocations;
+   
+function Initial_Load() {
+  document.getElementById("next").disabled = true; 
+  document.getElementById("previous").disabled = true;
+  locationIndex = -2;
   Display_Date();
-/*  Retrieve_Weather(); */
-  Retrieve_Forecast();
+  Check_Saved_Locations();   
+  Get_Location(); 
   }
   
-function Retrieve_PlaceName (position) {
-  latitude = position.coords.latitude;
-  longitude = position.coords.longitude;
-/*  latitude = 41.22;
-  longitude = -95.92;   */
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (xhttp.status >= 200 && xhttp.status < 400) {
-	  current = JSON.parse(xhttp.responseText);
-	  city = current.address.placename != "" ? current.address.placename : current.address.adminName2; 
-      document.getElementById("location").innerHTML = city + ", " + current.address.adminCode1;
-      }
-    }
-  url = "http://api.geonames.org/findNearestAddressJSON?lat=" + latitude + "&lng=" + longitude + "&radius= 1&username=ddover1";
-  xhttp.open("GET", url, true);
-  xhttp.send();
-  Retrieve_LatLon_Weather();
-}
-function Show_Error(error) {
-    switch(error.code) {
-        case error.PERMISSION_DENIED:
-            alert("Permission to determine location denied.");
-            break;
-        case error.POSITION_UNAVAILABLE:
-            alert("Location information unavailable.");
-            break;
-        case error.TIMEOUT:
-            alert("Request to get location timed out.");
-            break;
-        case error.UNKNOWN_ERROR:
-            alert("An unknown error occurred.");
-            break;
-    }
-}
-
-function Get_Location() {
-navigator.geolocation.getCurrentPosition(Retrieve_PlaceName, Show_Error);
-  }
-
-function Check_Saved_Locations() {
-  if (typeof(Storage) == "undefined") {
-    document.getElementById("temp").innerHTML = "No Local Storage"; }
+function Refresh_Display() {
+  if (locationIndex == -2) {
+    document.getElementById("DateTime").innerHTML = "Location cannot be determined and no locations have been saved"; }
+  else if (locationIndex == -1) {
+    Display_Date();
+    Get_Location(); }
   else {
-    localStorage.setItem("location", "Overland Park, KS"); 
-    localStorage.setItem("cityID1", "4276873"); }
-  } 
-
+    Display_Date();
+    Retrieve_Saved_Weather(); }
+  }
+  
+function Next_Location() {
+  locationIndex++;
+  Display_Date();
+  Retrieve_Saved_Weather();
+  }
+  
+function Previous_Location() {
+  locationIndex--;
+  Display_Date();
+  if (locationIndex == -1) { Get_Location(); }
+    else { Retrieve_Saved_Weather(); }
+  }
+  
 function Display_Date() {
   now = new Date();
   DayToday = now.getDay();
@@ -78,50 +55,123 @@ function Display_Date() {
   strDate = DayOfWeek[DayToday] + ", " + Month[MonthToday] + " " + DateToday;
   strTime = HourNow + ":" + MinutesNow + AmPm;
   document.getElementById("DateTime").innerHTML = strDate + " at " + strTime;
-/*  document.getElementById("location").innerHTML = "Overland Park, KS"; 
-  document.getElementById("location").innerHTML = localStorage.getItem("location");  */
   }
+
+function Check_Saved_Locations() {
+var URL = String(window.location);
+var subURL = URL.substr(0,4);
+if (subURL == 'file') {
+  testdata = {"locations": [ { "city": "Omaha, NE", "id": 5074472  },
+                             { "city": "Boston, MA", "id": 4930956  },
+                             { "city": "Boulder, CO", "id": 5574991  } ] } ;
+  data = testdata;						 
+  numLocations = 3;
+   }
+else {  
+  strdata = localStorage.getItem("locations");  
+  if (strdata !== null) {
+    data = JSON.parse(strdata); 
+	numLocations = data.locations.length}
+  else {
+    numLocations = 0; }
+  }  
+/* example = data.locations[0].city;
+alert(numLocations);  
+localStorage.setItem("locations", JSON.stringify(data)); 
+if (typeof(Storage) !== undefined) alert ("HI");
+localStorage.removeItem('lastname');
+ */
+  } 
+
+function Get_Location() {
+navigator.geolocation.getCurrentPosition(Retrieve_PlaceName, Show_Error);
+  }
+
+function Show_Error(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      alert("Permission to determine location denied.");
+      break;
+    case error.POSITION_UNAVAILABLE:
+      alert("Location information unavailable.");
+      break;
+    case error.TIMEOUT:
+      alert("Request to get location timed out.");
+      break;
+    case error.UNKNOWN_ERROR:
+      alert("An unknown error occurred while determining your position.");
+      break;
+    }
+  }
+
+function Retrieve_PlaceName (position) {
+  locationIndex = -1;
+  latitude = position.coords.latitude;
+  longitude = position.coords.longitude;
+  /* latitude = 40.02;
+  longitude = -105.27;   */
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status >= 200 && xhttp.status < 400) {
+	  current = JSON.parse(xhttp.responseText);
+	  city = current.address.placename != "" ? current.address.placename : current.address.adminName2; 
+      document.getElementById("location").innerHTML = city + ", " + current.address.adminCode1; 
+      }
+    }
+  url = "http://api.geonames.org/findNearestAddressJSON?lat=" + latitude + "&lng=" + longitude + "&radius= 1&username=ddover1";
+  xhttp.open("GET", url, true);
+  xhttp.send();
+  Retrieve_LatLon_Weather();
+}
 
 function Retrieve_LatLon_Weather() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
-    if (xhttp.status >= 200 && xhttp.status < 400) {
-	  weather = JSON.parse(xhttp.responseText);
-	  Load_LatLon_Data();
+    if (xhttp.readyState == 4 && xhttp.status >= 200 && xhttp.status < 400) {
+      weather = JSON.parse(xhttp.responseText);
+	  Load_Weather_Data(weather.list[0].main.temp, weather.list[0].main.humidity, weather.list[0].wind.deg,
+	                   weather.list[0].wind.speed, weather.list[0].clouds.all);
+      Retrieve_Forecast(weather.list[0].id, weather.list[0].main.temp);
       }
     }
   url = "http://api.openweathermap.org/data/2.5/find?lat=" + latitude + "&lon=" + longitude;
-  url = url + "&cnt=1&appid=cf89da31cbe98e4b2da1dad1458ec4be&units=imperial";
+  url += "&cnt=1&appid=cf89da31cbe98e4b2da1dad1458ec4be&units=imperial";
   xhttp.open("GET", url, true);
   xhttp.send();
   }
 
-function Retrieve_Weather() {
+function Retrieve_Saved_Weather() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
-    if (xhttp.status >= 200 && xhttp.status < 400) {
+    if (xhttp.readyState == 4 && xhttp.status >= 200 && xhttp.status < 400) {
 	  weather = JSON.parse(xhttp.responseText);
-	  Load_Current_Data();
+	  Load_Weather_Data(weather.main.temp, weather.main.humidity, weather.wind.deg,
+	                   weather.wind.speed, weather.clouds.all);
+      document.getElementById("location").innerHTML = data.locations[locationIndex].city; 
+      Retrieve_Forecast(data.locations[locationIndex].id, weather.main.temp);
       }
     }
-  url = "http://api.openweathermap.org/data/2.5/weather?id=4276873&appid=cf89da31cbe98e4b2da1dad1458ec4be&units=imperial";
+  url = "http://api.openweathermap.org/data/2.5/weather?id=" + data.locations[locationIndex].id;
+  url += "&appid=cf89da31cbe98e4b2da1dad1458ec4be&units=imperial";
   xhttp.open("GET", url, true);
   xhttp.send();
   }
 
-function Retrieve_Forecast() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (xhttp.status >= 200 && xhttp.status < 400) {
-	  forecast = JSON.parse(xhttp.responseText);
-	  Examine_Forecast_Data();
-	  Create_Forecast_Table(); 
-      }
-    }
-  url =
-  "http://api.openweathermap.org/data/2.5/forecast?id=4276873&appid=cf89da31cbe98e4b2da1dad1458ec4be&units=imperial";
-  xhttp.open("GET", url, true);
-  xhttp.send();
+function Load_Weather_Data (temp, humidity, degrees, speed, clouds) {
+  document.getElementById("temp").innerHTML = "Temp: " + parseInt(temp) + "&degF"; 
+  document.getElementById("humidity").innerHTML = "Humidity: " + humidity + "%";
+  if (degrees < 23) { direction = "N"; }
+    else if (degrees < 68) { direction = "NE"; }
+      else if (degrees < 113) { direction = "E"; }
+        else if (degrees < 158) { direction = "SE"; }
+          else if (degrees < 203) { direction = "S"; }
+            else if (degrees < 248) { direction = "SW"; }
+              else if (degrees < 293) { direction = "W"; }
+                else if (degrees < 313) { direction = "NW"; }
+                  else { direction = "N"; }
+  document.getElementById("wind").innerHTML = "Wind: " + direction + " at " + parseInt(speed) + " mph";
+  skyCondition = Determine_Sky_Cover(clouds);
+  document.getElementById("sky").innerHTML = "Sky: " + skyCondition; 
   }
 
 function Determine_Sky_Cover(skyCover) {
@@ -134,38 +184,19 @@ function Determine_Sky_Cover(skyCover) {
   return skyCondition;		
   }
 
-function Load_LatLon_Data () {
-  document.getElementById("temp").innerHTML = "Temp: " + parseInt(weather.list[0].main.temp) + "&degF"; 
-  document.getElementById("humidity").innerHTML = "Humidity: " + weather.list[0].main.humidity + "%";
-  if (weather.list[0].wind.deg < 23) { direction = "N"; }
-    else if (weather.list[0].wind.deg < 68) { direction = "NE"; }
-      else if (weather.list[0].wind.deg < 113) { direction = "E"; }
-        else if (weather.list[0].wind.deg < 158) { direction = "SE"; }
-          else if (weather.list[0].wind.deg < 203) { direction = "S"; }
-            else if (weather.list[0].wind.deg < 248) { direction = "SW"; }
-              else if (weather.list[0].wind.deg < 293) { direction = "W"; }
-                else if (weather.list[0].wind.deg < 313) { direction = "NW"; }
-                  else { direction = "N"; }
-  document.getElementById("wind").innerHTML = "Wind: " + direction + " at " + parseInt(weather.list[0].wind.speed) + " mph";
-  skyCondition = Determine_Sky_Cover(weather.list[0].clouds.all);
-  document.getElementById("sky").innerHTML = "Sky: " + skyCondition; 
-  }
-
-function Load_Current_Data () {
-  document.getElementById("temp").innerHTML = "Temp: " + parseInt(weather.main.temp) + "&degF"; 
-  document.getElementById("humidity").innerHTML = "Humidity: " + weather.main.humidity + "%";
-  if (weather.wind.deg < 23) { direction = "N"; }
-    else if (weather.wind.deg < 68) { direction = "NE"; }
-      else if (weather.wind.deg < 113) { direction = "E"; }
-        else if (weather.wind.deg < 158) { direction = "SE"; }
-          else if (weather.wind.deg < 203) { direction = "S"; }
-            else if (weather.wind.deg < 248) { direction = "SW"; }
-              else if (weather.wind.deg < 293) { direction = "W"; }
-                else if (weather.wind.deg < 313) { direction = "NW"; }
-                  else { direction = "N"; }
-  document.getElementById("wind").innerHTML = "Wind: " + direction + " at " + parseInt(weather.wind.speed) + " mph";
-  skyCondition = Determine_Sky_Cover(weather.clouds.all);
-  document.getElementById("sky").innerHTML = "Sky: " + skyCondition; 
+function Retrieve_Forecast(id, temp) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status >= 200 && xhttp.status < 400) {
+	  forecast = JSON.parse(xhttp.responseText);
+	  setTimeout(Examine_Forecast_Data(), 300); 
+	  Create_Forecast_Table(temp); 
+      }
+    }
+  url = "http://api.openweathermap.org/data/2.5/forecast?id=" + id +
+        "&appid=cf89da31cbe98e4b2da1dad1458ec4be&units=imperial";
+  xhttp.open("GET", url, true);
+  xhttp.send();
   }
 
 function Examine_Forecast_Data() {
@@ -196,11 +227,11 @@ function Examine_Forecast_Data() {
 	day[4] = DayOfWeek[(DayToday + 4) % 7] + ":"; }
   }
 
-function Create_Forecast_Table() {
-  var y = "<tr><th></th><th>LO</th><th>HI</th><th>Sky - Precip Chance</th></tr>"
+function Create_Forecast_Table(currentTemp) {
+  var y = "<tr><th></th><th>LO</th><th>HI</th><th>Sky - Precip Chance</th></tr>";
   for (i = 0; i <= 4; i++) {
-    highToday = (day[0] == "Today:" && i == 0) ? parseInt(weather.main.temp) : -200; 
-    lowToday = (day[0] == "Today:" && i == 0) ? parseInt(weather.main.temp) : 200;
+    highToday = (day[0] == "Today:" && i == 0) ? parseInt(currentTemp) : -200; 
+    lowToday = (day[0] == "Today:" && i == 0) ? parseInt(currentTemp) : 200;
     cloudTotal = 0;  num = 0;
 	for (j = slot[i]; j < slot[i+1]; j++) {
 	  if (forecast.list[j].main.temp > highToday) highToday = forecast.list[j].main.temp; 
@@ -214,4 +245,6 @@ function Create_Forecast_Table() {
     y = y + "<tr><td>" + day[i] + "</td><td>" + low[i] + "</td><td>" + high[i] + "</td><td>" + clouds[i] + "</td></tr>"; 
     }  
   document.getElementById("forecast").innerHTML = y;
+  document.getElementById("previous").disabled = locationIndex == -1 ? true : false; 
+  document.getElementById("next").disabled = locationIndex < numLocations - 1 ? false : true; 
   }
