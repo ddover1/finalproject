@@ -1,9 +1,10 @@
   var DayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   var Month = ["January", "February", "March", "April", "May", "June", "July", "August",
                "September", "October", "November", "December"];
+			   
   var DayToday;            var clouds = new Array;         var current = new Object;
   var firstHour;           var day =  new Array;           var weather = new Object;      
-  var latitude;            var high = new Array;           var data = new Object;
+  var latitude;            var high = new Array;           var data = new Object; 
   var longitude;           var low =  new Array;           
   var locationIndex;       var slot = new Array;       
   var numLocations;
@@ -74,12 +75,10 @@ else {
 	numLocations = data.locations.length}
   else {
     numLocations = 0; }
-  }  
-/* example = data.locations[0].city;
-alert(numLocations);  
-localStorage.setItem("locations", JSON.stringify(data)); 
+  }
+/* localStorage.setItem("locations", JSON.stringify(data)); 
 if (typeof(Storage) !== undefined) alert ("HI");
-localStorage.removeItem('lastname');
+localStorage.removeItem('locations');
  */
   } 
 
@@ -247,4 +246,38 @@ function Create_Forecast_Table(currentTemp) {
   document.getElementById("forecast").innerHTML = y;
   document.getElementById("previous").disabled = locationIndex == -1 ? true : false; 
   document.getElementById("next").disabled = locationIndex < numLocations - 1 ? false : true; 
+  }
+
+var triggerEl = document.querySelector('.trigger');
+var mainEl = document.querySelector('.container');
+
+triggerEl.addEventListener('click', function(event) {
+  event.preventDefault();
+  Create_Menu();
+  mainEl.classList.toggle('nav-is-open');
+}); 
+
+function Delete_Location(i) {
+  if (confirm ("Are you sure you want to delete " + data.locations[i].city + " as a saved location?") == true) {
+    data.locations.splice(i,1);
+    Create_Menu(); 
+    if  (locationIndex > numLocations - 1) locationIndex = numLocations - 1;
+    numLocations--; }
+  }
+
+function Add_Location() {
+  confirm ("Add Location?");
+  }
+
+function Create_Menu() {
+  var y = "<li><em><strong>Select to Delete</strong></em></li>"; 
+  y = y + "<li><em><strong>a Saved Location:</strong></em></li>"; 
+  y = y + '<li>&#20;</li>';
+  for (i = 0; i < data.locations.length; i++) {
+    y = y + '<li><a href="#" onclick="Delete_Location(' + i + ')";>' + data.locations[i].city + '</a></li>'; } 
+  y = y + '<li>&#20;</li>';
+  y = y + '<li>Or</li>';
+  y = y + '<li>&#20;</li>';
+  y = y + '<li><a href ="#" onclick="Add_Location()";>Add a New Location</a></li>';
+  document.getElementById("menu").innerHTML = y; 
   }

@@ -8,6 +8,10 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body onload="Initial_Load();">
+  <ul class="nav"> 
+    <div id="menu">
+	</div>
+  </ul>   
   <div class="container">
     <div class="header">
       <h1>Short & Sweet Weather</h1>
@@ -29,16 +33,15 @@
 		  <div id="precip" class="current-data"></div>
 		</div>  
       </div> <!-- current -->
-      <h3>Forecast:</h3>
+      <h3>5-Day Forecast:</h3>
 	  <table id="forecast" class="forecast"></table><br/>
     </div> <!-- main -->
-	<form>
-      <div class="buttons">
-        <input type="button" onclick="Refresh_Display();" value="Refresh"/>
-        <input type="button" onclick="Previous_Location();" value="Previous" id="previous"/> 
-        <input type="button" onclick="Next_Location();" value="Next" id="next"/> 
-      </div> <!-- buttons -->
-	</form>
+    <div class="buttons">
+      <a class="trigger" href="#">&#9776;</a> 
+      <input type="button" onclick="Refresh_Display();" value="Refresh"/>
+      <input type="button" onclick="Previous_Location();" value="Previous" id="previous"/> 
+      <input type="button" onclick="Next_Location();" value="Next" id="next"/> 
+    </div> <!-- buttons -->
     <div class="footer">
     </div> <!-- footer -->
   </div> <!-- container -->
