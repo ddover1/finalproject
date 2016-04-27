@@ -8,11 +8,12 @@
   <link rel="stylesheet" type="text/css" href="css/wxstyles.css">
 </head>
 <body onload="Initial_Load();">
-  <ul class="nav"> 
-    <div id="menu">
-	</div>
-  </ul>   
   <div class="container">
+  <ul class="nav"> 
+    <div id="menu"></div>
+	<input type="text" size="20" class="location" onkeyup="Show_Locations(this.value)">
+    <div id="citylist"></div>
+  </ul>   
     <div class="header">
       <h1>Short & Sweet Weather</h1>
       <h2 id="DateTime"></h2>
@@ -46,5 +47,6 @@
     </div> <!-- footer -->
   </div> <!-- container -->
   <script src="js/functions.js"></script>
+  <script src="js/stations.js"></script>
 </body>
 </html>

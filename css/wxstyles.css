@@ -3,6 +3,7 @@
 	 Final Project
 	 May 11, 2016    */
 .container {
+  overflow: hidden;
   max-width: 350px;
   margin: 0 auto 0 auto;
   padding: 0;
@@ -74,16 +75,21 @@ table {
   }	
 .nav {
   list-style: none;
-  background-color: white;
-  padding: 0;
-  position: fixed;
+  background-color: #f7f790;
+  padding: .5rem;
+  position: absolute;
   height: 100%;
-  width: 100%;
+  width: 55%;
+  transform: translate(-100%,0);
+  transition: transform 0.5s;
 }
 .nav a {
   color: blue;
   text-decoration: none;
 }
+.delete  a{
+  color: red;
+  }
 .trigger {
   color: #000;
   font-size: 1.5rem;
@@ -93,8 +99,7 @@ table {
   }
 .container {
   position: relative;
-  transition: transform 0.5s;
 } 
-.container.nav-is-open {
-  transform: translate(8.1rem,0);
+.container.nav-is-open .nav {
+  transform: translate(0,0);
 }

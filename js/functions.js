@@ -4,18 +4,20 @@
 			   
   var DayToday;            var clouds = new Array;         var current = new Object;
   var firstHour;           var day =  new Array;           var weather = new Object;      
-  var latitude;            var high = new Array;           var data = new Object; 
-  var longitude;           var low =  new Array;           
-  var locationIndex;       var slot = new Array;       
-  var numLocations;
+  var latitude;            var high = new Array;           var cities = new Object; 
+  var longitude;           var low =  new Array;           var forecast = new Object;
+  var locationIndex;       var slot = new Array;           
+  var numLocations;        var stations = new Array;
+  var fromFile;
+  var userInput;
    
 function Initial_Load() {
-  document.getElementById("next").disabled = true; 
-  document.getElementById("previous").disabled = true;
   locationIndex = -2;
   Display_Date();
   Check_Saved_Locations();   
   Get_Location(); 
+  document.getElementById("previous").disabled = locationIndex <= -1 ? true : false; 
+  document.getElementById("next").disabled = locationIndex < numLocations - 1 ? false : true; 
   }
   
 function Refresh_Display() {
@@ -33,6 +35,8 @@ function Next_Location() {
   locationIndex++;
   Display_Date();
   Retrieve_Saved_Weather();
+  document.getElementById("previous").disabled = locationIndex == -1 ? true : false; 
+  document.getElementById("next").disabled = locationIndex < numLocations - 1 ? false : true; 
   }
   
 function Previous_Location() {
@@ -40,6 +44,8 @@ function Previous_Location() {
   Display_Date();
   if (locationIndex == -1) { Get_Location(); }
     else { Retrieve_Saved_Weather(); }
+  document.getElementById("previous").disabled = locationIndex == -1 ? true : false; 
+  document.getElementById("next").disabled = locationIndex < numLocations - 1 ? false : true; 
   }
   
 function Display_Date() {
@@ -59,27 +65,22 @@ function Display_Date() {
   }
 
 function Check_Saved_Locations() {
-var URL = String(window.location);
-var subURL = URL.substr(0,4);
-if (subURL == 'file') {
-  testdata = {"locations": [ { "city": "Omaha, NE", "id": 5074472  },
-                             { "city": "Boston, MA", "id": 4930956  },
-                             { "city": "Boulder, CO", "id": 5574991  } ] } ;
-  data = testdata;						 
-  numLocations = 3;
-   }
-else {  
-  strdata = localStorage.getItem("locations");  
-  if (strdata !== null) {
-    data = JSON.parse(strdata); 
-	numLocations = data.locations.length}
+  var URL = String(window.location);
+  fromFile = (URL.substr(0,4) == 'file') ? true : false;
+  if (fromFile) {
+    stations = [ { "city": "Omaha, NE", "id": 5074472  },
+                 { "city": "Boston, MA", "id": 4930956  },
+                 { "city": "Boulder, CO", "id": 5574991  } ] ;
+    numLocations = 3; }
   else {
-    numLocations = 0; }
-  }
-/* localStorage.setItem("locations", JSON.stringify(data)); 
-if (typeof(Storage) !== undefined) alert ("HI");
-localStorage.removeItem('locations');
- */
+    strdata = localStorage.getItem("stations");  
+    if (strdata !== null) {
+      stations = JSON.parse(strdata); 
+	  numLocations = stations.length; 
+	  }
+    else {
+      numLocations = 0; }
+    }
   } 
 
 function Get_Location() {
@@ -121,7 +122,7 @@ function Retrieve_PlaceName (position) {
   xhttp.open("GET", url, true);
   xhttp.send();
   Retrieve_LatLon_Weather();
-}
+  }
 
 function Retrieve_LatLon_Weather() {
   var xhttp = new XMLHttpRequest();
@@ -146,11 +147,11 @@ function Retrieve_Saved_Weather() {
 	  weather = JSON.parse(xhttp.responseText);
 	  Load_Weather_Data(weather.main.temp, weather.main.humidity, weather.wind.deg,
 	                   weather.wind.speed, weather.clouds.all);
-      document.getElementById("location").innerHTML = data.locations[locationIndex].city; 
-      Retrieve_Forecast(data.locations[locationIndex].id, weather.main.temp);
+      document.getElementById("location").innerHTML = stations[locationIndex].city; 
+      Retrieve_Forecast(stations[locationIndex].id, weather.main.temp);
       }
     }
-  url = "http://api.openweathermap.org/data/2.5/weather?id=" + data.locations[locationIndex].id;
+  url = "http://api.openweathermap.org/data/2.5/weather?id=" + stations[locationIndex].id;
   url += "&appid=cf89da31cbe98e4b2da1dad1458ec4be&units=imperial";
   xhttp.open("GET", url, true);
   xhttp.send();
@@ -244,8 +245,6 @@ function Create_Forecast_Table(currentTemp) {
     y = y + "<tr><td>" + day[i] + "</td><td>" + low[i] + "</td><td>" + high[i] + "</td><td>" + clouds[i] + "</td></tr>"; 
     }  
   document.getElementById("forecast").innerHTML = y;
-  document.getElementById("previous").disabled = locationIndex == -1 ? true : false; 
-  document.getElementById("next").disabled = locationIndex < numLocations - 1 ? false : true; 
   }
 
 var triggerEl = document.querySelector('.trigger');
@@ -255,29 +254,65 @@ triggerEl.addEventListener('click', function(event) {
   event.preventDefault();
   Create_Menu();
   mainEl.classList.toggle('nav-is-open');
+  document.querySelector(".location").value = ""; 
+  document.getElementById("citylist").innerHTML = ""; 
 }); 
 
 function Delete_Location(i) {
-  if (confirm ("Are you sure you want to delete " + data.locations[i].city + " as a saved location?") == true) {
-    data.locations.splice(i,1);
-    Create_Menu(); 
+  if (confirm ("Are you sure you want to delete " + stations[i].city + " as a saved location?") == true) {
+    stations.splice(i,1);
+	if (!fromFile) {
+      localStorage.setItem("stations", JSON.stringify(stations)); }
     if  (locationIndex > numLocations - 1) locationIndex = numLocations - 1;
     numLocations--; }
+    Create_Menu(); 
   }
 
-function Add_Location() {
-  confirm ("Add Location?");
+function Show_Locations(inputString) {
+  userInput = inputString;
+  userInput = userInput.toUpperCase();
+  if (userInput.length < 4) {
+    document.getElementById("citylist").innerHTML = ""; 
+    return; }
+  cityMatches = cities.stations.filter(Check_Locations);
+  var y = "<li>&#20;</li>"; 
+  y = y + "<li><em><strong>Select Location to Add:</strong></em></li>"; 
+  y = y + '<li>&#20;</li>';
+  for (x = 0; x < cityMatches.length; x++) {
+    y = y + '<li><a href="#" onclick="Save_Location(' + x + ')";>' + cityMatches[x].name + ", " + cityMatches[x].state + '</a></li>'; } 
+  document.getElementById("citylist").innerHTML = y; 
   }
 
+function Check_Locations(city) {
+  citySubstring = city.name.substr(0,userInput.length);
+  citySubstring = citySubstring.toUpperCase();
+  if (citySubstring == userInput) return true; 
+    else return false;
+  }
+ 
+function Save_Location(x) {
+  if (numLocations == 10) {
+    alert ("You are at the maximum of 10 saved locations.");
+	return; }
+  stations[numLocations] = { "city": "Placeholder", "id": cityMatches[x].id };
+  stations[numLocations].city = cityMatches[x].name + ', ' + cityMatches[x].state;
+  if (!fromFile) {
+    localStorage.setItem("stations", JSON.stringify(stations)); }
+  numLocations++;
+  document.getElementById("citylist").innerHTML = ""; 
+  document.querySelector(".location").value = ""; 
+  Create_Menu();
+  }
+ 
 function Create_Menu() {
-  var y = "<li><em><strong>Select to Delete</strong></em></li>"; 
-  y = y + "<li><em><strong>a Saved Location:</strong></em></li>"; 
+  var y = "<li><em><strong>Select Location to Delete:</strong></em></li>"; 
   y = y + '<li>&#20;</li>';
-  for (i = 0; i < data.locations.length; i++) {
-    y = y + '<li><a href="#" onclick="Delete_Location(' + i + ')";>' + data.locations[i].city + '</a></li>'; } 
+  for (i = 0; i < numLocations; i++) {
+    y = y + '<li><a href="#" class="delete" onclick="Delete_Location(' + i + ')";>' + stations[i].city + '</a></li>'; } 
   y = y + '<li>&#20;</li>';
-  y = y + '<li>Or</li>';
+  y = y + "<li><em><strong>Input a New Location:</strong></em></li>"; 
   y = y + '<li>&#20;</li>';
-  y = y + '<li><a href ="#" onclick="Add_Location()";>Add a New Location</a></li>';
   document.getElementById("menu").innerHTML = y; 
+  document.getElementById("previous").disabled = locationIndex <= -1 ? true : false; 
+  document.getElementById("next").disabled = locationIndex < numLocations - 1 ? false : true; 
   }
