@@ -2,22 +2,26 @@
   var Month = ["January", "February", "March", "April", "May", "June", "July", "August",
                "September", "October", "November", "December"];
 			   
-  var DayToday;            var clouds = new Array;         var current = new Object;
-  var firstHour;           var day =  new Array;           var weather = new Object;      
-  var latitude;            var high = new Array;           var cities = new Object; 
-  var longitude;           var low =  new Array;           var forecast = new Object;
-  var locationIndex;       var slot = new Array;           
-  var numLocations;        var stations = new Array;
-  var fromFile;
-  var userInput;
+  var DayToday;      var numLocations;     var locationIndex;      
+  var firstHour;     var longitude;        var latitude;   
+  var userInput;     var menuSymbol;       var xSymbol;
+           
+  var clouds = new Array;     var current = new Object;       var fromFile = new Boolean;         
+  var day =  new Array;       var weather = new Object;       var locationAdded = new Boolean;    
+  var high = new Array;       var cities = new Object;        var locationDeleted = new Boolean;  
+  var low =  new Array;       var forecast = new Object;
+  var slot = new Array;           
+  var stations = new Array;
    
 function Initial_Load() {
+  menuSymbol = document.querySelector('.trigger').innerText;
+  xSymbol = document.querySelector('.xTrigger').innerText;
   locationIndex = -2;
   Display_Date();
   Check_Saved_Locations();   
   Get_Location(); 
-  document.getElementById("previous").disabled = locationIndex <= -1 ? true : false; 
-  document.getElementById("next").disabled = locationIndex < numLocations - 1 ? false : true; 
+  document.getElementById("previous").disabled = (locationIndex <= -1) ? true : false; 
+  document.getElementById("next").disabled = (locationIndex < numLocations - 1) ? false : true; 
   }
   
 function Refresh_Display() {
@@ -35,8 +39,8 @@ function Next_Location() {
   locationIndex++;
   Display_Date();
   Retrieve_Saved_Weather();
-  document.getElementById("previous").disabled = locationIndex == -1 ? true : false; 
-  document.getElementById("next").disabled = locationIndex < numLocations - 1 ? false : true; 
+  document.getElementById("previous").disabled = (locationIndex == -1) ? true : false; 
+  document.getElementById("next").disabled = (locationIndex < numLocations - 1) ? false : true; 
   }
   
 function Previous_Location() {
@@ -44,8 +48,8 @@ function Previous_Location() {
   Display_Date();
   if (locationIndex == -1) { Get_Location(); }
     else { Retrieve_Saved_Weather(); }
-  document.getElementById("previous").disabled = locationIndex == -1 ? true : false; 
-  document.getElementById("next").disabled = locationIndex < numLocations - 1 ? false : true; 
+  document.getElementById("previous").disabled = (locationIndex == -1) ? true : false; 
+  document.getElementById("next").disabled = (locationIndex < numLocations - 1) ? false : true; 
   }
   
 function Display_Date() {
@@ -55,7 +59,7 @@ function Display_Date() {
   MonthToday = now.getMonth();
   HourNow = now.getHours();
   MinutesNow = now.getMinutes();
-  AmPm = HourNow < 12 ? "am" : "pm";
+  AmPm = (HourNow < 12) ? "am" : "pm";
   if (HourNow > 12) HourNow = HourNow - 12;
   if (HourNow == 0) HourNow = 12;
   if (MinutesNow < 10) MinutesNow = "0" + MinutesNow;
@@ -114,7 +118,7 @@ function Retrieve_PlaceName (position) {
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status >= 200 && xhttp.status < 400) {
 	  current = JSON.parse(xhttp.responseText);
-	  city = current.address.placename != "" ? current.address.placename : current.address.adminName2; 
+	  city = (current.address.placename != "") ? current.address.placename : current.address.adminName2; 
       document.getElementById("location").innerHTML = city + ", " + current.address.adminCode1; 
       }
     }
@@ -129,8 +133,9 @@ function Retrieve_LatLon_Weather() {
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status >= 200 && xhttp.status < 400) {
       weather = JSON.parse(xhttp.responseText);
-	  Load_Weather_Data(weather.list[0].main.temp, weather.list[0].main.humidity, weather.list[0].wind.deg,
-	                   weather.list[0].wind.speed, weather.list[0].clouds.all);
+	  Load_Weather_Data(weather.list[0].main.temp, weather.list[0].main.humidity,
+             weather.list[0].wind.deg, weather.list[0].wind.speed, weather.list[0].clouds.all,
+			 weather.list[0].rain, weather.list[0].snow);
       Retrieve_Forecast(weather.list[0].id, weather.list[0].main.temp);
       }
     }
@@ -139,14 +144,14 @@ function Retrieve_LatLon_Weather() {
   xhttp.open("GET", url, true);
   xhttp.send();
   }
-
+ 
 function Retrieve_Saved_Weather() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status >= 200 && xhttp.status < 400) {
 	  weather = JSON.parse(xhttp.responseText);
 	  Load_Weather_Data(weather.main.temp, weather.main.humidity, weather.wind.deg,
-	                   weather.wind.speed, weather.clouds.all);
+	                   weather.wind.speed, weather.clouds.all, weather.rain, weather.snow);
       document.getElementById("location").innerHTML = stations[locationIndex].city; 
       Retrieve_Forecast(stations[locationIndex].id, weather.main.temp);
       }
@@ -157,7 +162,7 @@ function Retrieve_Saved_Weather() {
   xhttp.send();
   }
 
-function Load_Weather_Data (temp, humidity, degrees, speed, clouds) {
+function Load_Weather_Data (temp, humidity, degrees, speed, clouds, rain3h, snow3h) {
   document.getElementById("temp").innerHTML = "Temp: " + parseInt(temp) + "&degF"; 
   document.getElementById("humidity").innerHTML = "Humidity: " + humidity + "%";
   if (degrees < 23) { direction = "N"; }
@@ -170,17 +175,30 @@ function Load_Weather_Data (temp, humidity, degrees, speed, clouds) {
                 else if (degrees < 313) { direction = "NW"; }
                   else { direction = "N"; }
   document.getElementById("wind").innerHTML = "Wind: " + direction + " at " + parseInt(speed) + " mph";
-  skyCondition = Determine_Sky_Cover(clouds);
+  rain = (rain3h != undefined) ? true : false;			
+  snow = (snow3h != undefined) ? true : false;			
+  skyCondition = Determine_Sky_Cover(clouds, rain, snow, 0);
   document.getElementById("sky").innerHTML = "Sky: " + skyCondition; 
   }
 
-function Determine_Sky_Cover(skyCover) {
-  if (skyCover < 4) { skyCondition = "Clear"; }
-    else if (skyCover < 12) { skyCondition = "Mostly Clear"; }
+function Determine_Sky_Cover(skyCover, rain, snow, precipChance) {
+  if (skyCover < 5) { skyCondition = "Clear"; }
+    else if (skyCover < 14) { skyCondition = "Mostly Clear"; }
       else if (skyCover < 33) { skyCondition = "Scattered Clouds"; }
         else if (skyCover < 66) { skyCondition = "Partly Cloudy"; }
-          else if (skyCover < 93) { skyCondition = "Mostly Cloudy"; }
+          else if (skyCover < 91) { skyCondition = "Mostly Cloudy"; }
             else { skyCondition = "Overcast"; } 
+  if (rain && snow) skyCondition += ', Rain/Snow';			
+    else if (rain) skyCondition += ', Rain';			
+      else if (snow) skyCondition += ', Snow';	
+  if (precipChance >= .8) { chance = " 90%"; }
+    else if (precipChance >= .7) { chance = " 80%"; }
+      else if (precipChance >= .6) { chance = " 60%"; }
+        else if (precipChance >= .4) { chance = " 50%"; }
+          else if (precipChance >= .3) { chance = " 30%"; }
+            else if (precipChance >= .1) { chance = " 20%"; }
+              else {chance = ""; }
+  skyCondition += chance;	  
   return skyCondition;		
   }
 
@@ -232,31 +250,55 @@ function Create_Forecast_Table(currentTemp) {
   for (i = 0; i <= 4; i++) {
     highToday = (day[0] == "Today:" && i == 0) ? parseInt(currentTemp) : -200; 
     lowToday = (day[0] == "Today:" && i == 0) ? parseInt(currentTemp) : 200;
-    cloudTotal = 0;  num = 0;
+    cloudTotal = 0;  precipTotal = 0;  num = 0;  rain = false;  snow = false;
 	for (j = slot[i]; j < slot[i+1]; j++) {
-	  if (forecast.list[j].main.temp > highToday) highToday = forecast.list[j].main.temp; 
+	  rainFound = false;  snowFound = false;
+	  if (forecast.list[j].main.temp > highToday) 
+	    highToday = forecast.list[j].main.temp; 
       high[i] = parseInt(highToday);
-   	  if (forecast.list[j].main.temp < lowToday) lowToday = forecast.list[j].main.temp; 
+   	  if (forecast.list[j].main.temp < lowToday) 
+	    lowToday = forecast.list[j].main.temp; 
       low[i] = (firstHour > "15" && i == 0) ? "--" : parseInt(lowToday);
 	  cloudTotal = cloudTotal + parseInt(forecast.list[j].clouds.all);
+      if (forecast.list[j].rain != undefined) {
+        if (forecast.list[j].rain["3h"] != undefined) {
+		  rain = true; 
+		  rainFound = true; } }
+      if (forecast.list[j].snow != undefined) {
+        if (forecast.list[j].snow["3h"] != undefined) {
+		  snow = true; 
+		  snowFound = true; } }
 	  num++;
+      if (rainFound || snowFound) precipTotal++;
 	  }
-    clouds[i] = Determine_Sky_Cover(cloudTotal / num);
+    clouds[i] = Determine_Sky_Cover(cloudTotal/num, rain, snow, precipTotal/num);
     y = y + "<tr><td>" + day[i] + "</td><td>" + low[i] + "</td><td>" + high[i] + "</td><td>" + clouds[i] + "</td></tr>"; 
     }  
   document.getElementById("forecast").innerHTML = y;
   }
 
 var triggerEl = document.querySelector('.trigger');
-var mainEl = document.querySelector('.container');
 
 triggerEl.addEventListener('click', function(event) {
   event.preventDefault();
   Create_Menu();
-  mainEl.classList.toggle('nav-is-open');
-  document.querySelector(".location").value = ""; 
-  document.getElementById("citylist").innerHTML = ""; 
-}); 
+  document.querySelector('.container').classList.toggle('nav-is-open');
+  if (!document.querySelector('.container').classList.contains('nav-is-open')) {
+    if (locationAdded) {
+	  locationIndex = numLocations - 1; }
+    else if (locationDeleted) {
+      locationIndex = -1; }
+    Refresh_Display(); 
+    document.querySelector(".location").value = ""; 
+    document.getElementById("citylist").innerHTML = "";  
+    document.getElementById("previous").disabled = (locationIndex == -1) ? true : false; 
+    document.getElementById("next").disabled = (locationIndex < numLocations - 1) ? false : true; 
+    triggerEl.innerText = menuSymbol; }
+  else {
+    triggerEl.innerText = xSymbol;
+	locationDeleted = false;
+	locationAdded = false; }
+  }); 
 
 function Delete_Location(i) {
   if (confirm ("Are you sure you want to delete " + stations[i].city + " as a saved location?") == true) {
@@ -264,8 +306,9 @@ function Delete_Location(i) {
 	if (!fromFile) {
       localStorage.setItem("stations", JSON.stringify(stations)); }
     if  (locationIndex > numLocations - 1) locationIndex = numLocations - 1;
-    numLocations--; }
-    Create_Menu(); 
+    numLocations--; 
+    locationDeleted = true; }
+  Create_Menu(); 
   }
 
 function Show_Locations(inputString) {
@@ -275,11 +318,11 @@ function Show_Locations(inputString) {
     document.getElementById("citylist").innerHTML = ""; 
     return; }
   cityMatches = cities.stations.filter(Check_Locations);
-  var y = "<li>&#20;</li>"; 
-  y = y + "<li><em><strong>Select Location to Add:</strong></em></li>"; 
-  y = y + '<li>&#20;</li>';
+  var y = '<li>&#20;</li>'; 
+  y += '<li><em><strong>Select Location to Add:</strong></em></li>'; 
+  y += '<li>&#20;</li>';
   for (x = 0; x < cityMatches.length; x++) {
-    y = y + '<li><a href="#" onclick="Save_Location(' + x + ')";>' + cityMatches[x].name + ", " + cityMatches[x].state + '</a></li>'; } 
+    y += '<li><a href="#" onclick="Save_Location(' + x + ')";>' + cityMatches[x].name + ", " + cityMatches[x].state + '</a></li>'; } 
   document.getElementById("citylist").innerHTML = y; 
   }
 
@@ -299,20 +342,19 @@ function Save_Location(x) {
   if (!fromFile) {
     localStorage.setItem("stations", JSON.stringify(stations)); }
   numLocations++;
+  locationAdded = true;
   document.getElementById("citylist").innerHTML = ""; 
   document.querySelector(".location").value = ""; 
   Create_Menu();
   }
  
 function Create_Menu() {
-  var y = "<li><em><strong>Select Location to Delete:</strong></em></li>"; 
-  y = y + '<li>&#20;</li>';
+  var y = '<li><em><strong>Select Location to Delete:</strong></em></li>'; 
+  y += '<li>&#20;</li>';
   for (i = 0; i < numLocations; i++) {
-    y = y + '<li><a href="#" class="delete" onclick="Delete_Location(' + i + ')";>' + stations[i].city + '</a></li>'; } 
-  y = y + '<li>&#20;</li>';
-  y = y + "<li><em><strong>Input a New Location:</strong></em></li>"; 
-  y = y + '<li>&#20;</li>';
+    y += '<li><a href="#" class="delete" onclick="Delete_Location(' + i + ')";>' + stations[i].city + '</a></li>'; } 
+  y += '<li>&#20;</li>';
+  y += '<li><em><strong>Input a New Location:</strong></em></li>'; 
+  y += '<li>&#20;</li>';
   document.getElementById("menu").innerHTML = y; 
-  document.getElementById("previous").disabled = locationIndex <= -1 ? true : false; 
-  document.getElementById("next").disabled = locationIndex < numLocations - 1 ? false : true; 
   }

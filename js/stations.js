@@ -1,5 +1,4 @@
-cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coord":{"lon":-85.484657,"lat":31.21073}},
-{"id":4215307,"name":"Pennick","state":"GA","coord":{"lon":-81.55899,"lat":31.313}},
+cities = {"stations": [{"id":4215307,"name":"Pennick","state":"GA","coord":{"lon":-81.55899,"lat":31.313}},
 {"id":4047656,"name":"Provo","state":"AR","coord":{"lon":-94.107697,"lat":34.037609}},
 {"id":5493998,"name":"Tejon","state":"NM","coord":{"lon":-105.28611,"lat":34.58979}},
 {"id":5391891,"name":"San Dimas","state":"CA","coord":{"lon":-117.806732,"lat":34.106682}},
@@ -15,7 +14,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4178270,"name":"Wild Island","state":"FL","coord":{"lon":-81.203682,"lat":27.37282}},
 {"id":7217562,"name":"Lindsey","state":"FL","coord":{"lon":-82.211403,"lat":28.005199}},
 {"id":4684064,"name":"Cranell","state":"TX","coord":{"lon":-97.392769,"lat":28.16807}},
-{"id":4331987,"name":"Louisiana","state":"LA","coord":{"lon":-92.000397,"lat":31.000469}},
 {"id":4341715,"name":"Slagle","state":"LA","coord":{"lon":-93.12738,"lat":31.20241}},
 {"id":4053940,"name":"Castleberry","state":"AL","coord":{"lon":-87.022469,"lat":31.299061}},
 {"id":4059229,"name":"Dozier","state":"AL","coord":{"lon":-86.36496,"lat":31.492109}},
@@ -116,7 +114,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4475980,"name":"Lincoln Heights","state":"NC","coord":{"lon":-77.904709,"lat":35.69405}},
 {"id":4527720,"name":"Waterloo","state":"OH","coord":{"lon":-82.784897,"lat":39.83979}},
 {"id":5268838,"name":"Richfield","state":"WI","coord":{"lon":-88.193977,"lat":43.256119}},
-{"id":4599503,"name":"Vaughans Crossroads","state":"SC","coord":{"lon":-80.102287,"lat":34.208771}},
 {"id":5312572,"name":"Saint David","state":"AZ","coord":{"lon":-110.214241,"lat":31.904249}},
 {"id":4723416,"name":"Rockwell","state":"TX","coord":{"lon":-95.549683,"lat":33.591221}},
 {"id":4919277,"name":"Cook","state":"IN","coord":{"lon":-87.469757,"lat":41.377258}},
@@ -124,7 +121,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4494053,"name":"Sunny View","state":"NC","coord":{"lon":-82.187889,"lat":35.374279}},
 {"id":4913764,"name":"Tomahawk Bluff","state":"IL","coord":{"lon":-89.08342,"lat":41.380589}},
 {"id":4290651,"name":"Dykes","state":"KY","coord":{"lon":-84.435768,"lat":37.068138}},
-{"id":5723848,"name":"Drake Crossing","state":"OR","coord":{"lon":-122.655922,"lat":44.925961}},
 {"id":5564102,"name":"Gas Point","state":"CA","coord":{"lon":-122.534462,"lat":40.415428}},
 {"id":4926474,"name":"Sloan","state":"IN","coord":{"lon":-87.476128,"lat":40.301979}},
 {"id":5340687,"name":"Creston","state":"CA","coord":{"lon":-120.523773,"lat":35.51886}},
@@ -426,7 +422,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4130430,"name":"Searcy","state":"AR","coord":{"lon":-91.736252,"lat":35.250641}},
 {"id":4133367,"name":"Texarkana","state":"AR","coord":{"lon":-94.037689,"lat":33.441792}},
 {"id":4134716,"name":"Van Buren","state":"AR","coord":{"lon":-94.348267,"lat":35.43676}},
-{"id":4138106,"name":"District of Columbia","state":"DC","coord":{"lon":-77.000252,"lat":38.917061}},
 {"id":4147241,"name":"Belle Glade","state":"FL","coord":{"lon":-80.667557,"lat":26.684509}},
 {"id":4154568,"name":"Estero","state":"FL","coord":{"lon":-81.806747,"lat":26.438141}},
 {"id":4155995,"name":"Fort Myers","state":"FL","coord":{"lon":-81.840591,"lat":26.621679}},
@@ -475,7 +470,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4285268,"name":"Bowling Green","state":"KY","coord":{"lon":-86.443604,"lat":36.990318}},
 {"id":4289445,"name":"Danville","state":"KY","coord":{"lon":-84.772171,"lat":37.64563}},
 {"id":4290988,"name":"Elizabethtown","state":"KY","coord":{"lon":-85.859131,"lat":37.693951}},
-{"id":4297999,"name":"Lexington-Fayette","state":"KY","coord":{"lon":-84.458549,"lat":38.049801}},
 {"id":4299670,"name":"Madisonville","state":"KY","coord":{"lon":-87.498894,"lat":37.328098}},
 {"id":4315768,"name":"Bayou Cane","state":"LA","coord":{"lon":-90.751198,"lat":29.6241}},
 {"id":4326868,"name":"Hammond","state":"LA","coord":{"lon":-90.461197,"lat":30.50436}},
@@ -776,7 +770,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4433944,"name":"Livingston","state":"MS","coord":{"lon":-90.216202,"lat":32.552921}},
 {"id":5484708,"name":"Point of Sands","state":"NM","coord":{"lon":-106.195831,"lat":32.747028}},
 {"id":5495380,"name":"Tularosa","state":"NM","coord":{"lon":-106.0186,"lat":33.073971}},
-{"id":4684396,"name":"Crossroads Community Centery","state":"TX","coord":{"lon":-94.581871,"lat":33.072899}},
 {"id":5201874,"name":"Moorheadville","state":"PA","coord":{"lon":-79.910049,"lat":42.192001}},
 {"id":5137842,"name":"Sheenwater","state":"NY","coord":{"lon":-79.015877,"lat":42.995331}},
 {"id":5121009,"name":"Holland Cove","state":"NY","coord":{"lon":-77.143593,"lat":43.28701}},
@@ -797,7 +790,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5387307,"name":"Ribbonwood","state":"CA","coord":{"lon":-116.498901,"lat":33.570309}},
 {"id":4743093,"name":"Woodstock","state":"TX","coord":{"lon":-94.462982,"lat":33.55817}},
 {"id":4117436,"name":"Killin","state":"AR","coord":{"lon":-91.741241,"lat":33.612331}},
-{"id":4574333,"name":"Charleston Crossroads","state":"SC","coord":{"lon":-82.483742,"lat":34.08123}},
 {"id":5493952,"name":"Tecolote","state":"NM","coord":{"lon":-105.663322,"lat":34.017849}},
 {"id":4539119,"name":"Hoxbar","state":"OK","coord":{"lon":-97.039177,"lat":34.07093}},
 {"id":4716202,"name":"Oklaunion","state":"TX","coord":{"lon":-99.142853,"lat":34.129532}},
@@ -805,18 +797,15 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5457268,"name":"Bethel","state":"NM","coord":{"lon":-103.474678,"lat":34.228691}},
 {"id":5399922,"name":"Sun Valley","state":"CA","coord":{"lon":-118.370361,"lat":34.217499}},
 {"id":4530363,"name":"Bentley","state":"OK","coord":{"lon":-96.07888,"lat":34.214821}},
-{"id":5301232,"name":"Kohls Ranch","state":"AZ","coord":{"lon":-111.094299,"lat":34.32531}},
 {"id":5470124,"name":"Grier","state":"NM","coord":{"lon":-103.398567,"lat":34.410629}},
 {"id":5490606,"name":"Scholle","state":"NM","coord":{"lon":-106.416679,"lat":34.427559}},
 {"id":4093194,"name":"Ten Broeck","state":"AL","coord":{"lon":-85.986923,"lat":34.41787}},
-{"id":4585582,"name":"Lockhart Oil Field","state":"SC","coord":{"lon":-80.534523,"lat":34.423489}},
 {"id":4190542,"name":"Dahlonega","state":"GA","coord":{"lon":-83.984909,"lat":34.532589}},
 {"id":5322400,"name":"Adelanto","state":"CA","coord":{"lon":-117.409218,"lat":34.582771}},
 {"id":4593538,"name":"Rossville","state":"SC","coord":{"lon":-80.992577,"lat":34.603481}},
 {"id":4485528,"name":"Pinkston","state":"NC","coord":{"lon":-80.078392,"lat":35.016258}},
 {"id":5460986,"name":"Cedro","state":"NM","coord":{"lon":-106.353638,"lat":35.02227}},
 {"id":5474813,"name":"La Cuesta","state":"NM","coord":{"lon":-106.506973,"lat":35.078381}},
-{"id":4662168,"name":"Tennessee","state":"TN","coord":{"lon":-86.250267,"lat":35.750351}},
 {"id":4655513,"name":"Sal City","state":"TN","coord":{"lon":-86.049149,"lat":35.05592}},
 {"id":4627266,"name":"Hamburg","state":"TN","coord":{"lon":-88.304207,"lat":35.09481}},
 {"id":5516007,"name":"Aberdeen","state":"TX","coord":{"lon":-100.149277,"lat":35.03783}},
@@ -859,7 +848,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5342512,"name":"Delft Colony","state":"CA","coord":{"lon":-119.445961,"lat":36.511902}},
 {"id":5501198,"name":"Camp Desert Rock","state":"NV","coord":{"lon":-116.020027,"lat":36.627178}},
 {"id":5515766,"name":"Hough","state":"OK","coord":{"lon":-101.577103,"lat":36.870861}},
-{"id":5393244,"name":"Santa Nella Village","state":"CA","coord":{"lon":-121.016869,"lat":37.097721}},
 {"id":4245592,"name":"New Liberty","state":"IL","coord":{"lon":-88.447823,"lat":37.122002}},
 {"id":5427336,"name":"Kim","state":"CO","coord":{"lon":-103.352158,"lat":37.246689}},
 {"id":5431144,"name":"Midway","state":"CO","coord":{"lon":-102.186012,"lat":37.149189}},
@@ -883,7 +871,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5331154,"name":"Bruceville","state":"CA","coord":{"lon":-121.417168,"lat":38.335751}},
 {"id":5419932,"name":"Doyleville","state":"CO","coord":{"lon":-106.609482,"lat":38.45166}},
 {"id":4257682,"name":"Francisco","state":"IN","coord":{"lon":-87.445297,"lat":38.332272}},
-{"id":4251347,"name":"Toms Prairie","state":"IL","coord":{"lon":-88.258652,"lat":38.407829}},
 {"id":4799763,"name":"Bolair","state":"WV","coord":{"lon":-80.44397,"lat":38.437611}},
 {"id":5414591,"name":"Boone","state":"CO","coord":{"lon":-104.256912,"lat":38.248611}},
 {"id":5431129,"name":"Midland","state":"CO","coord":{"lon":-105.161652,"lat":38.858318}},
@@ -892,7 +879,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4270936,"name":"Ellis","state":"KS","coord":{"lon":-99.560669,"lat":38.938068}},
 {"id":5365089,"name":"Largo","state":"CA","coord":{"lon":-123.129997,"lat":39.021561}},
 {"id":5434851,"name":"Platte Springs","state":"CO","coord":{"lon":-105.358612,"lat":39.063599}},
-{"id":4361885,"name":"Maryland","state":"MD","coord":{"lon":-76.749969,"lat":39.000389}},
 {"id":5421941,"name":"Flagler","state":"CO","coord":{"lon":-103.067162,"lat":39.293049}},
 {"id":4405766,"name":"River Bend","state":"MO","coord":{"lon":-94.394951,"lat":39.17889}},
 {"id":5443572,"name":"West Burlington","state":"CO","coord":{"lon":-102.309639,"lat":39.303329}},
@@ -919,7 +905,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5702984,"name":"Crescent Valley","state":"NV","coord":{"lon":-116.576469,"lat":40.416031}},
 {"id":5056965,"name":"Queen City","state":"MO","coord":{"lon":-92.567688,"lat":40.409199}},
 {"id":4928084,"name":"West Middleton","state":"IN","coord":{"lon":-86.21611,"lat":40.43948}},
-{"id":5580548,"name":"Old Homestead","state":"CO","coord":{"lon":-106.143631,"lat":40.440262}},
 {"id":5056033,"name":"London","state":"MO","coord":{"lon":-95.234978,"lat":40.445}},
 {"id":5066953,"name":"Devils Gap","state":"NE","coord":{"lon":-99.87207,"lat":40.579449}},
 {"id":5707899,"name":"Rock House","state":"NV","coord":{"lon":-115.410881,"lat":40.42215}},
@@ -946,7 +931,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5703133,"name":"Deep Creek","state":"NV","coord":{"lon":-116.148697,"lat":41.567131}},
 {"id":5832096,"name":"Meriden","state":"WY","coord":{"lon":-104.31913,"lat":41.543591}},
 {"id":5585010,"name":"Bear Lake Sands","state":"ID","coord":{"lon":-111.253532,"lat":42.051601}},
-{"id":4896555,"name":"Howard District","state":"IL","coord":{"lon":-87.66922,"lat":42.020859}},
 {"id":4884951,"name":"Birchwood","state":"IL","coord":{"lon":-87.665337,"lat":42.016701}},
 {"id":4996543,"name":"Horton","state":"MI","coord":{"lon":-84.517181,"lat":42.150318}},
 {"id":4852165,"name":"Coggon","state":"IA","coord":{"lon":-91.530441,"lat":42.280819}},
@@ -987,7 +971,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5020993,"name":"Cherry Grove","state":"MN","coord":{"lon":-92.28878,"lat":43.58746}},
 {"id":5006232,"name":"Port Hope","state":"MI","coord":{"lon":-82.712708,"lat":43.940842}},
 {"id":5020988,"name":"Chester","state":"MN","coord":{"lon":-92.345169,"lat":44.006908}},
-{"id":5129017,"name":"North Croghan Crossing","state":"NY","coord":{"lon":-75.496857,"lat":44.03479}},
 {"id":5770431,"name":"Wildwood Addition","state":"SD","coord":{"lon":-103.274902,"lat":44.035271}},
 {"id":5037298,"name":"Meriden","state":"MN","coord":{"lon":-93.386879,"lat":44.074131}},
 {"id":5051458,"name":"Viola","state":"MN","coord":{"lon":-92.268219,"lat":44.063301}},
@@ -1142,7 +1125,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4579071,"name":"Four Seasons","state":"SC","coord":{"lon":-80.723419,"lat":34.203201}},
 {"id":4112421,"name":"Glenlake","state":"AR","coord":{"lon":-91.889297,"lat":34.193432}},
 {"id":5479411,"name":"Milagro","state":"NM","coord":{"lon":-105.239166,"lat":34.938389}},
-{"id":5474540,"name":"Kirtland Addition","state":"NM","coord":{"lon":-106.630859,"lat":35.055328}},
 {"id":4625077,"name":"Glover Hill","state":"TN","coord":{"lon":-85.651642,"lat":35.063129}},
 {"id":4555778,"name":"Willow View","state":"OK","coord":{"lon":-97.26503,"lat":35.058411}},
 {"id":4477331,"name":"Lovejoy","state":"NC","coord":{"lon":-79.919487,"lat":35.422642}},
@@ -1150,7 +1132,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4487278,"name":"Rawls","state":"NC","coord":{"lon":-78.815292,"lat":35.537102}},
 {"id":5455744,"name":"Arriba","state":"NM","coord":{"lon":-105.200844,"lat":35.623379}},
 {"id":7315189,"name":"Valle Vista","state":"AZ","coord":{"lon":-113.862709,"lat":35.410881}},
-{"id":5484620,"name":"Placitas Homesteads","state":"NM","coord":{"lon":-106.490303,"lat":35.308102}},
 {"id":4491651,"name":"Siler City","state":"NC","coord":{"lon":-79.462242,"lat":35.723469}},
 {"id":5384214,"name":"Ponderosa","state":"CA","coord":{"lon":-118.528137,"lat":36.105499}},
 {"id":5471040,"name":"Hebron","state":"NM","coord":{"lon":-104.46582,"lat":36.73864}},
@@ -1165,7 +1146,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5356429,"name":"Herald","state":"CA","coord":{"lon":-121.244392,"lat":38.29575}},
 {"id":5417561,"name":"Colorado City","state":"CO","coord":{"lon":-104.835258,"lat":37.94529}},
 {"id":5439126,"name":"Smeltertown","state":"CO","coord":{"lon":-106.014458,"lat":38.547501}},
-{"id":4144372,"name":"Rogers Development","state":"DE","coord":{"lon":-75.364082,"lat":38.700951}},
 {"id":5422191,"name":"Fountain","state":"CO","coord":{"lon":-104.700813,"lat":38.68222}},
 {"id":4377664,"name":"Blue Springs","state":"MO","coord":{"lon":-94.281609,"lat":39.016949}},
 {"id":5323111,"name":"Alicia","state":"CA","coord":{"lon":-121.581627,"lat":39.102669}},
@@ -1199,7 +1179,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5281189,"name":"Air City","state":"NY","coord":{"lon":-75.422401,"lat":43.22007}},
 {"id":5828759,"name":"Jeffrey City","state":"WY","coord":{"lon":-107.827301,"lat":42.494678}},
 {"id":5267785,"name":"Portage","state":"WI","coord":{"lon":-89.462624,"lat":43.53915}},
-{"id":5089451,"name":"Meredith Center","state":"NH","coord":{"lon":-71.529243,"lat":43.614239}},
 {"id":5596475,"name":"Idaho Falls","state":"ID","coord":{"lon":-112.034142,"lat":43.466579}},
 {"id":5092947,"name":"South Tamworth","state":"NH","coord":{"lon":-71.303131,"lat":43.824799}},
 {"id":5036062,"name":"Luverne","state":"MN","coord":{"lon":-96.212807,"lat":43.65414}},
@@ -1390,7 +1369,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4943926,"name":"Middleton","state":"MA","coord":{"lon":-71.016159,"lat":42.595089}},
 {"id":4929354,"name":"Assinippi","state":"MA","coord":{"lon":-70.850883,"lat":42.158428}},
 {"id":5257623,"name":"Island Park","state":"WI","coord":{"lon":-88.80233,"lat":44.022758}},
-{"id":4217078,"name":"Port Wentworth Junction","state":"GA","coord":{"lon":-81.192062,"lat":32.14381}},
 {"id":5280753,"name":"Triadelphia","state":"WV","coord":{"lon":-80.62841,"lat":40.05257}},
 {"id":4483478,"name":"Olympia","state":"NC","coord":{"lon":-76.970779,"lat":35.13905}},
 {"id":5595728,"name":"Hillcrest","state":"ID","coord":{"lon":-116.182892,"lat":43.563499}},
@@ -1403,7 +1381,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5466463,"name":"El Guacho","state":"NM","coord":{"lon":-106.086967,"lat":36.006691}},
 {"id":5570062,"name":"Red Bank","state":"CA","coord":{"lon":-122.445282,"lat":40.099319}},
 {"id":5458688,"name":"Boyd","state":"NM","coord":{"lon":-106.573608,"lat":32.32259}},
-{"id":5470711,"name":"Harkey Crossing","state":"NM","coord":{"lon":-104.197441,"lat":32.236511}},
 {"id":5477770,"name":"Maljamar","state":"NM","coord":{"lon":-103.762733,"lat":32.856232}},
 {"id":5480395,"name":"Mountainair","state":"NM","coord":{"lon":-106.241127,"lat":34.52034}},
 {"id":5421258,"name":"Eno","state":"CO","coord":{"lon":-104.844139,"lat":39.887211}},
@@ -1422,7 +1399,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4106726,"name":"Cotton Belt","state":"AR","coord":{"lon":-90.461769,"lat":36.093121}},
 {"id":4089186,"name":"Seven Hills","state":"AL","coord":{"lon":-88.303062,"lat":30.654079}},
 {"id":5610655,"name":"Troy","state":"ID","coord":{"lon":-116.7696,"lat":46.736839}},
-{"id":4941425,"name":"Knights Crossing","state":"MA","coord":{"lon":-70.88839,"lat":42.775089}},
 {"id":4745591,"name":"Barker Land","state":"VA","coord":{"lon":-77.889442,"lat":39.073719}},
 {"id":5522990,"name":"Heckville","state":"TX","coord":{"lon":-101.665169,"lat":33.754799}},
 {"id":4614286,"name":"Clovercroft","state":"TN","coord":{"lon":-86.76667,"lat":35.923672}},
@@ -1432,7 +1408,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5129029,"name":"North Elba","state":"NY","coord":{"lon":-73.954308,"lat":44.243382}},
 {"id":4200311,"name":"Hidden Forest","state":"GA","coord":{"lon":-83.774353,"lat":32.665138}},
 {"id":4870995,"name":"Percival","state":"IA","coord":{"lon":-95.813606,"lat":40.74889}},
-{"id":5372148,"name":"Mendenhall Springs","state":"CA","coord":{"lon":-121.647728,"lat":37.588268}},
 {"id":5853965,"name":"Village Park","state":"HI","coord":{"lon":-158.030273,"lat":21.39806}},
 {"id":5855321,"name":"Hālawa Hills","state":"HI","coord":{"lon":-157.906677,"lat":21.38472}},
 {"id":5857052,"name":"Akupu","state":"HI","coord":{"lon":-158.103058,"lat":21.394171}},
@@ -1445,7 +1420,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4674722,"name":"Black Jack","state":"TX","coord":{"lon":-96.528297,"lat":30.888519}},
 {"id":5795013,"name":"Fredonia","state":"WA","coord":{"lon":-122.444054,"lat":48.44622}},
 {"id":5816011,"name":"Wildcat Lake","state":"WA","coord":{"lon":-122.766823,"lat":47.604542}},
-{"id":4705000,"name":"Lakeview","state":"TX","coord":{"lon":-93.898499,"lat":29.913549}},
 {"id":4251413,"name":"Trenton","state":"IL","coord":{"lon":-89.682037,"lat":38.605598}},
 {"id":4408527,"name":"Shirley","state":"MO","coord":{"lon":-90.919296,"lat":37.915051}},
 {"id":4295251,"name":"Hopkinsville","state":"KY","coord":{"lon":-87.488617,"lat":36.865601}},
@@ -1464,7 +1438,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5043944,"name":"Rowland","state":"MN","coord":{"lon":-93.425507,"lat":44.860241}},
 {"id":4329654,"name":"Kaplan","state":"LA","coord":{"lon":-92.284851,"lat":29.99798}},
 {"id":4915695,"name":"Watertown","state":"IL","coord":{"lon":-89.294548,"lat":41.98531}},
-{"id":4886765,"name":"Castle Junction","state":"IL","coord":{"lon":-90.577911,"lat":41.392529}},
 {"id":4862034,"name":"Iowa City","state":"IA","coord":{"lon":-91.530167,"lat":41.661129}},
 {"id":5186451,"name":"Dawson","state":"PA","coord":{"lon":-80.403122,"lat":40.701729}},
 {"id":5263167,"name":"Minong","state":"WI","coord":{"lon":-91.824913,"lat":46.099388}},
@@ -1595,7 +1568,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4314969,"name":"Arcadia","state":"LA","coord":{"lon":-92.920158,"lat":32.549042}},
 {"id":5203241,"name":"New Morgan","state":"PA","coord":{"lon":-75.890213,"lat":40.180931}},
 {"id":5102727,"name":"Plains","state":"NJ","coord":{"lon":-74.701828,"lat":41.140652}},
-{"id":4927970,"name":"Waterford Mills","state":"IN","coord":{"lon":-85.830551,"lat":41.543098}},
 {"id":8114231,"name":"Terrace Aires","state":"OH","coord":{"lon":-84.410278,"lat":41.501942}},
 {"id":4990797,"name":"Dexter","state":"MI","coord":{"lon":-83.888557,"lat":42.338371}},
 {"id":4360564,"name":"Lereley","state":"MD","coord":{"lon":-76.402458,"lat":39.405659}},
@@ -1732,7 +1704,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5225631,"name":"Westerly","state":"RI","coord":{"lon":-71.827293,"lat":41.377602}},
 {"id":4984106,"name":"Alverno","state":"MI","coord":{"lon":-84.391701,"lat":45.55862}},
 {"id":5792466,"name":"Disautel","state":"WA","coord":{"lon":-119.237259,"lat":48.360432}},
-{"id":5605008,"name":"Reclamation Village","state":"ID","coord":{"lon":-115.488701,"lat":43.335449}},
 {"id":5805240,"name":"North Pine","state":"WA","coord":{"lon":-117.364906,"lat":47.281841}},
 {"id":4953804,"name":"Uxbridge","state":"MA","coord":{"lon":-71.629509,"lat":42.07732}},
 {"id":4872164,"name":"Preston","state":"IA","coord":{"lon":-90.414017,"lat":42.050301}},
@@ -1883,7 +1854,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4714865,"name":"Nocona","state":"TX","coord":{"lon":-97.725861,"lat":33.78677}},
 {"id":4477482,"name":"Lowgap","state":"NC","coord":{"lon":-80.867302,"lat":36.525688}},
 {"id":4261650,"name":"Mound Haven","state":"IN","coord":{"lon":-84.978287,"lat":39.383942}},
-{"id":5086766,"name":"Grafton Center","state":"NH","coord":{"lon":-71.973419,"lat":43.573959}},
 {"id":5184594,"name":"Cleversburg Junction","state":"PA","coord":{"lon":-77.464706,"lat":40.050369}},
 {"id":4698041,"name":"Hockley","state":"TX","coord":{"lon":-95.844398,"lat":30.02689}},
 {"id":4713866,"name":"Navasota","state":"TX","coord":{"lon":-96.08773,"lat":30.38798}},
@@ -1962,9 +1932,7 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4293382,"name":"Green Hill","state":"KY","coord":{"lon":-83.965477,"lat":37.296478}},
 {"id":5034516,"name":"Lester Prairie","state":"MN","coord":{"lon":-94.041641,"lat":44.88385}},
 {"id":4825440,"name":"Uneeda","state":"WV","coord":{"lon":-81.780678,"lat":38.03566}},
-{"id":4527676,"name":"Washington Meadows","state":"OH","coord":{"lon":-82.886009,"lat":39.584511}},
 {"id":4519990,"name":"Norwich","state":"OH","coord":{"lon":-81.791519,"lat":39.985069}},
-{"id":4629104,"name":"Hickory Grove","state":"TN","coord":{"lon":-89.01284,"lat":35.985352}},
 {"id":5190747,"name":"Galilee","state":"PA","coord":{"lon":-75.139618,"lat":41.735088}},
 {"id":4984863,"name":"Bangor","state":"MI","coord":{"lon":-86.113083,"lat":42.312538}},
 {"id":4846519,"name":"Albert City","state":"IA","coord":{"lon":-94.948601,"lat":42.781921}},
@@ -1976,9 +1944,7 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5291033,"name":"Cottonwood","state":"AZ","coord":{"lon":-112.00988,"lat":34.739189}},
 {"id":5090347,"name":"North Conway","state":"NH","coord":{"lon":-71.128403,"lat":44.05368}},
 {"id":4911382,"name":"Shirland","state":"IL","coord":{"lon":-89.197609,"lat":42.444462}},
-{"id":5537211,"name":"Columbia Junction","state":"UT","coord":{"lon":-110.443771,"lat":39.531631}},
 {"id":5136177,"name":"Sanborn","state":"NY","coord":{"lon":-78.884758,"lat":43.136719}},
-{"id":5112771,"name":"Clarence Center","state":"NY","coord":{"lon":-78.637527,"lat":43.010609}},
 {"id":5578235,"name":"Hudson","state":"CO","coord":{"lon":-104.643021,"lat":40.073589}},
 {"id":4904922,"name":"Orion","state":"IL","coord":{"lon":-90.381523,"lat":41.354759}},
 {"id":5019445,"name":"Brownsdale","state":"MN","coord":{"lon":-92.869347,"lat":43.740238}},
@@ -2019,7 +1985,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5009509,"name":"Shallows","state":"MI","coord":{"lon":-84.444206,"lat":46.474739}},
 {"id":4994347,"name":"Grand Marais","state":"MI","coord":{"lon":-85.985168,"lat":46.670811}},
 {"id":4743935,"name":"Addison Heights","state":"VA","coord":{"lon":-77.060257,"lat":38.855671}},
-{"id":5816884,"name":"Airport Road","state":"WY","coord":{"lon":-107.949257,"lat":43.99329}},
 {"id":5841207,"name":"Torrington","state":"WY","coord":{"lon":-104.184387,"lat":42.062462}},
 {"id":5832732,"name":"Moose","state":"WY","coord":{"lon":-110.718262,"lat":43.655769}},
 {"id":5824805,"name":"Evanston","state":"WY","coord":{"lon":-110.963242,"lat":41.26828}},
@@ -2042,7 +2007,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5248985,"name":"Clintonville","state":"WI","coord":{"lon":-88.762321,"lat":44.620529}},
 {"id":5244257,"name":"Ashland Junction","state":"WI","coord":{"lon":-90.971298,"lat":46.57383}},
 {"id":5265724,"name":"Oneida","state":"WI","coord":{"lon":-88.182877,"lat":44.4986}},
-{"id":5811225,"name":"South Broadway","state":"WA","coord":{"lon":-120.516731,"lat":46.566238}},
 {"id":5556487,"name":"Port Higgins","state":"AK","coord":{"lon":-131.816666,"lat":55.450001}},
 {"id":5796700,"name":"Harbert","state":"WA","coord":{"lon":-118.24218,"lat":46.087921}},
 {"id":5791201,"name":"Cowlitz","state":"WA","coord":{"lon":-122.842621,"lat":46.458721}},
@@ -2064,7 +2028,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5862936,"name":"Glennallen","state":"AK","coord":{"lon":-145.546387,"lat":62.109169}},
 {"id":4769120,"name":"Lees Mill","state":"VA","coord":{"lon":-76.895523,"lat":36.682652}},
 {"id":4755668,"name":"Deerwood","state":"VA","coord":{"lon":-78.446121,"lat":38.13541}},
-{"id":5773126,"name":"Colonial Gardens Condominium","state":"UT","coord":{"lon":-112.009109,"lat":41.183281}},
 {"id":5537680,"name":"Crescent Junction","state":"UT","coord":{"lon":-109.817352,"lat":38.943031}},
 {"id":5775438,"name":"Greenville","state":"UT","coord":{"lon":-111.848282,"lat":41.766319}},
 {"id":5780908,"name":"Sahara Village","state":"UT","coord":{"lon":-111.973282,"lat":41.100498}},
@@ -2204,7 +2167,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5123396,"name":"Kimball Stand","state":"NY","coord":{"lon":-79.255051,"lat":42.174782}},
 {"id":5123993,"name":"Lansing","state":"NY","coord":{"lon":-76.479942,"lat":42.484241}},
 {"id":5123873,"name":"Lakeland","state":"NY","coord":{"lon":-73.12011,"lat":40.80788}},
-{"id":7258009,"name":"Big Flats Airport","state":"NY","coord":{"lon":-76.889771,"lat":42.1693}},
 {"id":5143747,"name":"West Chenango","state":"NY","coord":{"lon":-75.9627,"lat":42.20063}},
 {"id":5128723,"name":"Niagara Falls","state":"NY","coord":{"lon":-79.056709,"lat":43.094501}},
 {"id":7261960,"name":"Nellis Air Force Base","state":"NV","coord":{"lon":-115.057213,"lat":36.246071}},
@@ -2251,7 +2213,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4492039,"name":"Smallwood","state":"NC","coord":{"lon":-77.03273,"lat":35.562939}},
 {"id":4466604,"name":"Floral College","state":"NC","coord":{"lon":-79.318367,"lat":34.7785}},
 {"id":4477525,"name":"Lumberton","state":"NC","coord":{"lon":-79.008636,"lat":34.618221}},
-{"id":4479047,"name":"Mewborns Crossroads","state":"NC","coord":{"lon":-77.592751,"lat":35.346272}},
 {"id":4471368,"name":"Hoffman","state":"NC","coord":{"lon":-79.547539,"lat":35.032379}},
 {"id":4477228,"name":"Longview","state":"NC","coord":{"lon":-81.383423,"lat":35.729301}},
 {"id":4490315,"name":"Sandy Springs","state":"NC","coord":{"lon":-77.944153,"lat":35.332661}},
@@ -2407,10 +2368,8 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4857911,"name":"Fruitland","state":"IA","coord":{"lon":-91.129318,"lat":41.35614}},
 {"id":4867801,"name":"Monticello","state":"IA","coord":{"lon":-91.187088,"lat":42.238338}},
 {"id":4866520,"name":"Maulsby","state":"IA","coord":{"lon":-92.923264,"lat":42.144711}},
-{"id":4876656,"name":"Skyview Mobile Home Park","state":"IA","coord":{"lon":-91.433487,"lat":40.466148}},
 {"id":4872393,"name":"Racine","state":"IA","coord":{"lon":-93.329369,"lat":42.470261}},
 {"id":4857486,"name":"Fort Dodge","state":"IA","coord":{"lon":-94.168022,"lat":42.497471}},
-{"id":4865892,"name":"Maharishi Vedic City","state":"IA","coord":{"lon":-91.994904,"lat":41.052521}},
 {"id":4859450,"name":"Gruver","state":"IA","coord":{"lon":-94.705261,"lat":43.393291}},
 {"id":4847668,"name":"Ballyclough","state":"IA","coord":{"lon":-90.718178,"lat":42.425838}},
 {"id":4867471,"name":"Millman","state":"IA","coord":{"lon":-93.677437,"lat":41.5411}},
@@ -3059,11 +3018,9 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4460243,"name":"Charlotte","state":"NC","coord":{"lon":-80.843132,"lat":35.227089}},
 {"id":4460943,"name":"Clayton","state":"NC","coord":{"lon":-78.45639,"lat":35.650711}},
 {"id":4461015,"name":"Clemmons","state":"NC","coord":{"lon":-80.382004,"lat":36.02153}},
-{"id":4461574,"name":"Concord","state":"NC","coord":{"lon":-80.579514,"lat":35.408749}},
 {"id":4461941,"name":"Cornelius","state":"NC","coord":{"lon":-80.860069,"lat":35.486801}},
 {"id":4464368,"name":"Durham","state":"NC","coord":{"lon":-78.898621,"lat":35.99403}},
 {"id":4466033,"name":"Fayetteville","state":"NC","coord":{"lon":-78.878357,"lat":35.052662}},
-{"id":4467485,"name":"Fuquay-Varina","state":"NC","coord":{"lon":-78.800011,"lat":35.58432}},
 {"id":4467657,"name":"Garner","state":"NC","coord":{"lon":-78.614166,"lat":35.711262}},
 {"id":4467732,"name":"Gastonia","state":"NC","coord":{"lon":-81.187302,"lat":35.262081}},
 {"id":4468261,"name":"Goldsboro","state":"NC","coord":{"lon":-77.992767,"lat":35.38488}},
@@ -3673,7 +3630,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4936159,"name":"Fall River","state":"MA","coord":{"lon":-71.155052,"lat":41.701488}},
 {"id":4936812,"name":"Fitchburg","state":"MA","coord":{"lon":-71.802299,"lat":42.58342}},
 {"id":4937230,"name":"Framingham","state":"MA","coord":{"lon":-71.416168,"lat":42.279259}},
-{"id":4937232,"name":"Framingham Center","state":"MA","coord":{"lon":-71.437012,"lat":42.297321}},
 {"id":4937276,"name":"Franklin","state":"MA","coord":{"lon":-71.396721,"lat":42.083431}},
 {"id":4937557,"name":"Gardner","state":"MA","coord":{"lon":-71.998131,"lat":42.575089}},
 {"id":4937829,"name":"Gloucester","state":"MA","coord":{"lon":-70.661987,"lat":42.615929}},
@@ -3753,7 +3709,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4975802,"name":"Portland","state":"ME","coord":{"lon":-70.255333,"lat":43.661469}},
 {"id":4977222,"name":"Saco","state":"ME","coord":{"lon":-70.442833,"lat":43.500919}},
 {"id":4979244,"name":"South Portland","state":"ME","coord":{"lon":-70.240883,"lat":43.641472}},
-{"id":4979245,"name":"South Portland Gardens","state":"ME","coord":{"lon":-70.315331,"lat":43.638969}},
 {"id":4982236,"name":"Waterville","state":"ME","coord":{"lon":-69.631706,"lat":44.55201}},
 {"id":4982720,"name":"West Scarborough","state":"ME","coord":{"lon":-70.387833,"lat":43.570358}},
 {"id":4982753,"name":"Westbrook","state":"ME","coord":{"lon":-70.371162,"lat":43.677029}},
@@ -4587,7 +4542,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5395244,"name":"Sherman Oaks","state":"CA","coord":{"lon":-118.449249,"lat":34.151119}},
 {"id":5396003,"name":"Simi Valley","state":"CA","coord":{"lon":-118.781479,"lat":34.269451}},
 {"id":5397376,"name":"South El Monte","state":"CA","coord":{"lon":-118.04673,"lat":34.051949}},
-{"id":5397603,"name":"South Gate","state":"CA","coord":{"lon":-118.212021,"lat":33.954739}},
 {"id":5397717,"name":"South Pasadena","state":"CA","coord":{"lon":-118.150352,"lat":34.116119}},
 {"id":5397765,"name":"South San Francisco","state":"CA","coord":{"lon":-122.407753,"lat":37.654659}},
 {"id":5397777,"name":"South San Jose Hills","state":"CA","coord":{"lon":-117.904778,"lat":34.012791}},
@@ -4606,7 +4560,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5404119,"name":"Tustin","state":"CA","coord":{"lon":-117.826172,"lat":33.74585}},
 {"id":5404122,"name":"North Tustin","state":"CA","coord":{"lon":-117.793938,"lat":33.764462}},
 {"id":5404554,"name":"Union City","state":"CA","coord":{"lon":-122.019173,"lat":37.595829}},
-{"id":5404555,"name":"Union City","state":"CA","coord":{"lon":-122.019127,"lat":37.595772}},
 {"id":5404794,"name":"Universal City","state":"CA","coord":{"lon":-118.353409,"lat":34.138901}},
 {"id":5404915,"name":"Upland","state":"CA","coord":{"lon":-117.648392,"lat":34.097511}},
 {"id":5405228,"name":"Vacaville","state":"CA","coord":{"lon":-121.98774,"lat":38.356579}},
@@ -4666,7 +4619,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5490263,"name":"Santa Fe","state":"NM","coord":{"lon":-105.937798,"lat":35.686981}},
 {"id":5492450,"name":"South Valley","state":"NM","coord":{"lon":-106.678078,"lat":35.010052}},
 {"id":5500539,"name":"Boulder City","state":"NV","coord":{"lon":-114.832489,"lat":35.978588}},
-{"id":5501344,"name":"Carson City","state":"NV","coord":{"lon":-119.767403,"lat":39.163799}},
 {"id":5505411,"name":"Henderson","state":"NV","coord":{"lon":-114.981941,"lat":36.0397}},
 {"id":5506956,"name":"Las Vegas","state":"NV","coord":{"lon":-115.137222,"lat":36.174969}},
 {"id":5511077,"name":"Reno","state":"NV","coord":{"lon":-119.813797,"lat":39.529629}},
@@ -4674,12 +4626,10 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5512862,"name":"Sparks","state":"NV","coord":{"lon":-119.752693,"lat":39.534908}},
 {"id":5512909,"name":"Spring Valley","state":"NV","coord":{"lon":-115.245003,"lat":36.108028}},
 {"id":5513307,"name":"Sun Valley","state":"NV","coord":{"lon":-119.776016,"lat":39.596298}},
-{"id":5513343,"name":"Sunrise Manor","state":"NV","coord":{"lon":-115.073059,"lat":36.211079}},
 {"id":5515110,"name":"Whitney","state":"NV","coord":{"lon":-115.08416,"lat":36.070808}},
 {"id":5515345,"name":"Winchester","state":"NV","coord":{"lon":-115.118889,"lat":36.129971}},
 {"id":5520993,"name":"El Paso","state":"TX","coord":{"lon":-106.486931,"lat":31.75872}},
 {"id":5551498,"name":"Anthem","state":"AZ","coord":{"lon":-112.14682,"lat":33.86726}},
-{"id":5551535,"name":"Apache Junction","state":"AZ","coord":{"lon":-111.549583,"lat":33.415051}},
 {"id":5552301,"name":"Avondale","state":"AZ","coord":{"lon":-112.349602,"lat":33.4356}},
 {"id":5554072,"name":"Juneau","state":"AK","coord":{"lon":-134.419724,"lat":58.301941}},
 {"id":5558953,"name":"Arcata","state":"CA","coord":{"lon":-124.08284,"lat":40.86652}},
@@ -4863,27 +4813,16 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":7176035,"name":"Silver Firs","state":"WA","coord":{"lon":-122.155098,"lat":47.86602}},
 {"id":7176039,"name":"Vineyard","state":"CA","coord":{"lon":-121.346916,"lat":38.464489}},
 {"id":7217356,"name":"Citrus Park","state":"FL","coord":{"lon":-82.452904,"lat":27.991501}},
-{"id":7257422,"name":"Wallingford Center","state":"CT","coord":{"lon":-72.818916,"lat":41.449871}},
 {"id":7257991,"name":"Bel Air","state":"MD","coord":{"lon":-76.373093,"lat":39.554291}},
-{"id":7258965,"name":"Setauket-East Setauket","state":"NY","coord":{"lon":-73.101784,"lat":40.930641}},
 {"id":7259084,"name":"Tonawanda","state":"NY","coord":{"lon":-78.877983,"lat":42.984989}},
-{"id":7259705,"name":"East Lake-Orient Park","state":"FL","coord":{"lon":-82.378777,"lat":27.982691}},
 {"id":7259823,"name":"Greater Northdale","state":"FL","coord":{"lon":-82.52594,"lat":28.10545}},
 {"id":7260019,"name":"Candler-McAfee","state":"GA","coord":{"lon":-84.272461,"lat":33.726719}},
 {"id":7260219,"name":"University","state":"FL","coord":{"lon":-82.436089,"lat":28.069201}},
 {"id":7260233,"name":"Vero Beach South","state":"FL","coord":{"lon":-80.413078,"lat":27.616381}},
 {"id":7260327,"name":"Kendall West","state":"FL","coord":{"lon":-80.438797,"lat":25.706499}},
 {"id":7260806,"name":"Arden-Arcade","state":"CA","coord":{"lon":-121.37854,"lat":38.602501}},
-{"id":7260966,"name":"Bryn Mawr-Skyway","state":"WA","coord":{"lon":-122.240921,"lat":47.494301}},
 {"id":7261291,"name":"Fort Hood","state":"TX","coord":{"lon":-97.775612,"lat":31.13489}},
-{"id":7261476,"name":"Inglewood-Finn Hill","state":"WA","coord":{"lon":-122.231667,"lat":47.72049}},
-{"id":7261553,"name":"La Crescenta-Montrose","state":"CA","coord":{"lon":-118.235291,"lat":34.232159}},
-{"id":7261759,"name":"East Hill-Meridian","state":"WA","coord":{"lon":-122.173691,"lat":47.410519}},
-{"id":7262349,"name":"Security-Widefield","state":"CO","coord":{"lon":-104.714394,"lat":38.74728}},
-{"id":7262428,"name":"Union Hill-Novelty Hill","state":"WA","coord":{"lon":-122.028328,"lat":47.678871}},
-{"id":7262518,"name":"West Whittier-Los Nietos","state":"CA","coord":{"lon":-118.069092,"lat":33.976002}},
 {"id":7310164,"name":"San Tan Valley","state":"AZ","coord":{"lon":-111.528,"lat":33.191101}},
-{"id":7506758,"name":"BloomingtonMn","state":"MN","coord":{"lon":-93.298431,"lat":44.840961}},
 {"id":7839240,"name":"Enchanted Hills","state":"NM","coord":{"lon":-106.592957,"lat":35.336761}},
 {"id":8030162,"name":"West Hills","state":"CA","coord":{"lon":-118.643982,"lat":34.197311}},
 {"id":4910713,"name":"Schaumburg","state":"IL","coord":{"lon":-88.083412,"lat":42.03336}},
@@ -5439,14 +5378,11 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4150733,"name":"Chiefland","state":"FL","coord":{"lon":-82.85984,"lat":29.47496}},
 {"id":4150769,"name":"Chipley","state":"FL","coord":{"lon":-85.538544,"lat":30.78186}},
 {"id":4150914,"name":"Chuluota","state":"FL","coord":{"lon":-81.123398,"lat":28.641939}},
-{"id":4151153,"name":"Citrus Hills","state":"FL","coord":{"lon":-82.432602,"lat":28.888309}},
-{"id":4151162,"name":"Citrus Ridge","state":"FL","coord":{"lon":-81.642319,"lat":28.333851}},
 {"id":4151163,"name":"Citrus Springs","state":"FL","coord":{"lon":-82.47065,"lat":28.99748}},
 {"id":4151207,"name":"Clarcona","state":"FL","coord":{"lon":-81.49868,"lat":28.61278}},
 {"id":4151366,"name":"Clewiston","state":"FL","coord":{"lon":-80.933678,"lat":26.75423}},
 {"id":4151416,"name":"Cleveland","state":"FL","coord":{"lon":-81.983978,"lat":26.961729}},
 {"id":4151441,"name":"Cocoa Beach","state":"FL","coord":{"lon":-80.607552,"lat":28.320009}},
-{"id":4151607,"name":"Combee Settlement","state":"FL","coord":{"lon":-81.905357,"lat":28.05835}},
 {"id":4151745,"name":"Conway","state":"FL","coord":{"lon":-81.33062,"lat":28.502781}},
 {"id":4152003,"name":"Cortez","state":"FL","coord":{"lon":-82.686211,"lat":27.46921}},
 {"id":4152267,"name":"Crawfordville","state":"FL","coord":{"lon":-84.375183,"lat":30.176041}},
@@ -5457,9 +5393,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4152498,"name":"Crystal Springs","state":"FL","coord":{"lon":-82.157578,"lat":28.1814}},
 {"id":4152513,"name":"Cudjoe Key","state":"FL","coord":{"lon":-81.498421,"lat":24.67153}},
 {"id":4152628,"name":"Cypress Gardens","state":"FL","coord":{"lon":-81.690079,"lat":27.99391}},
-{"id":4152639,"name":"Cypress Lake","state":"FL","coord":{"lon":-81.899246,"lat":26.53813}},
-{"id":4152649,"name":"Cypress Lakes","state":"FL","coord":{"lon":-80.122818,"lat":26.72784}},
-{"id":4152671,"name":"Cypress Quarters","state":"FL","coord":{"lon":-80.81395,"lat":27.251989}},
 {"id":4152695,"name":"Dade City","state":"FL","coord":{"lon":-82.195923,"lat":28.364719}},
 {"id":4152805,"name":"Davenport","state":"FL","coord":{"lon":-81.601738,"lat":28.1614}},
 {"id":4152881,"name":"Daytona Beach Shores","state":"FL","coord":{"lon":-80.982826,"lat":29.17609}},
@@ -5520,7 +5453,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4157605,"name":"Groveland","state":"FL","coord":{"lon":-81.851189,"lat":28.55805}},
 {"id":4157634,"name":"Gulf Breeze","state":"FL","coord":{"lon":-87.163857,"lat":30.35714}},
 {"id":4157687,"name":"Gulfport","state":"FL","coord":{"lon":-82.70343,"lat":27.74836}},
-{"id":4157981,"name":"Hamptons at Boca Raton","state":"FL","coord":{"lon":-80.185883,"lat":26.38258}},
 {"id":4158032,"name":"Harbor Bluffs","state":"FL","coord":{"lon":-82.827599,"lat":27.90947}},
 {"id":4158060,"name":"Harbour Heights","state":"FL","coord":{"lon":-82.002312,"lat":26.990891}},
 {"id":4158091,"name":"Harlem","state":"FL","coord":{"lon":-80.950897,"lat":26.73757}},
@@ -5537,7 +5469,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4158599,"name":"Highland Beach","state":"FL","coord":{"lon":-80.065598,"lat":26.399521}},
 {"id":4158604,"name":"Highland City","state":"FL","coord":{"lon":-81.877861,"lat":27.9653}},
 {"id":4158662,"name":"Hiland Park","state":"FL","coord":{"lon":-85.626869,"lat":30.201031}},
-{"id":4158668,"name":"Hill n Dale","state":"FL","coord":{"lon":-82.299263,"lat":28.51972}},
 {"id":4158693,"name":"Hilliard","state":"FL","coord":{"lon":-81.917328,"lat":30.691071}},
 {"id":4158700,"name":"Hillsboro Beach","state":"FL","coord":{"lon":-80.078934,"lat":26.29397}},
 {"id":4158758,"name":"Hobe Sound","state":"FL","coord":{"lon":-80.136429,"lat":27.0595}},
@@ -5598,7 +5529,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4161474,"name":"Lakeside Green","state":"FL","coord":{"lon":-80.114487,"lat":26.739229}},
 {"id":4161510,"name":"Lakewood Park","state":"FL","coord":{"lon":-80.402267,"lat":27.543091}},
 {"id":4161571,"name":"Lantana","state":"FL","coord":{"lon":-80.051987,"lat":26.58674}},
-{"id":4161624,"name":"Lauderdale-by-the-Sea","state":"FL","coord":{"lon":-80.096428,"lat":26.19203}},
 {"id":4161659,"name":"Laurel","state":"FL","coord":{"lon":-82.461578,"lat":27.14378}},
 {"id":4161733,"name":"Lecanto","state":"FL","coord":{"lon":-82.487602,"lat":28.85165}},
 {"id":4161807,"name":"Lely","state":"FL","coord":{"lon":-81.728416,"lat":26.100651}},
@@ -5634,11 +5564,9 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4163994,"name":"Melrose Park","state":"FL","coord":{"lon":-80.193382,"lat":26.11342}},
 {"id":4164047,"name":"Memphis","state":"FL","coord":{"lon":-82.561211,"lat":27.53587}},
 {"id":4164131,"name":"Mexico Beach","state":"FL","coord":{"lon":-85.417976,"lat":29.947981}},
-{"id":4164166,"name":"Miami Gardens","state":"FL","coord":{"lon":-80.202553,"lat":25.979811}},
 {"id":4164211,"name":"Miami Shores","state":"FL","coord":{"lon":-80.192833,"lat":25.86315}},
 {"id":4164223,"name":"Miami Springs","state":"FL","coord":{"lon":-80.289497,"lat":25.822321}},
 {"id":4164253,"name":"Micco","state":"FL","coord":{"lon":-80.500328,"lat":27.880581}},
-{"id":4164343,"name":"Midway","state":"FL","coord":{"lon":-84.454353,"lat":30.49548}},
 {"id":4164387,"name":"Middleburg","state":"FL","coord":{"lon":-81.860382,"lat":30.06885}},
 {"id":4164547,"name":"Milton","state":"FL","coord":{"lon":-87.039688,"lat":30.63241}},
 {"id":4164554,"name":"Mims","state":"FL","coord":{"lon":-80.84478,"lat":28.66527}},
@@ -5659,7 +5587,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4165869,"name":"New Port Richey","state":"FL","coord":{"lon":-82.719269,"lat":28.244181}},
 {"id":4165961,"name":"Newberry","state":"FL","coord":{"lon":-82.606499,"lat":29.646351}},
 {"id":4165995,"name":"Niceville","state":"FL","coord":{"lon":-86.48217,"lat":30.516859}},
-{"id":4166047,"name":"Nocatee","state":"FL","coord":{"lon":-81.882309,"lat":27.16033}},
 {"id":4166049,"name":"Nokomis","state":"FL","coord":{"lon":-82.44426,"lat":27.119221}},
 {"id":4166096,"name":"North Andrews Gardens","state":"FL","coord":{"lon":-80.144211,"lat":26.191469}},
 {"id":4166105,"name":"North Bay Village","state":"FL","coord":{"lon":-80.153938,"lat":25.84621}},
@@ -5730,8 +5657,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4170520,"name":"Roseland","state":"FL","coord":{"lon":-80.493111,"lat":27.835859}},
 {"id":4170556,"name":"Rotonda","state":"FL","coord":{"lon":-82.290092,"lat":26.88368}},
 {"id":4170894,"name":"Saint Augustine","state":"FL","coord":{"lon":-81.314522,"lat":29.89469}},
-{"id":4170896,"name":"Saint Augustine Beach","state":"FL","coord":{"lon":-81.26535,"lat":29.850531}},
-{"id":4170908,"name":"Saint Augustine Shores","state":"FL","coord":{"lon":-81.310349,"lat":29.810801}},
 {"id":4171010,"name":"Saint George","state":"FL","coord":{"lon":-82.727882,"lat":28.05641}},
 {"id":4171061,"name":"Saint James City","state":"FL","coord":{"lon":-82.07843,"lat":26.49758}},
 {"id":4171250,"name":"Saint Leo","state":"FL","coord":{"lon":-82.258423,"lat":28.337231}},
@@ -6166,7 +6091,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4234436,"name":"Brighton","state":"IL","coord":{"lon":-90.140663,"lat":39.039768}},
 {"id":4234810,"name":"Bunker Hill","state":"IL","coord":{"lon":-89.951767,"lat":39.04282}},
 {"id":4234985,"name":"Cairo","state":"IL","coord":{"lon":-89.17646,"lat":37.005329}},
-{"id":4234985,"name":"Cairo","state":"IL","coord":{"lon":-89.17646,"lat":37.005329}},
 {"id":4235075,"name":"Cambria","state":"IL","coord":{"lon":-89.119247,"lat":37.781441}},
 {"id":4235211,"name":"Carlinville","state":"IL","coord":{"lon":-89.881767,"lat":39.27977}},
 {"id":4235229,"name":"Carlyle","state":"IL","coord":{"lon":-89.372581,"lat":38.610329}},
@@ -6423,7 +6347,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4263736,"name":"Rising Sun","state":"IN","coord":{"lon":-84.853844,"lat":38.949501}},
 {"id":4263848,"name":"Rockport","state":"IN","coord":{"lon":-87.2789,"lat":39.880871}},
 {"id":4263850,"name":"Rockville","state":"IN","coord":{"lon":-87.229179,"lat":39.762539}},
-{"id":4263856,"name":"Rockport","state":"IN","coord":{"lon":-87.049438,"lat":37.88311}},
 {"id":4263965,"name":"Rushville","state":"IN","coord":{"lon":-85.446358,"lat":39.609211}},
 {"id":4264243,"name":"Saint Paul","state":"IN","coord":{"lon":-85.628311,"lat":39.428101}},
 {"id":4264334,"name":"Salem","state":"IN","coord":{"lon":-86.101089,"lat":38.60561}},
@@ -6742,15 +6665,12 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4300739,"name":"Midway","state":"KY","coord":{"lon":-84.68383,"lat":38.150909}}
 ,{"id":4301094,"name":"Heritage Creek","state":"KY","coord":{"lon":-85.719681,"lat":38.12368}}
 ,{"id":4301224,"name":"Monticello","state":"KY","coord":{"lon":-84.849113,"lat":36.829788}}
-,{"id":4301229,"name":"Monticello","state":"KY","coord":{"lon":-84.550217,"lat":37.992298}}
 ,{"id":4301307,"name":"Morehead","state":"KY","coord":{"lon":-83.432678,"lat":38.183971}}
-,{"id":4301317,"name":"Morehead","state":"KY","coord":{"lon":-87.176376,"lat":37.271149}}
 ,{"id":4301345,"name":"Morganfield","state":"KY","coord":{"lon":-87.916687,"lat":37.68338}}
 ,{"id":4301349,"name":"Morgantown","state":"KY","coord":{"lon":-86.683601,"lat":37.225601}}
 ,{"id":4301603,"name":"Mount Olivet","state":"KY","coord":{"lon":-84.036873,"lat":38.53146}}
 ,{"id":4301683,"name":"Mount Sterling","state":"KY","coord":{"lon":-83.94326,"lat":38.056469}}
 ,{"id":4301702,"name":"Mount Vernon","state":"KY","coord":{"lon":-84.495216,"lat":38.025631}}
-,{"id":4301703,"name":"Mount Vernon","state":"KY","coord":{"lon":-84.340492,"lat":37.352859}}
 ,{"id":4301732,"name":"Mount Washington","state":"KY","coord":{"lon":-85.545792,"lat":38.05006}}
 ,{"id":4302012,"name":"Munfordville","state":"KY","coord":{"lon":-85.891083,"lat":37.272282}}
 ,{"id":4302338,"name":"New Castle","state":"KY","coord":{"lon":-85.169678,"lat":38.433399}}
@@ -6889,7 +6809,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4321014,"name":"Coushatta","state":"LA","coord":{"lon":-93.342117,"lat":32.014881}}
 ,{"id":4321310,"name":"Crowley","state":"LA","coord":{"lon":-92.37458,"lat":30.21409}}
 ,{"id":4321358,"name":"Cullen","state":"LA","coord":{"lon":-93.450729,"lat":32.969028}}
-,{"id":4321399,"name":"Cut Off","state":"LA","coord":{"lon":-90.338142,"lat":29.542721}}
 ,{"id":4321770,"name":"DeQuincy","state":"LA","coord":{"lon":-93.43322,"lat":30.45048}}
 ,{"id":4321781,"name":"DeRidder","state":"LA","coord":{"lon":-93.289047,"lat":30.84631}}
 ,{"id":4321920,"name":"Delcambre","state":"LA","coord":{"lon":-91.988731,"lat":29.948259}}
@@ -6926,7 +6845,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4326320,"name":"Gray","state":"LA","coord":{"lon":-90.786484,"lat":29.69771}}
 ,{"id":4326511,"name":"Greensburg","state":"LA","coord":{"lon":-90.671761,"lat":30.83074}}
 ,{"id":4326533,"name":"Greenwood","state":"LA","coord":{"lon":-93.972961,"lat":32.442928}}
-,{"id":4326534,"name":"Greenwood","state":"LA","coord":{"lon":-91.106773,"lat":30.54491}}
 ,{"id":4326636,"name":"Gueydan","state":"LA","coord":{"lon":-92.508469,"lat":30.026039}}
 ,{"id":4326799,"name":"Hahnville","state":"LA","coord":{"lon":-90.408974,"lat":29.976589}}
 ,{"id":4326916,"name":"Harahan","state":"LA","coord":{"lon":-90.203133,"lat":29.940479}}
@@ -6985,7 +6903,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4333533,"name":"Minden","state":"LA","coord":{"lon":-93.286842,"lat":32.615429}}
 ,{"id":4333548,"name":"Minorca","state":"LA","coord":{"lon":-91.481781,"lat":31.57933}}
 ,{"id":4333694,"name":"Montegut","state":"LA","coord":{"lon":-90.502029,"lat":30.070761}}
-,{"id":4333695,"name":"Montegut","state":"LA","coord":{"lon":-90.55703,"lat":29.47439}}
 ,{"id":4333718,"name":"Monticello","state":"LA","coord":{"lon":-91.048721,"lat":30.48908}}
 ,{"id":4333725,"name":"Montz","state":"LA","coord":{"lon":-90.468689,"lat":30.00687}}
 ,{"id":4333811,"name":"Morgan City","state":"LA","coord":{"lon":-91.206772,"lat":29.699369}}
@@ -7001,7 +6918,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4335690,"name":"Oak Grove","state":"LA","coord":{"lon":-91.388451,"lat":32.860958}}
 ,{"id":4335754,"name":"Oak Hills Place","state":"LA","coord":{"lon":-91.087601,"lat":30.359921}}
 ,{"id":4335796,"name":"Oakdale","state":"LA","coord":{"lon":-92.660423,"lat":30.816031}}
-,{"id":4335797,"name":"Oakdale","state":"LA","coord":{"lon":-92.621529,"lat":30.80547}}
 ,{"id":4335887,"name":"Oberlin","state":"LA","coord":{"lon":-92.76265,"lat":30.620199}}
 ,{"id":4335921,"name":"Oil City","state":"LA","coord":{"lon":-93.971573,"lat":32.74403}}
 ,{"id":4335963,"name":"Old Jefferson","state":"LA","coord":{"lon":-91.017052,"lat":30.38269}}
@@ -7080,7 +6996,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4346952,"name":"Accokeek","state":"MD","coord":{"lon":-77.028313,"lat":38.667622}}
 ,{"id":4346978,"name":"Adamstown","state":"MD","coord":{"lon":-77.474709,"lat":39.31094}}
 ,{"id":4347060,"name":"Algonquin","state":"MD","coord":{"lon":-76.105766,"lat":38.582901}}
-,{"id":4347392,"name":"Arden on the Severn","state":"MD","coord":{"lon":-76.57885,"lat":39.065941}}
 ,{"id":4347708,"name":"Baden","state":"MD","coord":{"lon":-76.777748,"lat":38.659279}}
 ,{"id":4347800,"name":"Baltimore Highlands","state":"MD","coord":{"lon":-76.636627,"lat":39.233158}}
 ,{"id":4347947,"name":"Bartonsville","state":"MD","coord":{"lon":-77.35804,"lat":39.392601}}
@@ -7111,7 +7026,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4350675,"name":"Cavetown","state":"MD","coord":{"lon":-77.585823,"lat":39.64426}}
 ,{"id":4350878,"name":"Centreville","state":"MD","coord":{"lon":-76.06633,"lat":39.041779}}
 ,{"id":4351037,"name":"Charlestown","state":"MD","coord":{"lon":-76.705254,"lat":39.268162}}
-,{"id":4351038,"name":"Charlestown","state":"MD","coord":{"lon":-75.974953,"lat":39.57373}}
 ,{"id":4351048,"name":"Charlotte Hall","state":"MD","coord":{"lon":-76.778023,"lat":38.480961}}
 ,{"id":4351184,"name":"Chesapeake Beach","state":"MD","coord":{"lon":-76.534683,"lat":38.68623}}
 ,{"id":4351248,"name":"Chester","state":"MD","coord":{"lon":-76.289398,"lat":38.975391}}
@@ -7137,7 +7051,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4353463,"name":"District Heights","state":"MD","coord":{"lon":-76.88942,"lat":38.857609}}
 ,{"id":4353667,"name":"Drum Point","state":"MD","coord":{"lon":-76.426064,"lat":38.32679}}
 ,{"id":4353798,"name":"Dunkirk","state":"MD","coord":{"lon":-76.660522,"lat":38.721779}}
-,{"id":4353805,"name":"Dunkirk Town Center","state":"MD","coord":{"lon":-76.658569,"lat":38.72039}}
 ,{"id":4354060,"name":"Edgemere","state":"MD","coord":{"lon":-76.448021,"lat":39.24205}}
 ,{"id":4354072,"name":"Edgewater","state":"MD","coord":{"lon":-76.549957,"lat":38.957062}}
 ,{"id":4354121,"name":"Edmonston","state":"MD","coord":{"lon":-76.931091,"lat":38.946781}}
@@ -7148,9 +7061,7 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4355214,"name":"Forest Glen","state":"MD","coord":{"lon":-77.054703,"lat":39.014549}}
 ,{"id":4355230,"name":"Forest Heights","state":"MD","coord":{"lon":-76.998032,"lat":38.809559}}
 ,{"id":4355274,"name":"Forestville","state":"MD","coord":{"lon":-76.874969,"lat":38.845112}}
-,{"id":4355322,"name":"Fort George G Mead Junction","state":"MD","coord":{"lon":-76.789139,"lat":39.125938}}
 ,{"id":4355670,"name":"Friendly","state":"MD","coord":{"lon":-76.978592,"lat":38.751781}}
-,{"id":4355730,"name":"Friendship Village","state":"MD","coord":{"lon":-77.088867,"lat":38.962891}}
 ,{"id":4355756,"name":"Frostburg","state":"MD","coord":{"lon":-78.92836,"lat":39.658138}}
 ,{"id":4355780,"name":"Fruitland","state":"MD","coord":{"lon":-75.620201,"lat":38.32206}}
 ,{"id":4355809,"name":"Fulton","state":"MD","coord":{"lon":-76.923027,"lat":39.15094}}
@@ -7177,7 +7088,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4358144,"name":"Hillsmere Shores","state":"MD","coord":{"lon":-76.494957,"lat":38.940109}}
 ,{"id":4358671,"name":"Hughesville","state":"MD","coord":{"lon":-76.783859,"lat":38.532619}}
 ,{"id":4358772,"name":"Huntingtown","state":"MD","coord":{"lon":-76.613022,"lat":38.615952}}
-,{"id":4358779,"name":"Huntingtown Town Center","state":"MD","coord":{"lon":-76.616074,"lat":38.620949}}
 ,{"id":4358790,"name":"Hurlock","state":"MD","coord":{"lon":-75.854378,"lat":38.624279}}
 ,{"id":4358916,"name":"Indian Head","state":"MD","coord":{"lon":-77.162201,"lat":38.600121}}
 ,{"id":4359359,"name":"Jarrettsville","state":"MD","coord":{"lon":-76.477737,"lat":39.604549}}
@@ -7207,7 +7117,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4361365,"name":"Lusby","state":"MD","coord":{"lon":-76.455231,"lat":38.410679}}
 ,{"id":4361379,"name":"Lutherville","state":"MD","coord":{"lon":-76.626083,"lat":39.421219}}
 ,{"id":4361547,"name":"Manchester","state":"MD","coord":{"lon":-76.884979,"lat":39.661209}}
-,{"id":4361701,"name":"Marlboro Meadows","state":"MD","coord":{"lon":-76.714973,"lat":38.83622}}
 ,{"id":4361721,"name":"Marlow Heights","state":"MD","coord":{"lon":-76.951637,"lat":38.83345}}
 ,{"id":4361725,"name":"Marlton","state":"MD","coord":{"lon":-76.78997,"lat":38.773731}}
 ,{"id":4361969,"name":"Maugansville","state":"MD","coord":{"lon":-77.74472,"lat":39.692871}}
@@ -7225,7 +7134,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4363611,"name":"New Carrollton","state":"MD","coord":{"lon":-76.879967,"lat":38.96983}}
 ,{"id":4363692,"name":"New Windsor","state":"MD","coord":{"lon":-77.10804,"lat":39.542049}}
 ,{"id":4363831,"name":"North Beach","state":"MD","coord":{"lon":-76.531067,"lat":38.70734}}
-,{"id":4363889,"name":"North East","state":"MD","coord":{"lon":-75.94133,"lat":39.600109}}
 ,{"id":4363960,"name":"North Kensington","state":"MD","coord":{"lon":-77.072479,"lat":39.030392}}
 ,{"id":4363964,"name":"North Laurel","state":"MD","coord":{"lon":-76.870529,"lat":39.139}}
 ,{"id":4364231,"name":"Oakland","state":"MD","coord":{"lon":-79.406708,"lat":39.407871}}
@@ -7250,11 +7158,8 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4366877,"name":"Riva","state":"MD","coord":{"lon":-76.578018,"lat":38.952061}}
 ,{"id":4366919,"name":"Riverdale Park","state":"MD","coord":{"lon":-76.931641,"lat":38.96344}}
 ,{"id":4366929,"name":"Riverside","state":"MD","coord":{"lon":-76.241341,"lat":39.473721}}
-,{"id":4366930,"name":"Riverside","state":"MD","coord":{"lon":-76.885246,"lat":39.173439}}
 ,{"id":4366966,"name":"Riviera Beach","state":"MD","coord":{"lon":-76.508018,"lat":39.166779}}
 ,{"id":4367034,"name":"Robinwood","state":"MD","coord":{"lon":-76.514679,"lat":38.954281}}
-,{"id":4367035,"name":"Robinwood","state":"MD","coord":{"lon":-77.656937,"lat":39.637039}}
-,{"id":4367036,"name":"Robinwood","state":"MD","coord":{"lon":-77.662498,"lat":39.625}}
 ,{"id":4367081,"name":"Rock Hall","state":"MD","coord":{"lon":-76.234947,"lat":39.138168}}
 ,{"id":4367344,"name":"Rosaryville","state":"MD","coord":{"lon":-76.809692,"lat":38.756779}}
 ,{"id":4367417,"name":"Rossmoor","state":"MD","coord":{"lon":-77.071091,"lat":39.103722}}
@@ -7291,7 +7196,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4373225,"name":"Westernport","state":"MD","coord":{"lon":-79.044746,"lat":39.485371}}
 ,{"id":4373275,"name":"Westphalia","state":"MD","coord":{"lon":-76.811081,"lat":38.84539}}
 ,{"id":4373426,"name":"White Marsh","state":"MD","coord":{"lon":-76.432182,"lat":39.38372}}
-,{"id":4374056,"name":"Woodlawn","state":"MD","coord":{"lon":-76.891357,"lat":38.949558}}
 ,{"id":4374100,"name":"Woodmore","state":"MD","coord":{"lon":-76.803032,"lat":38.921219}}
 ,{"id":4374122,"name":"Woodsboro","state":"MD","coord":{"lon":-77.314713,"lat":39.533161}},
 {"id":4374497,"name":"Adrian","state":"MO","coord":{"lon":-94.351624,"lat":38.397518}}
@@ -7579,7 +7483,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4412847,"name":"Van Buren","state":"MO","coord":{"lon":-91.014572,"lat":36.995609}}
 ,{"id":4412896,"name":"Vandalia","state":"MO","coord":{"lon":-91.488487,"lat":39.310871}}
 ,{"id":4412975,"name":"Velda Village","state":"MO","coord":{"lon":-90.294281,"lat":38.690048}}
-,{"id":4412976,"name":"Velda Village Hills","state":"MO","coord":{"lon":-90.287338,"lat":38.690609}}
 ,{"id":4413013,"name":"Versailles","state":"MO","coord":{"lon":-92.841026,"lat":38.431412}}
 ,{"id":4413085,"name":"Vienna","state":"MO","coord":{"lon":-91.947113,"lat":38.18671}}
 ,{"id":4413136,"name":"Vinita Park","state":"MO","coord":{"lon":-90.342621,"lat":38.690048}}
@@ -7805,7 +7708,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4454971,"name":"Benson","state":"NC","coord":{"lon":-78.548622,"lat":35.382111}}
 ,{"id":4454988,"name":"Bent Creek","state":"NC","coord":{"lon":-82.607903,"lat":35.508999}}
 ,{"id":4455042,"name":"Bermuda Run","state":"NC","coord":{"lon":-80.421997,"lat":36.00375}}
-,{"id":4455043,"name":"Bermuda Run","state":"NC","coord":{"lon":-80.421997,"lat":36.00375}}
 ,{"id":4455080,"name":"Bessemer City","state":"NC","coord":{"lon":-81.283974,"lat":35.284859}}
 ,{"id":4455171,"name":"Bethel","state":"NC","coord":{"lon":-77.37886,"lat":35.807098}}
 ,{"id":4455335,"name":"Bethlehem","state":"NC","coord":{"lon":-81.30703,"lat":35.825691}}
@@ -7888,19 +7790,15 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4465691,"name":"Fairmont","state":"NC","coord":{"lon":-79.114197,"lat":34.49683}}
 ,{"id":4465700,"name":"Fairplains","state":"NC","coord":{"lon":-81.152863,"lat":36.198471}}
 ,{"id":4465705,"name":"Fairview","state":"NC","coord":{"lon":-82.39595,"lat":35.514011}}
-,{"id":4465711,"name":"Fairview","state":"NC","coord":{"lon":-80.537567,"lat":35.138481}}
 ,{"id":4465983,"name":"Farmville","state":"NC","coord":{"lon":-79.220016,"lat":35.570709}}
-,{"id":4465984,"name":"Farmville","state":"NC","coord":{"lon":-77.585251,"lat":35.59544}}
 ,{"id":4466031,"name":"Fearrington Village","state":"NC","coord":{"lon":-79.090286,"lat":35.803761}}
 ,{"id":4466444,"name":"Flat Rock","state":"NC","coord":{"lon":-82.441513,"lat":35.271229}}
-,{"id":4466446,"name":"Flat Rock","state":"NC","coord":{"lon":-80.569778,"lat":36.51236}}
 ,{"id":4466547,"name":"Fletcher","state":"NC","coord":{"lon":-82.501228,"lat":35.430672}}
 ,{"id":4466720,"name":"Forest City","state":"NC","coord":{"lon":-81.865097,"lat":35.334011}}
 ,{"id":4466782,"name":"Forest Oaks","state":"NC","coord":{"lon":-79.706139,"lat":35.98819}}
 ,{"id":4466951,"name":"Foscoe","state":"NC","coord":{"lon":-81.765663,"lat":36.1618}}
 ,{"id":4466988,"name":"Four Oaks","state":"NC","coord":{"lon":-78.426949,"lat":35.444881}}
 ,{"id":4467128,"name":"Franklin","state":"NC","coord":{"lon":-83.381538,"lat":35.18232}}
-,{"id":4467129,"name":"Franklin","state":"NC","coord":{"lon":-80.498947,"lat":35.721249}}
 ,{"id":4467161,"name":"Franklinton","state":"NC","coord":{"lon":-78.458054,"lat":36.101822}}
 ,{"id":4467167,"name":"Franklinville","state":"NC","coord":{"lon":-79.692253,"lat":35.743752}}
 ,{"id":4467254,"name":"Fremont","state":"NC","coord":{"lon":-77.974709,"lat":35.545441}}
@@ -7917,7 +7815,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4468590,"name":"Granite Falls","state":"NC","coord":{"lon":-81.430649,"lat":35.79652}}
 ,{"id":4468595,"name":"Granite Quarry","state":"NC","coord":{"lon":-80.446732,"lat":35.612358}}
 ,{"id":4468989,"name":"Green Level","state":"NC","coord":{"lon":-79.344193,"lat":36.120972}}
-,{"id":4468990,"name":"Green Level","state":"NC","coord":{"lon":-78.9039,"lat":35.782089}}
 ,{"id":4469281,"name":"Grifton","state":"NC","coord":{"lon":-77.437462,"lat":35.372662}}
 ,{"id":4469607,"name":"Half Moon","state":"NC","coord":{"lon":-77.459412,"lat":34.826}}
 ,{"id":4469617,"name":"Halifax","state":"NC","coord":{"lon":-77.589417,"lat":36.328491}}
@@ -7949,7 +7846,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4474274,"name":"Kill Devil Hills","state":"NC","coord":{"lon":-75.67601,"lat":36.03072}}
 ,{"id":4474316,"name":"King","state":"NC","coord":{"lon":-80.359222,"lat":36.280689}}
 ,{"id":4474382,"name":"Kings Grant","state":"NC","coord":{"lon":-77.863602,"lat":34.262951}}
-,{"id":4474383,"name":"Kings Grant","state":"NC","coord":{"lon":-77.860542,"lat":34.263779}}
 ,{"id":4474388,"name":"Kings Mountain","state":"NC","coord":{"lon":-81.341187,"lat":35.245129}}
 ,{"id":4474505,"name":"Kitty Hawk","state":"NC","coord":{"lon":-75.705727,"lat":36.06461}}
 ,{"id":4474527,"name":"Knightdale","state":"NC","coord":{"lon":-78.48056,"lat":35.787651}}
@@ -7957,7 +7853,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4474627,"name":"La Grange","state":"NC","coord":{"lon":-77.788033,"lat":35.306831}}
 ,{"id":4474773,"name":"Lake Junaluska","state":"NC","coord":{"lon":-82.959579,"lat":35.527882}}
 ,{"id":4474803,"name":"Lake Lure","state":"NC","coord":{"lon":-82.204826,"lat":35.427898}}
-,{"id":4474841,"name":"Lake Norman of Catawba","state":"NC","coord":{"lon":-80.959518,"lat":35.5868}}
 ,{"id":4474845,"name":"Lake Park","state":"NC","coord":{"lon":-80.635071,"lat":35.086262}}
 ,{"id":4474919,"name":"Lake Waccamaw","state":"NC","coord":{"lon":-78.500008,"lat":34.319061}}
 ,{"id":4475057,"name":"Landis","state":"NC","coord":{"lon":-80.610901,"lat":35.545689}}
@@ -8045,7 +7940,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4486537,"name":"Princeton","state":"NC","coord":{"lon":-78.160553,"lat":35.465988}}
 ,{"id":4486540,"name":"Princeville","state":"NC","coord":{"lon":-77.532188,"lat":35.889599}}
 ,{"id":4486727,"name":"Pumpkin Center","state":"NC","coord":{"lon":-81.14119,"lat":35.519299}}
-,{"id":4486728,"name":"Pumpkin Center","state":"NC","coord":{"lon":-77.372459,"lat":34.79155}}
 ,{"id":4486983,"name":"Raeford","state":"NC","coord":{"lon":-79.224197,"lat":34.980999}}
 ,{"id":4487078,"name":"Ramseur","state":"NC","coord":{"lon":-79.652527,"lat":35.733471}}
 ,{"id":4487116,"name":"Randleman","state":"NC","coord":{"lon":-79.803093,"lat":35.817909}}
@@ -8112,7 +8006,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4493592,"name":"Stoneville","state":"NC","coord":{"lon":-79.906982,"lat":36.46653}}
 ,{"id":4493685,"name":"Stony Point","state":"NC","coord":{"lon":-81.047302,"lat":35.863468}}
 ,{"id":4493990,"name":"Summerfield","state":"NC","coord":{"lon":-79.904762,"lat":36.208752}}
-,{"id":4493991,"name":"Summerfield","state":"NC","coord":{"lon":-77.40274,"lat":35.568218}}
 ,{"id":4494082,"name":"Sunset Beach","state":"NC","coord":{"lon":-78.51223,"lat":33.88073}}
 ,{"id":4494127,"name":"Surf City","state":"NC","coord":{"lon":-77.546082,"lat":34.427109}}
 ,{"id":4494217,"name":"Swannanoa","state":"NC","coord":{"lon":-82.399841,"lat":35.597889}}
@@ -8132,7 +8025,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4495710,"name":"Troutman","state":"NC","coord":{"lon":-80.88813,"lat":35.700691}}
 ,{"id":4495714,"name":"Troy","state":"NC","coord":{"lon":-79.894493,"lat":35.358471}}
 ,{"id":4495749,"name":"Tryon","state":"NC","coord":{"lon":-82.238449,"lat":35.208172}}
-,{"id":4495762,"name":"Tryon","state":"NC","coord":{"lon":-81.322029,"lat":35.339859}}
 ,{"id":4496065,"name":"Tyro","state":"NC","coord":{"lon":-80.372833,"lat":35.809029}}
 ,{"id":4496304,"name":"Unionville","state":"NC","coord":{"lon":-80.508957,"lat":35.087372}}
 ,{"id":4496484,"name":"Valdese","state":"NC","coord":{"lon":-81.563148,"lat":35.740688}}
@@ -8141,7 +8033,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4496582,"name":"Vander","state":"NC","coord":{"lon":-78.794739,"lat":35.032108}}
 ,{"id":4497244,"name":"Wadesboro","state":"NC","coord":{"lon":-80.076729,"lat":34.968208}}
 ,{"id":4497373,"name":"Walkertown","state":"NC","coord":{"lon":-80.153099,"lat":36.175411}}
-,{"id":4497374,"name":"Walkertown","state":"NC","coord":{"lon":-78.813629,"lat":35.285721}}
 ,{"id":4497385,"name":"Wallace","state":"NC","coord":{"lon":-77.995262,"lat":34.735722}}
 ,{"id":4497413,"name":"Wallburg","state":"NC","coord":{"lon":-80.139214,"lat":36.010139}}
 ,{"id":4497437,"name":"Walnut Cove","state":"NC","coord":{"lon":-80.141708,"lat":36.295422}}
@@ -8164,7 +8055,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4498428,"name":"Westport","state":"NC","coord":{"lon":-80.978691,"lat":35.501251}}
 ,{"id":4498560,"name":"Whispering Pines","state":"NC","coord":{"lon":-79.372253,"lat":35.255711}}
 ,{"id":4498720,"name":"White Plains","state":"NC","coord":{"lon":-81.39814,"lat":35.23402}}
-,{"id":4498722,"name":"White Plains","state":"NC","coord":{"lon":-80.6334,"lat":36.44569}}
 ,{"id":4498899,"name":"Whiteville","state":"NC","coord":{"lon":-78.703072,"lat":34.338779}}
 ,{"id":4499138,"name":"Wilkesboro","state":"NC","coord":{"lon":-81.160637,"lat":36.145962}}
 ,{"id":4499294,"name":"Williamston","state":"NC","coord":{"lon":-77.055511,"lat":35.854599}}
@@ -8201,7 +8091,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4500951,"name":"Brooklawn","state":"NJ","coord":{"lon":-75.119621,"lat":39.874279}}
 ,{"id":4500959,"name":"Browns Mills","state":"NJ","coord":{"lon":-74.582932,"lat":39.97261}}
 ,{"id":4500977,"name":"Buena","state":"NJ","coord":{"lon":-74.924622,"lat":39.513729}}
-,{"id":4501057,"name":"Cape May Court House","state":"NJ","coord":{"lon":-74.823776,"lat":39.082611}}
 ,{"id":4501066,"name":"Cape May","state":"NJ","coord":{"lon":-74.906013,"lat":38.935108}}
 ,{"id":4501073,"name":"Carneys Point","state":"NJ","coord":{"lon":-75.4702,"lat":39.71122}}
 ,{"id":4501111,"name":"Cedar Glen Lakes","state":"NJ","coord":{"lon":-74.399872,"lat":39.952339}}
@@ -8219,7 +8108,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4501678,"name":"Elmer","state":"NJ","coord":{"lon":-75.170181,"lat":39.595112}}
 ,{"id":4501689,"name":"Elwood","state":"NJ","coord":{"lon":-74.716827,"lat":39.576511}}
 ,{"id":4501706,"name":"Erma","state":"NJ","coord":{"lon":-74.907951,"lat":38.980671}}
-,{"id":4501708,"name":"Estell Manor","state":"NJ","coord":{"lon":-74.742393,"lat":39.41206}}
 ,{"id":4501732,"name":"Fairton","state":"NJ","coord":{"lon":-75.21991,"lat":39.381779}}
 ,{"id":4501808,"name":"Folsom","state":"NJ","coord":{"lon":-74.842667,"lat":39.602058}}
 ,{"id":4501818,"name":"Forked River","state":"NJ","coord":{"lon":-74.19014,"lat":39.83984}}
@@ -8241,7 +8129,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4502667,"name":"Leisuretowne","state":"NJ","coord":{"lon":-74.702103,"lat":39.892342}}
 ,{"id":4502690,"name":"Linwood","state":"NJ","coord":{"lon":-74.575157,"lat":39.33984}}
 ,{"id":4502832,"name":"Magnolia","state":"NJ","coord":{"lon":-74.660713,"lat":39.949841}}
-,{"id":4502833,"name":"Magnolia","state":"NJ","coord":{"lon":-75.039062,"lat":39.854561}}
 ,{"id":4502866,"name":"Manahawkin","state":"NJ","coord":{"lon":-74.258751,"lat":39.6954}}
 ,{"id":4502904,"name":"Margate City","state":"NJ","coord":{"lon":-74.503487,"lat":39.327888}}
 ,{"id":4502911,"name":"Marlton","state":"NJ","coord":{"lon":-74.921829,"lat":39.89122}}
@@ -8262,12 +8149,10 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4503401,"name":"Olivet","state":"NJ","coord":{"lon":-75.154633,"lat":39.548168}}
 ,{"id":4503516,"name":"Paulsboro","state":"NJ","coord":{"lon":-75.240463,"lat":39.830391}}
 ,{"id":4503532,"name":"Pemberton","state":"NJ","coord":{"lon":-74.682938,"lat":39.972061}}
-,{"id":4503534,"name":"Pemberton Heights","state":"NJ","coord":{"lon":-74.678772,"lat":39.962608}}
 ,{"id":4503544,"name":"Penns Grove","state":"NJ","coord":{"lon":-75.467972,"lat":39.729561}}
 ,{"id":4503555,"name":"Pennsville","state":"NJ","coord":{"lon":-75.516586,"lat":39.65345}}
 ,{"id":4503596,"name":"Pine Beach","state":"NJ","coord":{"lon":-74.170967,"lat":39.935951}}
 ,{"id":4503606,"name":"Pine Hill","state":"NJ","coord":{"lon":-74.992111,"lat":39.784279}}
-,{"id":4503617,"name":"Pine Ridge at Crestwood","state":"NJ","coord":{"lon":-74.315147,"lat":39.954559}}
 ,{"id":4503635,"name":"Pitman","state":"NJ","coord":{"lon":-75.131569,"lat":39.732891}}
 ,{"id":4503681,"name":"Port Norris","state":"NJ","coord":{"lon":-75.035179,"lat":39.245949}}
 ,{"id":4503682,"name":"Port Republic","state":"NJ","coord":{"lon":-74.48571,"lat":39.520672}}
@@ -8374,7 +8259,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4512378,"name":"Fruit Hill","state":"OH","coord":{"lon":-84.36438,"lat":39.075619}}
 ,{"id":4512449,"name":"Gallipolis","state":"OH","coord":{"lon":-82.20237,"lat":38.809799}}
 ,{"id":4512557,"name":"Geneva","state":"OH","coord":{"lon":-82.433487,"lat":39.66201}}
-,{"id":4512584,"name":"Georgetown","state":"OH","coord":{"lon":-83.904091,"lat":38.86451}}
 ,{"id":4512620,"name":"Germantown","state":"OH","coord":{"lon":-84.369392,"lat":39.626171}}
 ,{"id":4512773,"name":"Glendale","state":"OH","coord":{"lon":-84.459389,"lat":39.270611}}
 ,{"id":4512821,"name":"Glouster","state":"OH","coord":{"lon":-82.084587,"lat":39.503132}}
@@ -8456,12 +8340,10 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4519745,"name":"Newport","state":"OH","coord":{"lon":-81.226784,"lat":39.390911}}
 ,{"id":4519761,"name":"Newtown","state":"OH","coord":{"lon":-84.36161,"lat":39.1245}}
 ,{"id":4519853,"name":"North College Hill","state":"OH","coord":{"lon":-84.550781,"lat":39.218391}}
-,{"id":4519883,"name":"North Fork Village","state":"OH","coord":{"lon":-83.029068,"lat":39.335899}}
 ,{"id":4519923,"name":"North Zanesville","state":"OH","coord":{"lon":-82.003471,"lat":39.97868}}
 ,{"id":4519924,"name":"Northbrook","state":"OH","coord":{"lon":-84.583557,"lat":39.246449}}
 ,{"id":4519938,"name":"Northgate","state":"OH","coord":{"lon":-84.592453,"lat":39.252831}}
 ,{"id":4519950,"name":"Northridge","state":"OH","coord":{"lon":-83.778542,"lat":39.99173}}
-,{"id":4519951,"name":"Northridge","state":"OH","coord":{"lon":-84.196892,"lat":39.80756}}
 ,{"id":4520081,"name":"Oak Hill","state":"OH","coord":{"lon":-82.573502,"lat":38.893959}}
 ,{"id":4520163,"name":"Oakwood","state":"OH","coord":{"lon":-84.17411,"lat":39.725342}}
 ,{"id":4520177,"name":"Obetz","state":"OH","coord":{"lon":-82.950737,"lat":39.878948}}
@@ -8793,7 +8675,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4560291,"name":"Penn Wynne","state":"PA","coord":{"lon":-75.275459,"lat":39.986221}}
 ,{"id":4560318,"name":"Pennville","state":"PA","coord":{"lon":-76.998039,"lat":39.789539}}
 ,{"id":4560492,"name":"Point Marion","state":"PA","coord":{"lon":-79.898666,"lat":39.738972}}
-,{"id":4560549,"name":"Prospect Park","state":"PA","coord":{"lon":-75.308243,"lat":39.88789}}
 ,{"id":4560577,"name":"Quarryville","state":"PA","coord":{"lon":-76.163567,"lat":39.897049}}
 ,{"id":4560639,"name":"Red Lion","state":"PA","coord":{"lon":-76.605797,"lat":39.900928}}
 ,{"id":4560671,"name":"Republic","state":"PA","coord":{"lon":-79.876709,"lat":39.962582}}
@@ -8840,7 +8721,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4569929,"name":"Bamberg","state":"SC","coord":{"lon":-81.034821,"lat":33.2971}}
 ,{"id":4570015,"name":"Barnwell","state":"SC","coord":{"lon":-81.358719,"lat":33.244869}}
 ,{"id":4570111,"name":"Batesburg","state":"SC","coord":{"lon":-81.547333,"lat":33.907921}}
-,{"id":4570117,"name":"Batesburg-Leesville","state":"SC","coord":{"lon":-81.537331,"lat":33.910141}}
 ,{"id":4570284,"name":"Beaufort","state":"SC","coord":{"lon":-80.66983,"lat":32.43158}}
 ,{"id":4570579,"name":"Belton","state":"SC","coord":{"lon":-82.494293,"lat":34.522888}}
 ,{"id":4570590,"name":"Belvedere","state":"SC","coord":{"lon":-81.944839,"lat":33.530972}}
@@ -8852,7 +8732,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4571722,"name":"Bluffton","state":"SC","coord":{"lon":-80.86039,"lat":32.237148}}
 ,{"id":4571725,"name":"Blythewood","state":"SC","coord":{"lon":-80.973984,"lat":34.214321}}
 ,{"id":4571804,"name":"Boiling Springs","state":"SC","coord":{"lon":-81.431221,"lat":33.135151}}
-,{"id":4571805,"name":"Boiling Springs","state":"SC","coord":{"lon":-81.981773,"lat":35.046509}}
 ,{"id":4571857,"name":"Bonneau Beach","state":"SC","coord":{"lon":-80.000359,"lat":33.319889}}
 ,{"id":4572098,"name":"Branchville","state":"SC","coord":{"lon":-80.815651,"lat":33.25127}}
 ,{"id":4572352,"name":"Brookdale","state":"SC","coord":{"lon":-80.823418,"lat":33.506821}}
@@ -8865,7 +8744,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4573805,"name":"Catawba","state":"SC","coord":{"lon":-80.911186,"lat":34.852921}}
 ,{"id":4573888,"name":"Cayce","state":"SC","coord":{"lon":-81.073982,"lat":33.96571}}
 ,{"id":4574140,"name":"Centerville","state":"SC","coord":{"lon":-82.704018,"lat":34.532051}}
-,{"id":4574143,"name":"Centerville","state":"SC","coord":{"lon":-80.170372,"lat":32.995731}}
 ,{"id":4574153,"name":"Central","state":"SC","coord":{"lon":-82.78125,"lat":34.72427}}
 ,{"id":4574280,"name":"Chapin","state":"SC","coord":{"lon":-81.349823,"lat":34.165981}}
 ,{"id":4574434,"name":"Cheraw","state":"SC","coord":{"lon":-79.8834,"lat":34.697659}}
@@ -8891,7 +8769,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4577532,"name":"Edgefield","state":"SC","coord":{"lon":-81.929558,"lat":33.789581}}
 ,{"id":4577557,"name":"Edisto","state":"SC","coord":{"lon":-80.898697,"lat":33.47654}}
 ,{"id":4577653,"name":"Elgin","state":"SC","coord":{"lon":-80.79425,"lat":34.170979}}
-,{"id":4577654,"name":"Elgin","state":"SC","coord":{"lon":-80.718964,"lat":34.672932}}
 ,{"id":4577897,"name":"Estill","state":"SC","coord":{"lon":-81.24205,"lat":32.75489}}
 ,{"id":4577930,"name":"Eureka Mill","state":"SC","coord":{"lon":-81.193703,"lat":34.71764}}
 ,{"id":4578047,"name":"Fairfax","state":"SC","coord":{"lon":-81.236504,"lat":32.959049}}
@@ -9002,7 +8879,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4597113,"name":"South Sumter","state":"SC","coord":{"lon":-80.346191,"lat":33.905708}}
 ,{"id":4597140,"name":"Southern Shops","state":"SC","coord":{"lon":-81.994553,"lat":34.98595}}
 ,{"id":4597397,"name":"Springdale","state":"SC","coord":{"lon":-80.786179,"lat":34.689308}}
-,{"id":4597398,"name":"Springdale","state":"SC","coord":{"lon":-81.108978,"lat":33.95932}}
 ,{"id":4597573,"name":"Stateburg","state":"SC","coord":{"lon":-80.534813,"lat":33.957649}}
 ,{"id":4597882,"name":"Sullivans Island","state":"SC","coord":{"lon":-79.836746,"lat":32.763229}}
 ,{"id":4598052,"name":"Surfside Beach","state":"SC","coord":{"lon":-78.973091,"lat":33.605999}}
@@ -9059,7 +8935,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4607647,"name":"Bon Aqua Junction","state":"TN","coord":{"lon":-87.310837,"lat":35.927841}}
 ,{"id":4608147,"name":"Bradford","state":"TN","coord":{"lon":-88.810059,"lat":36.07645}}
 ,{"id":4608615,"name":"Brighton","state":"TN","coord":{"lon":-86.439163,"lat":35.08009}}
-,{"id":4608616,"name":"Brighton","state":"TN","coord":{"lon":-89.725082,"lat":35.483971}}
 ,{"id":4609116,"name":"Brownsville","state":"TN","coord":{"lon":-89.262291,"lat":35.593971}}
 ,{"id":4609163,"name":"Bruceton","state":"TN","coord":{"lon":-88.244492,"lat":36.03812}}
 ,{"id":4610022,"name":"Burns","state":"TN","coord":{"lon":-87.312508,"lat":36.053391}}
@@ -9070,7 +8945,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4612315,"name":"Celina","state":"TN","coord":{"lon":-85.505249,"lat":36.55006}}
 ,{"id":4612465,"name":"Centerville","state":"TN","coord":{"lon":-87.466957,"lat":35.778961}}
 ,{"id":4612474,"name":"Central","state":"TN","coord":{"lon":-82.289581,"lat":36.326221}}
-,{"id":4612476,"name":"Central","state":"TN","coord":{"lon":-89.5373,"lat":35.803692}}
 ,{"id":4612725,"name":"Chapel Hill","state":"TN","coord":{"lon":-86.693329,"lat":35.626461}}
 ,{"id":4612828,"name":"Charlotte","state":"TN","coord":{"lon":-87.339729,"lat":36.17728}}
 ,{"id":4613560,"name":"Church Hill","state":"TN","coord":{"lon":-82.713493,"lat":36.52232}}
@@ -9102,7 +8976,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4619955,"name":"East Cleveland","state":"TN","coord":{"lon":-84.857719,"lat":35.160912}}
 ,{"id":4620634,"name":"Elizabethton","state":"TN","coord":{"lon":-82.210693,"lat":36.348721}}
 ,{"id":4621002,"name":"Englewood","state":"TN","coord":{"lon":-84.487427,"lat":35.424519}}
-,{"id":4621003,"name":"Englewood","state":"TN","coord":{"lon":-89.154793,"lat":36.36673}}
 ,{"id":4621108,"name":"Erin","state":"TN","coord":{"lon":-87.69474,"lat":36.31839}}
 ,{"id":4621130,"name":"Erwin","state":"TN","coord":{"lon":-82.416809,"lat":36.145111}}
 ,{"id":4621192,"name":"Estill Springs","state":"TN","coord":{"lon":-86.128036,"lat":35.270641}}
@@ -9137,7 +9010,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4629986,"name":"Hohenwald","state":"TN","coord":{"lon":-87.551964,"lat":35.547852}}
 ,{"id":4630564,"name":"Hopewell","state":"TN","coord":{"lon":-84.888,"lat":35.234791}}
 ,{"id":4631357,"name":"Hunter","state":"TN","coord":{"lon":-84.14048,"lat":36.362301}}
-,{"id":4631358,"name":"Hunter","state":"TN","coord":{"lon":-82.158737,"lat":36.37178}}
 ,{"id":4631422,"name":"Huntingdon","state":"TN","coord":{"lon":-88.428108,"lat":36.000622}}
 ,{"id":4631443,"name":"Huntsville","state":"TN","coord":{"lon":-84.490494,"lat":36.409801}}
 ,{"id":4632591,"name":"Jacksboro","state":"TN","coord":{"lon":-84.183823,"lat":36.330078}}
@@ -9203,7 +9075,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4645532,"name":"Newport","state":"TN","coord":{"lon":-83.18766,"lat":35.967041}}
 ,{"id":4645738,"name":"Nolensville","state":"TN","coord":{"lon":-86.669441,"lat":35.95229}}
 ,{"id":4645799,"name":"Norris","state":"TN","coord":{"lon":-84.06797,"lat":36.195629}}
-,{"id":4646335,"name":"Oak Grove","state":"TN","coord":{"lon":-82.424591,"lat":36.41177}}
 ,{"id":4646498,"name":"Oak Hill","state":"TN","coord":{"lon":-86.783051,"lat":36.087841}}
 ,{"id":4646637,"name":"Oakland","state":"TN","coord":{"lon":-89.515083,"lat":35.228981}}
 ,{"id":4646772,"name":"Obion","state":"TN","coord":{"lon":-89.191742,"lat":36.258961}}
@@ -9419,7 +9290,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4684547,"name":"Cuero","state":"TX","coord":{"lon":-97.289162,"lat":29.09387}}
 ,{"id":4684698,"name":"Cut and Shoot","state":"TX","coord":{"lon":-95.357986,"lat":30.333269}}
 ,{"id":4684858,"name":"Daingerfield","state":"TX","coord":{"lon":-94.72187,"lat":33.031792}}
-,{"id":4684955,"name":"Dalworthington Gardens","state":"TX","coord":{"lon":-97.155289,"lat":32.702911}}
 ,{"id":4685160,"name":"Danbury","state":"TX","coord":{"lon":-95.34494,"lat":29.2283}}
 ,{"id":4685449,"name":"Dayton","state":"TX","coord":{"lon":-94.885201,"lat":30.04661}}
 ,{"id":4685467,"name":"De Kalb","state":"TX","coord":{"lon":-94.616318,"lat":33.508732}}
@@ -9498,7 +9368,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4694535,"name":"Granite Shoals","state":"TX","coord":{"lon":-98.383919,"lat":30.589081}}
 ,{"id":4694562,"name":"Grapeland","state":"TX","coord":{"lon":-95.478561,"lat":31.49184}}
 ,{"id":4694896,"name":"Greatwood","state":"TX","coord":{"lon":-95.675781,"lat":29.554131}}
-,{"id":4694990,"name":"Green Valley Farms","state":"TX","coord":{"lon":-97.560539,"lat":26.122021}}
 ,{"id":4695155,"name":"Gregory","state":"TX","coord":{"lon":-97.289993,"lat":27.922239}}
 ,{"id":4695270,"name":"Groesbeck","state":"TX","coord":{"lon":-96.533867,"lat":31.52434}}
 ,{"id":4695325,"name":"Groveton","state":"TX","coord":{"lon":-95.125771,"lat":31.054911}}
@@ -9626,7 +9495,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4706141,"name":"Liberty City","state":"TX","coord":{"lon":-94.948547,"lat":32.445431}}
 ,{"id":4706386,"name":"Lindale","state":"TX","coord":{"lon":-95.409401,"lat":32.515701}}
 ,{"id":4706404,"name":"Linden","state":"TX","coord":{"lon":-94.365471,"lat":33.012348}}
-,{"id":4706919,"name":"Little River-Academy","state":"TX","coord":{"lon":-97.358612,"lat":30.98629}}
 ,{"id":4707055,"name":"Live Oak","state":"TX","coord":{"lon":-98.336403,"lat":29.565229}}
 ,{"id":4707173,"name":"Livingston","state":"TX","coord":{"lon":-94.932991,"lat":30.711029}}
 ,{"id":4707191,"name":"Llano","state":"TX","coord":{"lon":-98.675041,"lat":30.75935}}
@@ -9980,7 +9848,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4751066,"name":"Carrollton","state":"VA","coord":{"lon":-76.560509,"lat":36.946819}}
 ,{"id":4751296,"name":"Castlewood","state":"VA","coord":{"lon":-82.279587,"lat":36.890099}}
 ,{"id":4751445,"name":"Cedar Bluff","state":"VA","coord":{"lon":-79.935318,"lat":37.26403}}
-,{"id":4751446,"name":"Cedar Bluff","state":"VA","coord":{"lon":-81.759003,"lat":37.087608}}
 ,{"id":4751778,"name":"Central Garage","state":"VA","coord":{"lon":-77.131638,"lat":37.74403}}
 ,{"id":4751886,"name":"Chamberlayne","state":"VA","coord":{"lon":-77.428589,"lat":37.62653}}
 ,{"id":4752001,"name":"Charles City","state":"VA","coord":{"lon":-77.073029,"lat":37.343479}}
@@ -10106,7 +9973,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4771980,"name":"Mathews","state":"VA","coord":{"lon":-76.319939,"lat":37.43708}}
 ,{"id":4772009,"name":"Matoaca","state":"VA","coord":{"lon":-77.477493,"lat":37.230431}}
 ,{"id":4772739,"name":"Merrimac","state":"VA","coord":{"lon":-78.078613,"lat":38.452629}}
-,{"id":4772740,"name":"Merrimac","state":"VA","coord":{"lon":-80.425613,"lat":37.189571}}
 ,{"id":4772927,"name":"Middletown","state":"VA","coord":{"lon":-78.280563,"lat":39.027611}}
 ,{"id":4773690,"name":"Monterey","state":"VA","coord":{"lon":-79.580597,"lat":38.412338}}
 ,{"id":4773747,"name":"Montrose","state":"VA","coord":{"lon":-77.378311,"lat":37.520699}}
@@ -10159,7 +10025,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4785161,"name":"Shawnee Land","state":"VA","coord":{"lon":-78.345558,"lat":39.19149}}
 ,{"id":4785167,"name":"Shawsville","state":"VA","coord":{"lon":-80.255318,"lat":37.168468}}
 ,{"id":4785243,"name":"Shenandoah","state":"VA","coord":{"lon":-78.625023,"lat":38.485119}}
-,{"id":4785261,"name":"Shenandoah Farms","state":"VA","coord":{"lon":-78.075546,"lat":38.981781}}
 ,{"id":4786274,"name":"Smithfield","state":"VA","coord":{"lon":-76.631073,"lat":36.982368}}
 ,{"id":4786522,"name":"South Boston","state":"VA","coord":{"lon":-78.901398,"lat":36.69875}}
 ,{"id":4786619,"name":"South Hill","state":"VA","coord":{"lon":-78.128891,"lat":36.726528}}
@@ -10194,14 +10059,11 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4792484,"name":"Wattsville","state":"VA","coord":{"lon":-75.499649,"lat":37.93401}}
 ,{"id":4792494,"name":"Waverly","state":"VA","coord":{"lon":-77.095238,"lat":37.03598}}
 ,{"id":4792598,"name":"Weber City","state":"VA","coord":{"lon":-78.28389,"lat":37.755138}}
-,{"id":4792599,"name":"Weber City","state":"VA","coord":{"lon":-82.562103,"lat":36.622879}}
-,{"id":4792829,"name":"West Gate","state":"VA","coord":{"lon":-77.49749,"lat":38.78289}}
 ,{"id":4792878,"name":"West Point","state":"VA","coord":{"lon":-76.796349,"lat":37.531528}}
 ,{"id":4793125,"name":"Weyers Cave","state":"VA","coord":{"lon":-78.913078,"lat":38.28846}}
 ,{"id":4793846,"name":"Williamsburg","state":"VA","coord":{"lon":-76.707458,"lat":37.270699}}
 ,{"id":4794164,"name":"Windsor","state":"VA","coord":{"lon":-76.744118,"lat":36.808479}}
 ,{"id":4794457,"name":"Woodbridge","state":"VA","coord":{"lon":-77.249702,"lat":38.658169}}
-,{"id":4794529,"name":"Woodlawn","state":"VA","coord":{"lon":-80.822853,"lat":36.722351}}
 ,{"id":4794641,"name":"Woodstock","state":"VA","coord":{"lon":-78.505836,"lat":38.881779}}
 ,{"id":4794814,"name":"Wyndham","state":"VA","coord":{"lon":-77.612488,"lat":37.698479}}
 ,{"id":4794837,"name":"Wytheville","state":"VA","coord":{"lon":-81.084808,"lat":36.948448}}
@@ -10407,7 +10269,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4833276,"name":"Watervliet","state":"NY","coord":{"lon":-73.701233,"lat":42.73008}},
 {"id":4833279,"name":"East Brooklyn","state":"CT","coord":{"lon":-71.897293,"lat":41.796768}},
 {"id":4833304,"name":"Camden","state":"OH","coord":{"lon":-82.305717,"lat":41.237831}},
-{"id":4833348,"name":"Genoa","state":"OH","coord":{"lon":-83.359093,"lat":41.518108}},
 {"id":4833363,"name":"East Haddam","state":"CT","coord":{"lon":-72.461197,"lat":41.453152}},
 {"id":4833387,"name":"East Hampton","state":"CT","coord":{"lon":-72.502586,"lat":41.575932}},
 {"id":4833478,"name":"Carnegie","state":"PA","coord":{"lon":-80.083389,"lat":40.40868}},
@@ -10438,7 +10299,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":4839568,"name":"Noank","state":"CT","coord":{"lon":-71.990631,"lat":41.327881}},
 {"id":4839636,"name":"North Branford","state":"CT","coord":{"lon":-72.767319,"lat":41.327599}},
 {"id":4839692,"name":"North Granby","state":"CT","coord":{"lon":-72.829536,"lat":41.99593}},
-{"id":4839697,"name":"North Grosvenor Dale","state":"CT","coord":{"lon":-71.898682,"lat":41.985649}},
 {"id":4839921,"name":"Oakville","state":"CT","coord":{"lon":-73.085388,"lat":41.59343}},
 {"id":4839983,"name":"Old Greenwich","state":"CT","coord":{"lon":-73.56485,"lat":41.022881}},
 {"id":4840015,"name":"Old Mystic","state":"CT","coord":{"lon":-71.961739,"lat":41.391491}},
@@ -10761,7 +10621,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4886590,"name":"Carbon Cliff","state":"IL","coord":{"lon":-90.390678,"lat":41.494759}}
 ,{"id":4886717,"name":"Carthage","state":"IL","coord":{"lon":-89.313713,"lat":41.918919}}
 ,{"id":4886790,"name":"Catlin","state":"IL","coord":{"lon":-87.701973,"lat":40.065041}}
-,{"id":4887024,"name":"Central City","state":"IL","coord":{"lon":-88.281731,"lat":41.237808}}
 ,{"id":4887198,"name":"Channahon","state":"IL","coord":{"lon":-88.228668,"lat":41.429482}}
 ,{"id":4887205,"name":"Channel Lake","state":"IL","coord":{"lon":-88.137589,"lat":42.47863}}
 ,{"id":4887330,"name":"Chenoa","state":"IL","coord":{"lon":-88.719788,"lat":40.741699}}
@@ -10786,7 +10645,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4889256,"name":"Cuba","state":"IL","coord":{"lon":-88.19091,"lat":42.18391}}
 ,{"id":4889423,"name":"Danvers","state":"IL","coord":{"lon":-89.177307,"lat":40.52948}}
 ,{"id":4889496,"name":"Davis Junction","state":"IL","coord":{"lon":-89.093163,"lat":42.101688}}
-,{"id":4889652,"name":"Deer Park","state":"IL","coord":{"lon":-88.081467,"lat":42.160858}}
 ,{"id":4889700,"name":"Delavan","state":"IL","coord":{"lon":-89.547318,"lat":40.37254}}
 ,{"id":4889761,"name":"Depue","state":"IL","coord":{"lon":-89.306747,"lat":41.3242}}
 ,{"id":4889835,"name":"Diamond","state":"IL","coord":{"lon":-88.251732,"lat":41.288639}}
@@ -10806,11 +10664,9 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4891240,"name":"Erie","state":"IL","coord":{"lon":-90.079292,"lat":41.656422}}
 ,{"id":4891310,"name":"Eureka","state":"IL","coord":{"lon":-89.272858,"lat":40.721432}}
 ,{"id":4891520,"name":"Fairbury","state":"IL","coord":{"lon":-88.514778,"lat":40.747261}}
-,{"id":4891534,"name":"Fairfield","state":"IL","coord":{"lon":-88.06147,"lat":42.219189}}
 ,{"id":4891555,"name":"Fairmont","state":"IL","coord":{"lon":-88.059227,"lat":41.556141}}
 ,{"id":4891772,"name":"Farmer City","state":"IL","coord":{"lon":-88.64257,"lat":40.24337}}
 ,{"id":4891784,"name":"Farmington","state":"IL","coord":{"lon":-90.005951,"lat":40.69809}}
-,{"id":4891785,"name":"Farmington","state":"IL","coord":{"lon":-88.31591,"lat":41.944752}}
 ,{"id":4892570,"name":"Fisher","state":"IL","coord":{"lon":-88.350052,"lat":40.314758}}
 ,{"id":4892637,"name":"Flanagan","state":"IL","coord":{"lon":-88.861183,"lat":40.87809}}
 ,{"id":4892684,"name":"Flossmoor","state":"IL","coord":{"lon":-87.684769,"lat":41.542809}}
@@ -10832,7 +10688,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4893581,"name":"Geneseo","state":"IL","coord":{"lon":-90.154282,"lat":41.44809}}
 ,{"id":4893601,"name":"Genoa","state":"IL","coord":{"lon":-88.692871,"lat":42.097252}}
 ,{"id":4893637,"name":"Georgetown","state":"IL","coord":{"lon":-89.828728,"lat":42.139751}}
-,{"id":4893670,"name":"Germantown Hills","state":"IL","coord":{"lon":-89.467873,"lat":40.76643}}
 ,{"id":4893700,"name":"Gibson City","state":"IL","coord":{"lon":-88.384598,"lat":40.458431}}
 ,{"id":4893731,"name":"Gilberts","state":"IL","coord":{"lon":-88.372864,"lat":42.103359}}
 ,{"id":4893755,"name":"Gilman","state":"IL","coord":{"lon":-87.992264,"lat":40.766701}}
@@ -11139,12 +10994,10 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4922418,"name":"Knox","state":"IN","coord":{"lon":-86.625008,"lat":41.295879}}
 ,{"id":4922501,"name":"Lake Dalecarlia","state":"IN","coord":{"lon":-87.39476,"lat":41.330872}}
 ,{"id":4922541,"name":"Lake Station","state":"IN","coord":{"lon":-87.238922,"lat":41.575039}}
-,{"id":4922562,"name":"Lakes of the Four Seasons","state":"IN","coord":{"lon":-87.213089,"lat":41.41032}}
 ,{"id":4922624,"name":"Lapel","state":"IN","coord":{"lon":-85.848312,"lat":40.068371}}
 ,{"id":4922721,"name":"Leo-Cedarville","state":"IN","coord":{"lon":-85.01664,"lat":41.212551}}
 ,{"id":4922776,"name":"Ligonier","state":"IN","coord":{"lon":-85.587479,"lat":41.465881}}
 ,{"id":4922979,"name":"Long Beach","state":"IN","coord":{"lon":-86.856972,"lat":41.73893}}
-,{"id":4923041,"name":"Lowell","state":"IN","coord":{"lon":-87.420593,"lat":41.29142}}
 ,{"id":4923096,"name":"Lynn","state":"IN","coord":{"lon":-84.93969,"lat":40.04977}}
 ,{"id":4923226,"name":"Markle","state":"IN","coord":{"lon":-85.338837,"lat":40.824619}}
 ,{"id":4923554,"name":"Middlebury","state":"IN","coord":{"lon":-85.7061,"lat":41.675331}}
@@ -11299,7 +11152,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4939004,"name":"Harwich","state":"MA","coord":{"lon":-70.075851,"lat":41.686218}}
 ,{"id":4939008,"name":"Harwich Port","state":"MA","coord":{"lon":-70.078629,"lat":41.666779}}
 ,{"id":4939048,"name":"Hatfield","state":"MA","coord":{"lon":-72.598137,"lat":42.370918}}
-,{"id":4939191,"name":"Head of Westport","state":"MA","coord":{"lon":-71.061989,"lat":41.620941}}
 ,{"id":4939549,"name":"Hingham","state":"MA","coord":{"lon":-70.889771,"lat":42.241772}}
 ,{"id":4939561,"name":"Hinsdale","state":"MA","coord":{"lon":-73.125381,"lat":42.438702}}
 ,{"id":4939637,"name":"Holbrook","state":"MA","coord":{"lon":-71.008659,"lat":42.155102}}
@@ -11374,7 +11226,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4946990,"name":"Pepperell","state":"MA","coord":{"lon":-71.588402,"lat":42.66592}}
 ,{"id":4947124,"name":"Phillipston","state":"MA","coord":{"lon":-72.132858,"lat":42.548698}}
 ,{"id":4947397,"name":"Pinehurst","state":"MA","coord":{"lon":-71.228111,"lat":42.529259}}
-,{"id":4947490,"name":"Plainville","state":"MA","coord":{"lon":-71.332832,"lat":42.004269}}
 ,{"id":4947597,"name":"Plymouth","state":"MA","coord":{"lon":-70.667259,"lat":41.958439}}
 ,{"id":4947641,"name":"Plympton","state":"MA","coord":{"lon":-70.814484,"lat":41.952881}}
 ,{"id":4947655,"name":"Pocasset","state":"MA","coord":{"lon":-70.616142,"lat":41.686218}}
@@ -11512,7 +11363,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4962502,"name":"Dexter","state":"ME","coord":{"lon":-69.289772,"lat":45.023949}}
 ,{"id":4962589,"name":"Dixfield","state":"ME","coord":{"lon":-70.455902,"lat":44.533951}}
 ,{"id":4962596,"name":"Dixmont","state":"ME","coord":{"lon":-69.162819,"lat":44.680351}}
-,{"id":4962775,"name":"Dover-Foxcroft","state":"ME","coord":{"lon":-69.22699,"lat":45.183392}}
 ,{"id":4963306,"name":"East Machias","state":"ME","coord":{"lon":-67.389992,"lat":44.739239}}
 ,{"id":4963318,"name":"East Millinocket","state":"ME","coord":{"lon":-68.574478,"lat":45.627548}}
 ,{"id":4963478,"name":"Easton","state":"ME","coord":{"lon":-67.90947,"lat":46.641151}}
@@ -11606,7 +11456,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":4974071,"name":"Oakland","state":"ME","coord":{"lon":-69.721992,"lat":44.54034}}
 ,{"id":4974108,"name":"Ogunquit","state":"ME","coord":{"lon":-70.59922,"lat":43.248981}}
 ,{"id":4974194,"name":"Old Orchard Beach","state":"ME","coord":{"lon":-70.377548,"lat":43.517311}}
-,{"id":4974231,"name":"Old Town","state":"ME","coord":{"lon":-68.645309,"lat":44.934231}}
 ,{"id":4974306,"name":"Orland","state":"ME","coord":{"lon":-68.735863,"lat":44.570351}}
 ,{"id":4974313,"name":"Orono","state":"ME","coord":{"lon":-68.671982,"lat":44.883121}}
 ,{"id":4974328,"name":"Orrington","state":"ME","coord":{"lon":-68.826431,"lat":44.731178}}
@@ -12156,7 +12005,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5033740,"name":"Lake Crystal","state":"MN","coord":{"lon":-94.218849,"lat":44.105801}}
 ,{"id":5033762,"name":"Lake Elmo","state":"MN","coord":{"lon":-92.879379,"lat":44.9958}}
 ,{"id":5033783,"name":"Zimmerman","state":"MN","coord":{"lon":-93.589958,"lat":45.443298}}
-,{"id":5033910,"name":"Lake Saint Croix Beach","state":"MN","coord":{"lon":-92.766869,"lat":44.920799}}
 ,{"id":5033918,"name":"Lake Shore","state":"MN","coord":{"lon":-94.360558,"lat":46.485519}}
 ,{"id":5033962,"name":"Lakefield","state":"MN","coord":{"lon":-95.171661,"lat":43.67746}}
 ,{"id":5033970,"name":"Lakeland","state":"MN","coord":{"lon":-92.765762,"lat":44.95636}}
@@ -12628,7 +12476,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5095626,"name":"Bernardsville","state":"NJ","coord":{"lon":-74.569321,"lat":40.718712}}
 ,{"id":5095691,"name":"Beverly","state":"NJ","coord":{"lon":-74.91906,"lat":40.065392}}
 ,{"id":5095786,"name":"Bloomingdale","state":"NJ","coord":{"lon":-74.326538,"lat":41.002041}}
-,{"id":5095787,"name":"Bloomingdale","state":"NJ","coord":{"lon":-74.647377,"lat":40.497601}}
 ,{"id":5095808,"name":"Bogota","state":"NJ","coord":{"lon":-74.029861,"lat":40.876209}}
 ,{"id":5095826,"name":"Boonton","state":"NJ","coord":{"lon":-74.407097,"lat":40.902599}}
 ,{"id":5095847,"name":"Bordentown","state":"NJ","coord":{"lon":-74.71183,"lat":40.146221}}
@@ -12673,9 +12520,7 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5097686,"name":"Englishtown","state":"NJ","coord":{"lon":-74.3582,"lat":40.297329}}
 ,{"id":5097718,"name":"Essex Fells","state":"NJ","coord":{"lon":-74.284592,"lat":40.824539}}
 ,{"id":5097769,"name":"Fair Haven","state":"NJ","coord":{"lon":-74.038193,"lat":40.360668}}
-,{"id":5097778,"name":"Fairfield","state":"NJ","coord":{"lon":-74.305977,"lat":40.883709}}
 ,{"id":5097801,"name":"Fairview","state":"NJ","coord":{"lon":-73.999031,"lat":40.812599}}
-,{"id":5097803,"name":"Fairview","state":"NJ","coord":{"lon":-74.086807,"lat":40.373161}}
 ,{"id":5097830,"name":"Fanwood","state":"NJ","coord":{"lon":-74.383476,"lat":40.640942}}
 ,{"id":5097844,"name":"Farmingdale","state":"NJ","coord":{"lon":-74.16848,"lat":40.196499}}
 ,{"id":5097900,"name":"Finderne","state":"NJ","coord":{"lon":-74.57766,"lat":40.56316}}
@@ -12731,7 +12576,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5100362,"name":"Lebanon","state":"NJ","coord":{"lon":-74.835999,"lat":40.641769}}
 ,{"id":5100381,"name":"Leisure Knoll","state":"NJ","coord":{"lon":-74.292091,"lat":40.019009}}
 ,{"id":5100382,"name":"Leisure Village","state":"NJ","coord":{"lon":-74.18486,"lat":40.042622}}
-,{"id":5100383,"name":"Leisure Village East","state":"NJ","coord":{"lon":-74.164307,"lat":40.030121}}
 ,{"id":5100394,"name":"Leonardo","state":"NJ","coord":{"lon":-74.06208,"lat":40.417332}}
 ,{"id":5100399,"name":"Leonia","state":"NJ","coord":{"lon":-73.98819,"lat":40.861488}}
 ,{"id":5100477,"name":"Lincoln Park","state":"NJ","coord":{"lon":-74.302094,"lat":40.924271}}
@@ -13240,7 +13084,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5127007,"name":"Millbrook","state":"NY","coord":{"lon":-73.694023,"lat":41.785091}}
 ,{"id":5127043,"name":"Miller Place","state":"NY","coord":{"lon":-72.996208,"lat":40.95982}}
 ,{"id":5127098,"name":"Milton","state":"NY","coord":{"lon":-73.852623,"lat":43.033691}}
-,{"id":5127099,"name":"Milton","state":"NY","coord":{"lon":-73.957077,"lat":41.659821}}
 ,{"id":5127147,"name":"Minetto","state":"NY","coord":{"lon":-76.47744,"lat":43.398121}}
 ,{"id":5127150,"name":"Mineville","state":"NY","coord":{"lon":-73.518181,"lat":44.092831}}
 ,{"id":5127179,"name":"Minoa","state":"NY","coord":{"lon":-76.000748,"lat":43.07618}}
@@ -13289,14 +13132,12 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5129093,"name":"North Hills","state":"NY","coord":{"lon":-73.676521,"lat":40.78093}}
 ,{"id":5129125,"name":"North Lindenhurst","state":"NY","coord":{"lon":-73.381508,"lat":40.714272}}
 ,{"id":5129141,"name":"North Merrick","state":"NY","coord":{"lon":-73.563179,"lat":40.691212}}
-,{"id":5129147,"name":"North New Hyde Park","state":"NY","coord":{"lon":-73.693192,"lat":40.74316}}
 ,{"id":5129157,"name":"North Patchogue","state":"NY","coord":{"lon":-73.009003,"lat":40.787041}}
 ,{"id":5129210,"name":"North Sea","state":"NY","coord":{"lon":-72.414253,"lat":40.93288}}
 ,{"id":5129242,"name":"North Syracuse","state":"NY","coord":{"lon":-76.129921,"lat":43.134789}}
 ,{"id":5129254,"name":"North Wantagh","state":"NY","coord":{"lon":-73.507629,"lat":40.693432}}
 ,{"id":5129290,"name":"Northport","state":"NY","coord":{"lon":-73.34317,"lat":40.900928}}
 ,{"id":5129313,"name":"Northville","state":"NY","coord":{"lon":-74.172081,"lat":43.225632}}
-,{"id":5129314,"name":"Northville","state":"NY","coord":{"lon":-72.61898,"lat":40.9701}}
 ,{"id":5129325,"name":"Northwest Harbor","state":"NY","coord":{"lon":-72.221191,"lat":41.009819}}
 ,{"id":5129359,"name":"Norwich","state":"NY","coord":{"lon":-75.523514,"lat":42.531181}}
 ,{"id":5129364,"name":"Norwood","state":"NY","coord":{"lon":-74.994362,"lat":44.75145}}
@@ -13645,13 +13486,10 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5155438,"name":"Gambier","state":"OH","coord":{"lon":-82.397102,"lat":40.375622}}
 ,{"id":5155529,"name":"Garrettsville","state":"OH","coord":{"lon":-81.096489,"lat":41.284222}}
 ,{"id":5155534,"name":"Gates Mills","state":"OH","coord":{"lon":-81.40345,"lat":41.517551}}
-,{"id":5155572,"name":"Geneva","state":"OH","coord":{"lon":-80.948151,"lat":41.80505}}
-,{"id":5155587,"name":"Geneva-on-the-Lake","state":"OH","coord":{"lon":-80.953979,"lat":41.859501}}
 ,{"id":5155590,"name":"Genoa","state":"OH","coord":{"lon":-81.466507,"lat":40.782841}}
 ,{"id":5155710,"name":"Gibsonburg","state":"OH","coord":{"lon":-83.32048,"lat":41.384499}}
 ,{"id":5155755,"name":"Girard","state":"OH","coord":{"lon":-80.701469,"lat":41.15395}}
 ,{"id":5155783,"name":"Glandorf","state":"OH","coord":{"lon":-84.079109,"lat":41.028938}}
-,{"id":5155824,"name":"Glendale","state":"OH","coord":{"lon":-81.542343,"lat":41.396999}}
 ,{"id":5155842,"name":"Glenmoor","state":"OH","coord":{"lon":-80.623131,"lat":40.666168}}
 ,{"id":5155897,"name":"Gnadenhutten","state":"OH","coord":{"lon":-81.43428,"lat":40.358398}}
 ,{"id":5156170,"name":"Grafton","state":"OH","coord":{"lon":-82.054588,"lat":41.272549}}
@@ -13690,7 +13528,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5160611,"name":"Leipsic","state":"OH","coord":{"lon":-83.984673,"lat":41.098381}}
 ,{"id":5160635,"name":"Lexington","state":"OH","coord":{"lon":-82.58239,"lat":40.678669}}
 ,{"id":5160667,"name":"Liberty Center","state":"OH","coord":{"lon":-84.008827,"lat":41.443378}}
-,{"id":5160854,"name":"Lincoln Heights","state":"OH","coord":{"lon":-82.484329,"lat":40.77145}}
 ,{"id":5160951,"name":"Lisbon","state":"OH","coord":{"lon":-80.768127,"lat":40.771999}}
 ,{"id":5161142,"name":"Lodi","state":"OH","coord":{"lon":-82.012093,"lat":41.03339}}
 ,{"id":5161301,"name":"Lordstown","state":"OH","coord":{"lon":-80.857582,"lat":41.165611}}
@@ -13702,7 +13539,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5161539,"name":"Macedonia","state":"OH","coord":{"lon":-81.508453,"lat":41.313671}}
 ,{"id":5161567,"name":"Madison","state":"OH","coord":{"lon":-81.04982,"lat":41.77116}}
 ,{"id":5161684,"name":"Malvern","state":"OH","coord":{"lon":-81.181213,"lat":40.69173}}
-,{"id":5161693,"name":"Manchester","state":"OH","coord":{"lon":-81.56929,"lat":40.937}}
 ,{"id":5161742,"name":"Mantua","state":"OH","coord":{"lon":-81.223991,"lat":41.283939}}
 ,{"id":5162044,"name":"Martins Ferry","state":"OH","coord":{"lon":-80.724533,"lat":40.095909}}
 ,{"id":5162119,"name":"Masury","state":"OH","coord":{"lon":-80.537849,"lat":41.21117}}
@@ -13727,7 +13563,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5163375,"name":"Montpelier","state":"OH","coord":{"lon":-84.605507,"lat":41.584499}}
 ,{"id":5163448,"name":"Moreland Hills","state":"OH","coord":{"lon":-81.42762,"lat":41.44783}}
 ,{"id":5163469,"name":"Morgandale","state":"OH","coord":{"lon":-80.78286,"lat":41.26561}}
-,{"id":5163613,"name":"Mount Carmel","state":"OH","coord":{"lon":-82.936859,"lat":41.27116}}
 ,{"id":5163631,"name":"Mount Gilead","state":"OH","coord":{"lon":-82.8274,"lat":40.549229}}
 ,{"id":5163968,"name":"Munroe Falls","state":"OH","coord":{"lon":-81.439827,"lat":41.144501}}
 ,{"id":5164057,"name":"Napoleon","state":"OH","coord":{"lon":-84.125221,"lat":41.392269}}
@@ -14007,7 +13842,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5185531,"name":"Coudersport","state":"PA","coord":{"lon":-78.020561,"lat":41.774792}}
 ,{"id":5185721,"name":"Crafton","state":"PA","coord":{"lon":-80.06617,"lat":40.43507}}
 ,{"id":5185861,"name":"Cresson","state":"PA","coord":{"lon":-78.591682,"lat":40.459789}}
-,{"id":5185866,"name":"Cressona","state":"PA","coord":{"lon":-76.192719,"lat":40.626759}}
 ,{"id":5186053,"name":"Croydon","state":"PA","coord":{"lon":-74.903503,"lat":40.08733}}
 ,{"id":5186171,"name":"Curtisville","state":"PA","coord":{"lon":-79.850891,"lat":40.642288}}
 ,{"id":5186172,"name":"Curwensville","state":"PA","coord":{"lon":-78.525017,"lat":40.975609}}
@@ -14029,7 +13863,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5187215,"name":"Dover","state":"PA","coord":{"lon":-76.85025,"lat":40.001759}}
 ,{"id":5187232,"name":"Downingtown","state":"PA","coord":{"lon":-75.70327,"lat":40.0065}}
 ,{"id":5187247,"name":"Doylestown","state":"PA","coord":{"lon":-75.12989,"lat":40.310108}}
-,{"id":5187248,"name":"Doylestown","state":"PA","coord":{"lon":-77.721382,"lat":40.197578}}
 ,{"id":5187286,"name":"Dravosburg","state":"PA","coord":{"lon":-79.886162,"lat":40.350632}}
 ,{"id":5187432,"name":"Du Bois","state":"PA","coord":{"lon":-78.760033,"lat":41.119228}}
 ,{"id":5187443,"name":"Dublin","state":"PA","coord":{"lon":-75.201561,"lat":40.371769}}
@@ -14059,7 +13892,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5188236,"name":"Economy","state":"PA","coord":{"lon":-80.224777,"lat":40.600071}}
 ,{"id":5188243,"name":"Eddington","state":"PA","coord":{"lon":-74.944893,"lat":40.08456}}
 ,{"id":5188284,"name":"Edgewood","state":"PA","coord":{"lon":-79.881439,"lat":40.432011}}
-,{"id":5188287,"name":"Edgewood","state":"PA","coord":{"lon":-76.572456,"lat":40.788422}}
 ,{"id":5188302,"name":"Edgeworth","state":"PA","coord":{"lon":-80.192841,"lat":40.551182}}
 ,{"id":5188306,"name":"Edinboro","state":"PA","coord":{"lon":-80.131721,"lat":41.874222}}
 ,{"id":5188339,"name":"Effort","state":"PA","coord":{"lon":-75.434914,"lat":40.939259}}
@@ -14092,7 +13924,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5189004,"name":"Exeter","state":"PA","coord":{"lon":-75.819077,"lat":41.320641}}
 ,{"id":5189022,"name":"Exton","state":"PA","coord":{"lon":-75.620773,"lat":40.028999}}
 ,{"id":5189041,"name":"Factoryville","state":"PA","coord":{"lon":-75.209618,"lat":40.824821}}
-,{"id":5189042,"name":"Factoryville","state":"PA","coord":{"lon":-75.782692,"lat":41.563129}}
 ,{"id":5189085,"name":"Fairhope","state":"PA","coord":{"lon":-79.839767,"lat":40.113682}}
 ,{"id":5189091,"name":"Fairless Hills","state":"PA","coord":{"lon":-74.855164,"lat":40.17955}}
 ,{"id":5189124,"name":"Fairview","state":"PA","coord":{"lon":-80.255341,"lat":42.031448}}
@@ -14191,7 +14022,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5194658,"name":"Hyde Park","state":"PA","coord":{"lon":-75.925209,"lat":40.377319}}
 ,{"id":5194741,"name":"Imperial","state":"PA","coord":{"lon":-80.244499,"lat":40.449509}}
 ,{"id":5194821,"name":"Indian Mountain Lake","state":"PA","coord":{"lon":-75.50824,"lat":41.003139}}
-,{"id":5194823,"name":"Indian Mountain Lake","state":"PA","coord":{"lon":-75.499352,"lat":41.00481}}
 ,{"id":5194868,"name":"Indiana","state":"PA","coord":{"lon":-79.152527,"lat":40.62146}}
 ,{"id":5194892,"name":"Industry","state":"PA","coord":{"lon":-80.416183,"lat":40.644508}}
 ,{"id":5194912,"name":"Ingram","state":"PA","coord":{"lon":-80.067558,"lat":40.446178}}
@@ -14210,7 +14040,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5195437,"name":"Jessup","state":"PA","coord":{"lon":-75.562134,"lat":41.468689}}
 ,{"id":5195460,"name":"Jim Thorpe","state":"PA","coord":{"lon":-75.732407,"lat":40.875919}}
 ,{"id":5195549,"name":"Johnsonburg","state":"PA","coord":{"lon":-78.675034,"lat":41.49062}}
-,{"id":5195550,"name":"Johnsonburg","state":"PA","coord":{"lon":-78.877808,"lat":40.886181}}
 ,{"id":5195606,"name":"Jonestown","state":"PA","coord":{"lon":-76.478302,"lat":40.4137}}
 ,{"id":5195728,"name":"Kane","state":"PA","coord":{"lon":-78.811142,"lat":41.662842}}
 ,{"id":5195978,"name":"Kenhorst","state":"PA","coord":{"lon":-75.939377,"lat":40.31065}}
@@ -14264,7 +14093,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5199075,"name":"Lower Allen","state":"PA","coord":{"lon":-76.900528,"lat":40.226479}}
 ,{"id":5199087,"name":"Lower Burrell","state":"PA","coord":{"lon":-79.757271,"lat":40.55312}}
 ,{"id":5199209,"name":"Loyalhanna","state":"PA","coord":{"lon":-79.362259,"lat":40.322571}}
-,{"id":5199308,"name":"Luzerne","state":"PA","coord":{"lon":-75.901031,"lat":41.285641}}
 ,{"id":5199324,"name":"Lykens","state":"PA","coord":{"lon":-76.700523,"lat":40.56675}}
 ,{"id":5199439,"name":"Macungie","state":"PA","coord":{"lon":-75.555191,"lat":40.51593}}
 ,{"id":5199494,"name":"Mahanoy City","state":"PA","coord":{"lon":-76.141602,"lat":40.812592}}
@@ -14274,7 +14102,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5199677,"name":"Manor","state":"PA","coord":{"lon":-79.670036,"lat":40.333961}}
 ,{"id":5199710,"name":"Mansfield","state":"PA","coord":{"lon":-77.077469,"lat":41.807301}}
 ,{"id":5199740,"name":"Maple Glen","state":"PA","coord":{"lon":-79.976723,"lat":40.015629}}
-,{"id":5199781,"name":"Maple Glen","state":"PA","coord":{"lon":-75.18045,"lat":40.179279}}
 ,{"id":5199873,"name":"Marianne","state":"PA","coord":{"lon":-79.428932,"lat":41.246449}}
 ,{"id":5199876,"name":"Marienville","state":"PA","coord":{"lon":-79.1231,"lat":41.468948}}
 ,{"id":5199879,"name":"Marietta","state":"PA","coord":{"lon":-76.552193,"lat":40.057041}}
@@ -14284,7 +14111,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5200122,"name":"Matamoras","state":"PA","coord":{"lon":-76.933311,"lat":40.44009}}
 ,{"id":5200123,"name":"Matamoras","state":"PA","coord":{"lon":-74.700157,"lat":41.368698}}
 ,{"id":5200194,"name":"Mayfield","state":"PA","coord":{"lon":-75.536018,"lat":41.538139}}
-,{"id":5200195,"name":"Mayfield","state":"PA","coord":{"lon":-79.597816,"lat":40.136181}}
 ,{"id":5200208,"name":"Maytown","state":"PA","coord":{"lon":-76.582191,"lat":40.075371}}
 ,{"id":5200220,"name":"McAdoo","state":"PA","coord":{"lon":-75.991318,"lat":40.910091}}
 ,{"id":5200318,"name":"McConnellstown","state":"PA","coord":{"lon":-78.081673,"lat":40.452572}}
@@ -14300,9 +14126,7 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5200837,"name":"Meridian","state":"PA","coord":{"lon":-79.961998,"lat":40.8484}}
 ,{"id":5201006,"name":"Middleburg","state":"PA","coord":{"lon":-77.047203,"lat":40.785919}}
 ,{"id":5201027,"name":"Middletown","state":"PA","coord":{"lon":-76.731079,"lat":40.19981}}
-,{"id":5201031,"name":"Middletown","state":"PA","coord":{"lon":-75.332397,"lat":40.64399}}
 ,{"id":5201045,"name":"Midland","state":"PA","coord":{"lon":-80.446449,"lat":40.632568}}
-,{"id":5201046,"name":"Midland","state":"PA","coord":{"lon":-80.218109,"lat":40.258961}}
 ,{"id":5201080,"name":"Mifflinburg","state":"PA","coord":{"lon":-77.047752,"lat":40.91758}}
 ,{"id":5201085,"name":"Mifflintown","state":"PA","coord":{"lon":-77.396927,"lat":40.569801}}
 ,{"id":5201088,"name":"Mifflinville","state":"PA","coord":{"lon":-76.307991,"lat":41.03231}}
@@ -14331,11 +14155,9 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5202202,"name":"Mount Joy","state":"PA","coord":{"lon":-76.503304,"lat":40.109821}}
 ,{"id":5202251,"name":"Mount Oliver","state":"PA","coord":{"lon":-79.987831,"lat":40.414242}}
 ,{"id":5202264,"name":"Mount Penn","state":"PA","coord":{"lon":-75.890762,"lat":40.328152}}
-,{"id":5202286,"name":"Mount Pleasant","state":"PA","coord":{"lon":-79.541153,"lat":40.14896}}
 ,{"id":5202340,"name":"Mount Pocono","state":"PA","coord":{"lon":-75.364632,"lat":41.122028}}
 ,{"id":5202382,"name":"Mount Union","state":"PA","coord":{"lon":-77.882217,"lat":40.384521}}
 ,{"id":5202421,"name":"Mount Wolf","state":"PA","coord":{"lon":-76.703857,"lat":40.063148}}
-,{"id":5202535,"name":"Mountain Top","state":"PA","coord":{"lon":-75.877419,"lat":41.169529}}
 ,{"id":5202551,"name":"Mountainhome","state":"PA","coord":{"lon":-75.271019,"lat":41.173698}}
 ,{"id":5202566,"name":"Mountville","state":"PA","coord":{"lon":-76.430801,"lat":40.039261}}
 ,{"id":5202691,"name":"Muhlenberg Park","state":"PA","coord":{"lon":-75.941322,"lat":40.384819}}
@@ -14385,7 +14207,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5204143,"name":"Oakdale","state":"PA","coord":{"lon":-80.185608,"lat":40.398121}}
 ,{"id":5204144,"name":"Oakdale","state":"PA","coord":{"lon":-75.920197,"lat":40.992031}}
 ,{"id":5204166,"name":"Oakland","state":"PA","coord":{"lon":-78.88752,"lat":40.306461}}
-,{"id":5204168,"name":"Oakland","state":"PA","coord":{"lon":-80.369507,"lat":40.98978}}
 ,{"id":5204203,"name":"Oakmont","state":"PA","coord":{"lon":-79.84227,"lat":40.521729}}
 ,{"id":5204220,"name":"Oakwood","state":"PA","coord":{"lon":-80.379509,"lat":41.01062}}
 ,{"id":5204273,"name":"Ohioville","state":"PA","coord":{"lon":-80.494789,"lat":40.67923}}
@@ -14406,8 +14227,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5204971,"name":"Palo Alto","state":"PA","coord":{"lon":-76.172157,"lat":40.687309}}
 ,{"id":5205037,"name":"Paoli","state":"PA","coord":{"lon":-75.476311,"lat":40.042049}}
 ,{"id":5205052,"name":"Paradise","state":"PA","coord":{"lon":-76.128571,"lat":40.009819}}
-,{"id":5205094,"name":"Park Forest Village","state":"PA","coord":{"lon":-77.916946,"lat":40.806728}}
-,{"id":5205152,"name":"Parkside","state":"PA","coord":{"lon":-75.250458,"lat":41.1012}}
 ,{"id":5205215,"name":"Patton","state":"PA","coord":{"lon":-78.650299,"lat":40.633961}}
 ,{"id":5205249,"name":"Paxtang","state":"PA","coord":{"lon":-76.831917,"lat":40.25898}}
 ,{"id":5205267,"name":"Paxtonia","state":"PA","coord":{"lon":-76.794418,"lat":40.31731}}
@@ -14429,7 +14248,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5206487,"name":"Pleasant Hill","state":"PA","coord":{"lon":-76.441628,"lat":40.336201}}
 ,{"id":5206647,"name":"Plumsteadville","state":"PA","coord":{"lon":-75.146561,"lat":40.387329}}
 ,{"id":5206659,"name":"Plymouth","state":"PA","coord":{"lon":-75.944641,"lat":41.24036}}
-,{"id":5206666,"name":"Plymouth Meeting","state":"PA","coord":{"lon":-75.274353,"lat":40.102329}}
 ,{"id":5206718,"name":"Pocono Pines","state":"PA","coord":{"lon":-75.454353,"lat":41.10675}}
 ,{"id":5206933,"name":"Port Carbon","state":"PA","coord":{"lon":-76.168831,"lat":40.69648}}
 ,{"id":5206956,"name":"Port Allegany","state":"PA","coord":{"lon":-78.279739,"lat":41.810902}}
@@ -14446,7 +14264,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5207660,"name":"Raubsville","state":"PA","coord":{"lon":-75.192947,"lat":40.635658}}
 ,{"id":5207745,"name":"Reamstown","state":"PA","coord":{"lon":-76.123283,"lat":40.211479}}
 ,{"id":5207780,"name":"Red Hill","state":"PA","coord":{"lon":-75.48101,"lat":40.372879}}
-,{"id":5207794,"name":"Red Lion","state":"PA","coord":{"lon":-75.61602,"lat":40.480652}}
 ,{"id":5207976,"name":"Reiffton","state":"PA","coord":{"lon":-75.873543,"lat":40.31982}}
 ,{"id":5207989,"name":"Reinholds","state":"PA","coord":{"lon":-76.115501,"lat":40.266762}}
 ,{"id":5208015,"name":"Rennerdale","state":"PA","coord":{"lon":-80.141449,"lat":40.398399}}
@@ -14502,7 +14319,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5211846,"name":"Shenandoah","state":"PA","coord":{"lon":-76.200768,"lat":40.82037}}
 ,{"id":5211850,"name":"Shenandoah Heights","state":"PA","coord":{"lon":-76.206879,"lat":40.827591}}
 ,{"id":5211953,"name":"Shillington","state":"PA","coord":{"lon":-75.965492,"lat":40.307869}}
-,{"id":5211957,"name":"Shiloh","state":"PA","coord":{"lon":-78.291397,"lat":41.041721}}
 ,{"id":5212002,"name":"Shinglehouse","state":"PA","coord":{"lon":-78.190842,"lat":41.96368}}
 ,{"id":5212033,"name":"Shiremanstown","state":"PA","coord":{"lon":-76.95359,"lat":40.223419}}
 ,{"id":5212038,"name":"Shippensburg","state":"PA","coord":{"lon":-77.520264,"lat":40.050652}}
@@ -14542,7 +14358,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5214696,"name":"Sugarcreek","state":"PA","coord":{"lon":-79.881172,"lat":41.421452}}
 ,{"id":5214775,"name":"Summit Hill","state":"PA","coord":{"lon":-75.871033,"lat":40.82481}}
 ,{"id":5214809,"name":"Sun Valley","state":"PA","coord":{"lon":-75.466019,"lat":40.982029}}
-,{"id":5214810,"name":"Sun Valley","state":"PA","coord":{"lon":-75.469627,"lat":41.0112}}
 ,{"id":5214814,"name":"Sunbury","state":"PA","coord":{"lon":-76.794411,"lat":40.862591}}
 ,{"id":5214867,"name":"Sunrise Lake","state":"PA","coord":{"lon":-74.96656,"lat":41.309811}}
 ,{"id":5214936,"name":"Susquehanna","state":"PA","coord":{"lon":-75.599632,"lat":41.943409}}
@@ -14577,7 +14392,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5216013,"name":"Trexlertown","state":"PA","coord":{"lon":-75.605743,"lat":40.548149}}
 ,{"id":5216092,"name":"Trooper","state":"PA","coord":{"lon":-75.401848,"lat":40.14983}}
 ,{"id":5216182,"name":"Troy","state":"PA","coord":{"lon":-76.78801,"lat":41.785912}}
-,{"id":5216183,"name":"Troy","state":"PA","coord":{"lon":-78.2164,"lat":40.915058}}
 ,{"id":5216205,"name":"Trucksville","state":"PA","coord":{"lon":-75.932137,"lat":41.30397}}
 ,{"id":5216241,"name":"Tullytown","state":"PA","coord":{"lon":-74.814613,"lat":40.139278}}
 ,{"id":5216260,"name":"Tunkhannock","state":"PA","coord":{"lon":-75.946587,"lat":41.538689}}
@@ -14585,7 +14399,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5216514,"name":"Tyrone","state":"PA","coord":{"lon":-78.238617,"lat":40.67062}}
 ,{"id":5216639,"name":"Union City","state":"PA","coord":{"lon":-79.845329,"lat":41.899502}}
 ,{"id":5217005,"name":"Valley Green","state":"PA","coord":{"lon":-76.792747,"lat":40.15731}}
-,{"id":5217039,"name":"Valley View","state":"PA","coord":{"lon":-76.539131,"lat":40.64592}}
 ,{"id":5217103,"name":"Vandergrift","state":"PA","coord":{"lon":-79.564774,"lat":40.60284}}
 ,{"id":5217183,"name":"Versailles","state":"PA","coord":{"lon":-79.831161,"lat":40.315632}}
 ,{"id":5217238,"name":"Village Shires","state":"PA","coord":{"lon":-74.970451,"lat":40.203159}}
@@ -14620,7 +14433,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5218867,"name":"West Reading","state":"PA","coord":{"lon":-75.947433,"lat":40.333698}}
 ,{"id":5218918,"name":"West View","state":"PA","coord":{"lon":-80.034218,"lat":40.522289}}
 ,{"id":5218938,"name":"West Wyoming","state":"PA","coord":{"lon":-75.846031,"lat":41.319801}}
-,{"id":5218940,"name":"West Wyomissing","state":"PA","coord":{"lon":-75.990768,"lat":40.324539}}
 ,{"id":5218969,"name":"Westfield","state":"PA","coord":{"lon":-77.538872,"lat":41.919239}}
 ,{"id":5219140,"name":"Whitaker","state":"PA","coord":{"lon":-79.889771,"lat":40.398399}}
 ,{"id":5219189,"name":"White Haven","state":"PA","coord":{"lon":-75.774078,"lat":41.060638}}
@@ -14650,7 +14462,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5220281,"name":"Yardley","state":"PA","coord":{"lon":-74.846001,"lat":40.245659}}
 ,{"id":5220310,"name":"Yeagertown","state":"PA","coord":{"lon":-77.580551,"lat":40.643131}}
 ,{"id":5220400,"name":"Youngsville","state":"PA","coord":{"lon":-75.476852,"lat":40.781212}}
-,{"id":5220401,"name":"Youngsville","state":"PA","coord":{"lon":-79.318657,"lat":41.85228}}
 ,{"id":5220405,"name":"Youngwood","state":"PA","coord":{"lon":-79.576714,"lat":40.240349}}
 ,{"id":5220432,"name":"Zelienople","state":"PA","coord":{"lon":-80.136726,"lat":40.79451}}
 ,{"id":5220463,"name":"Zion","state":"PA","coord":{"lon":-77.684723,"lat":40.91423}},
@@ -15026,7 +14837,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5272227,"name":"Sauk City","state":"WI","coord":{"lon":-89.722069,"lat":43.270821}}
 ,{"id":5272249,"name":"Saukville","state":"WI","coord":{"lon":-87.940651,"lat":43.381672}}
 ,{"id":5272378,"name":"Schofield","state":"WI","coord":{"lon":-89.604568,"lat":44.909691}}
-,{"id":5272775,"name":"Seymour","state":"WI","coord":{"lon":-91.431267,"lat":44.82663}}
 ,{"id":5272851,"name":"Sharon","state":"WI","coord":{"lon":-88.728989,"lat":42.502522}}
 ,{"id":5272873,"name":"Shawano","state":"WI","coord":{"lon":-88.608994,"lat":44.782211}}
 ,{"id":5272907,"name":"Sheboygan Falls","state":"WI","coord":{"lon":-87.822128,"lat":43.731972}}
@@ -15501,7 +15311,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5364826,"name":"Lakeview","state":"CA","coord":{"lon":-117.118088,"lat":33.838631}}
 ,{"id":5365113,"name":"Larkspur","state":"CA","coord":{"lon":-122.535248,"lat":37.93409}}
 ,{"id":5365171,"name":"Las Flores","state":"CA","coord":{"lon":-118.635918,"lat":34.037231}}
-,{"id":5365172,"name":"Las Flores","state":"CA","coord":{"lon":-117.626717,"lat":33.588081}}
 ,{"id":5365203,"name":"Las Lomas","state":"CA","coord":{"lon":-121.734947,"lat":36.865231}}
 ,{"id":5365442,"name":"Laton","state":"CA","coord":{"lon":-119.686798,"lat":36.433281}}
 ,{"id":5365660,"name":"Laytonville","state":"CA","coord":{"lon":-123.482788,"lat":39.68821}}
@@ -15513,7 +15322,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5366582,"name":"Linden","state":"CA","coord":{"lon":-121.083832,"lat":38.021309}}
 ,{"id":5366604,"name":"Lindsay","state":"CA","coord":{"lon":-119.088158,"lat":36.203011}}
 ,{"id":5367308,"name":"Littlerock","state":"CA","coord":{"lon":-117.983681,"lat":34.521099}}
-,{"id":5367315,"name":"Live Oak","state":"CA","coord":{"lon":-121.659973,"lat":39.275719}}
 ,{"id":5367427,"name":"Livingston","state":"CA","coord":{"lon":-120.723534,"lat":37.386879}}
 ,{"id":5367523,"name":"Lockeford","state":"CA","coord":{"lon":-121.14994,"lat":38.163528}}
 ,{"id":5367721,"name":"Loma Rica","state":"CA","coord":{"lon":-121.41774,"lat":39.311829}}
@@ -15819,7 +15627,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5422557,"name":"Fruitvale","state":"CO","coord":{"lon":-108.496758,"lat":39.08165}}
 ,{"id":5422853,"name":"Genesee","state":"CO","coord":{"lon":-105.272774,"lat":39.685822}}
 ,{"id":5422889,"name":"Georgetown","state":"CO","coord":{"lon":-105.697502,"lat":39.7061}}
-,{"id":5423075,"name":"Glendale","state":"CO","coord":{"lon":-104.933594,"lat":39.70499}}
 ,{"id":5423078,"name":"Gleneagle","state":"CO","coord":{"lon":-104.824417,"lat":39.045269}}
 ,{"id":5423092,"name":"Glenwood Springs","state":"CO","coord":{"lon":-107.324783,"lat":39.550541}}
 ,{"id":5423908,"name":"Greenwood Village","state":"CO","coord":{"lon":-104.950813,"lat":39.61721}}
@@ -15906,7 +15713,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5446617,"name":"Sublette","state":"KS","coord":{"lon":-100.843773,"lat":37.481689}}
 ,{"id":5446643,"name":"Tribune","state":"KS","coord":{"lon":-101.75267,"lat":38.469742}}
 ,{"id":5446683,"name":"Ulysses","state":"KS","coord":{"lon":-101.355171,"lat":37.581409}}
-,{"id":5454355,"name":"Agua Fria","state":"NM","coord":{"lon":-106.02224,"lat":35.65448}}
 ,{"id":5454546,"name":"Alamo","state":"NM","coord":{"lon":-107.51088,"lat":34.420891}}
 ,{"id":5455214,"name":"Angel Fire","state":"NM","coord":{"lon":-105.285011,"lat":36.393089}}
 ,{"id":5455381,"name":"Anthony","state":"NM","coord":{"lon":-106.605827,"lat":32.00399}}
@@ -16113,7 +15919,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5523963,"name":"Jayton","state":"TX","coord":{"lon":-100.57373,"lat":33.24815}}
 ,{"id":5524527,"name":"Kermit","state":"TX","coord":{"lon":-103.092667,"lat":31.85763}}
 ,{"id":5524849,"name":"Lamesa","state":"TX","coord":{"lon":-101.950989,"lat":32.737598}}
-,{"id":5524912,"name":"Las Quintas Fronterizas","state":"TX","coord":{"lon":-100.468689,"lat":28.690531}}
 ,{"id":5525042,"name":"Levelland","state":"TX","coord":{"lon":-102.37796,"lat":33.587318}}
 ,{"id":5525295,"name":"Littlefield","state":"TX","coord":{"lon":-102.324898,"lat":33.917309}}
 ,{"id":5525346,"name":"Lockney","state":"TX","coord":{"lon":-101.441551,"lat":34.124519}}
@@ -16241,7 +16046,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":5553955,"name":"Rathdrum","state":"ID","coord":{"lon":-116.89196,"lat":47.813728}},
 {"id":5554419,"name":"Beach","state":"ND","coord":{"lon":-104.004372,"lat":46.918072}},
 {"id":5554428,"name":"Ketchikan","state":"AK","coord":{"lon":-131.646103,"lat":55.34222}},
-{"id":5555083,"name":"Little Cottonwood Creek Valley","state":"UT","coord":{"lon":-111.829376,"lat":40.604389}},
 {"id":5555097,"name":"Salem","state":"UT","coord":{"lon":-111.673538,"lat":40.053009}},
 {"id":5555129,"name":"Wellsville","state":"UT","coord":{"lon":-111.93383,"lat":41.638538}},
 {"id":5555235,"name":"Lea Hill","state":"WA","coord":{"lon":-122.181511,"lat":47.32621}},
@@ -16752,7 +16556,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5771716,"name":"Bluffdale","state":"UT","coord":{"lon":-111.93882,"lat":40.48967}}
 ,{"id":5772418,"name":"Canyon Rim","state":"UT","coord":{"lon":-111.821877,"lat":40.706612}}
 ,{"id":5772581,"name":"Cedar Hills","state":"UT","coord":{"lon":-111.758537,"lat":40.41412}}
-,{"id":5772653,"name":"Centerfield","state":"UT","coord":{"lon":-111.897987,"lat":40.691341}}
 ,{"id":5773066,"name":"Coalville","state":"UT","coord":{"lon":-111.399361,"lat":40.917728}}
 ,{"id":5774135,"name":"Duchesne","state":"UT","coord":{"lon":-110.402931,"lat":40.163288}}
 ,{"id":5774456,"name":"Elk Ridge","state":"UT","coord":{"lon":-111.676872,"lat":40.011341}}
@@ -16884,7 +16687,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5792869,"name":"DuPont","state":"WA","coord":{"lon":-122.631241,"lat":47.09676}}
 ,{"id":5792990,"name":"Duvall","state":"WA","coord":{"lon":-121.98568,"lat":47.742321}}
 ,{"id":5793237,"name":"East Port Orchard","state":"WA","coord":{"lon":-122.624298,"lat":47.52343}}
-,{"id":5793242,"name":"East Renton Highlands","state":"WA","coord":{"lon":-122.112343,"lat":47.484821}}
 ,{"id":5793271,"name":"East Wenatchee","state":"WA","coord":{"lon":-120.293129,"lat":47.41568}}
 ,{"id":5793278,"name":"Eastgate","state":"WA","coord":{"lon":-122.145782,"lat":47.572659}}
 ,{"id":5793321,"name":"Eatonville","state":"WA","coord":{"lon":-122.266502,"lat":46.867329}}
@@ -17183,7 +16985,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 ,{"id":5855741,"name":"Hauula","state":"HI","coord":{"lon":-157.910828,"lat":21.610559}}
 ,{"id":5855809,"name":"Hawaiian Paradise Park","state":"HI","coord":{"lon":-154.973053,"lat":19.59333}}
 ,{"id":5855815,"name":"Hawaiian Ocean View","state":"HI","coord":{"lon":-155.764999,"lat":19.068609}}
-,{"id":5855818,"name":"Hawaiian Paradise Park","state":"HI","coord":{"lon":-154.970566,"lat":19.50139}}
 ,{"id":5855841,"name":"Hawi","state":"HI","coord":{"lon":-155.832779,"lat":20.24139}}
 ,{"id":5855847,"name":"Heeia","state":"HI","coord":{"lon":-157.810562,"lat":21.43083}}
 ,{"id":5856050,"name":"Holualoa","state":"HI","coord":{"lon":-155.952225,"lat":19.62278}}
@@ -17238,7 +17039,6 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":6943007,"name":"Baywood","state":"NY","coord":{"lon":-73.290558,"lat":40.751389}},
 {"id":7121608,"name":"Elko New Market","state":"MN","coord":{"lon":-93.326942,"lat":44.56472}},
 {"id":7123765,"name":"South Blooming Grove","state":"NY","coord":{"lon":-74.178421,"lat":41.373371}},
-{"id":7149330,"name":"Dewey-Humboldt","state":"AZ","coord":{"lon":-112.242218,"lat":34.529999}},
 {"id":7161969,"name":"Peppermill Village","state":"MD","coord":{"lon":-76.886543,"lat":38.894718}},
 {"id":7172778,"name":"Boulevard Gardens","state":"FL","coord":{"lon":-80.17997,"lat":26.12326}},
 {"id":7172786,"name":"High Point","state":"FL","coord":{"lon":-82.524681,"lat":28.546869}},
@@ -17246,45 +17046,32 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":7176022,"name":"Las Maravillas","state":"NM","coord":{"lon":-106.668541,"lat":34.738152}},
 {"id":7176024,"name":"Monterey Park","state":"NM","coord":{"lon":-106.640846,"lat":34.75898}},
 {"id":7176028,"name":"Peaceful Valley","state":"WA","coord":{"lon":-122.147339,"lat":48.938148}},
-{"id":7176030,"name":"Rancho Tehama Reserve","state":"CA","coord":{"lon":-122.400719,"lat":40.01569}},
-{"id":7176031,"name":"Rio Communities","state":"NM","coord":{"lon":-106.734032,"lat":34.64959}},
 {"id":7176038,"name":"Verde Village","state":"AZ","coord":{"lon":-112.01152,"lat":34.710499}},
-{"id":7179381,"name":"Chattahoochee Hills","state":"GA","coord":{"lon":-84.76049,"lat":33.550629}},
 {"id":7220609,"name":"Desert Edge","state":"CA","coord":{"lon":-116.441391,"lat":33.924171}},
 {"id":7220835,"name":"Fox Chase","state":"PA","coord":{"lon":-75.962158,"lat":40.395569}},
 {"id":7223060,"name":"Saint Augustine South","state":"FL","coord":{"lon":-81.314484,"lat":29.842489}},
 {"id":7231955,"name":"Captains Cove","state":"VA","coord":{"lon":-75.422722,"lat":37.98996}},
-{"id":7234896,"name":"Cross Roads","state":"TX","coord":{"lon":-97.0019,"lat":33.230652}},
 {"id":7238057,"name":"Weston Lakes","state":"TX","coord":{"lon":-95.935707,"lat":29.683241}},
-{"id":7257357,"name":"Conning Towers-Nautilus Park","state":"CT","coord":{"lon":-72.068771,"lat":41.385479}},
-{"id":7257361,"name":"Deep River Center","state":"CT","coord":{"lon":-72.438622,"lat":41.38221}},
 {"id":7257367,"name":"Essex Village","state":"CT","coord":{"lon":-72.391006,"lat":41.355438}},
 {"id":7257370,"name":"Guilford Center","state":"CT","coord":{"lon":-72.676178,"lat":41.281559}},
 {"id":7257377,"name":"Madison Center","state":"CT","coord":{"lon":-72.600479,"lat":41.279251}},
 {"id":7257382,"name":"New Hartford Center","state":"CT","coord":{"lon":-72.975304,"lat":41.879959}},
 {"id":7257391,"name":"Northwest Harwinton","state":"CT","coord":{"lon":-73.079224,"lat":41.776852}},
 {"id":7257394,"name":"Old Saybrook Center","state":"CT","coord":{"lon":-72.36528,"lat":41.2915}},
-{"id":7257396,"name":"Oxoboxo River","state":"CT","coord":{"lon":-72.125023,"lat":41.443909}},
 {"id":7257398,"name":"Plainfield Village","state":"CT","coord":{"lon":-71.924889,"lat":41.676861}},
 {"id":7257408,"name":"Simsbury Center","state":"CT","coord":{"lon":-72.811157,"lat":41.880878}},
 {"id":7257425,"name":"Westbrook Center","state":"CT","coord":{"lon":-72.442543,"lat":41.279968}},
 {"id":7257433,"name":"Woodbury Center","state":"CT","coord":{"lon":-73.204758,"lat":41.544529}},
 {"id":7257523,"name":"Acushnet Center","state":"MA","coord":{"lon":-70.906418,"lat":41.685081}},
-{"id":7257572,"name":"Green Harbor-Cedar Crest","state":"MA","coord":{"lon":-70.658432,"lat":42.074951}},
 {"id":7257575,"name":"Harwich Center","state":"MA","coord":{"lon":-70.069382,"lat":41.692348}},
 {"id":7257618,"name":"Hillsborough","state":"NH","coord":{"lon":-71.8992,"lat":43.114101}},
-{"id":7257640,"name":"Tilton-Northfield","state":"NH","coord":{"lon":-71.593643,"lat":43.443001}},
 {"id":7257658,"name":"Newport East","state":"RI","coord":{"lon":-71.287521,"lat":41.515789}},
-{"id":7257663,"name":"Wakefield-Peacedale","state":"RI","coord":{"lon":-71.500397,"lat":41.44606}},
 {"id":7257704,"name":"Mansfield Center","state":"MA","coord":{"lon":-71.218079,"lat":42.022621}},
-{"id":7257706,"name":"Marion Center","state":"MA","coord":{"lon":-70.762863,"lat":41.704239}},
 {"id":7257710,"name":"Mattapoisett Center","state":"MA","coord":{"lon":-70.807198,"lat":41.665951}},
 {"id":7257713,"name":"Middleborough Center","state":"MA","coord":{"lon":-70.926178,"lat":41.8946}},
-{"id":7257716,"name":"Millis-Clicquot","state":"MA","coord":{"lon":-71.354424,"lat":42.164799}},
 {"id":7257719,"name":"Monson Center","state":"MA","coord":{"lon":-72.30481,"lat":42.09898}},
 {"id":7257737,"name":"Northwest Harwich","state":"MA","coord":{"lon":-70.102501,"lat":41.690289}},
 {"id":7257739,"name":"Norton Center","state":"MA","coord":{"lon":-71.185349,"lat":41.972542}},
-{"id":7257741,"name":"Ocean Bluff-Brant Rock","state":"MA","coord":{"lon":-70.657356,"lat":42.102341}},
 {"id":7257796,"name":"Bethlehem Village","state":"CT","coord":{"lon":-73.203079,"lat":41.640099}},
 {"id":7257798,"name":"Branford Center","state":"CT","coord":{"lon":-72.815109,"lat":41.277382}},
 {"id":7257804,"name":"Central Waterford","state":"CT","coord":{"lon":-72.129478,"lat":41.345039}},
@@ -17296,29 +17083,19 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":7257908,"name":"Fort Lee","state":"VA","coord":{"lon":-77.334419,"lat":37.246941}},
 {"id":7257909,"name":"Fort Meade","state":"MD","coord":{"lon":-76.743233,"lat":39.10815}},
 {"id":7257914,"name":"Aberdeen Proving Ground","state":"MD","coord":{"lon":-76.130661,"lat":39.466862}},
-{"id":7257953,"name":"Ashton-Sandy Spring","state":"MD","coord":{"lon":-77.005043,"lat":39.149761}},
-{"id":7257988,"name":"Beaverdam Lake-Salisbury Mills","state":"NY","coord":{"lon":-74.116287,"lat":41.44162}},
-{"id":7258044,"name":"Brittany Farms-Highlands","state":"PA","coord":{"lon":-75.214012,"lat":40.269009}},
 {"id":7258078,"name":"Carmel Hamlet","state":"NY","coord":{"lon":-73.685242,"lat":41.414848}},
-{"id":7258082,"name":"Carnot-Moon","state":"PA","coord":{"lon":-80.217361,"lat":40.518559}},
-{"id":7258090,"name":"Cecil-Bishop","state":"PA","coord":{"lon":-80.193321,"lat":40.318192}},
 {"id":7258153,"name":"Conneaut Lakeshore","state":"PA","coord":{"lon":-80.310081,"lat":41.62711}},
 {"id":7258161,"name":"Cortland West","state":"NY","coord":{"lon":-76.225868,"lat":42.594311}},
-{"id":7258233,"name":"East Hampton North","state":"NY","coord":{"lon":-72.18911,"lat":40.972759}},
 {"id":7258259,"name":"McGuire AFB","state":"NJ","coord":{"lon":-74.581741,"lat":40.039768}},
 {"id":7258303,"name":"Moorestown-Lenola","state":"NJ","coord":{"lon":-74.964409,"lat":39.965912}},
-{"id":7258310,"name":"Mount Gay-Shamrock","state":"WV","coord":{"lon":-82.029701,"lat":37.83857}},
 {"id":7258318,"name":"Mount Vernon","state":"VA","coord":{"lon":-77.107262,"lat":38.719189}},
 {"id":7258330,"name":"Naval Academy","state":"MD","coord":{"lon":-76.48774,"lat":38.98568}},
-{"id":7258338,"name":"New Castle Northwest","state":"PA","coord":{"lon":-80.356819,"lat":41.022079}},
 {"id":7258360,"name":"North Ballston Spa","state":"NY","coord":{"lon":-73.851089,"lat":43.019691}},
 {"id":7258390,"name":"Northeast Ithaca","state":"NY","coord":{"lon":-76.46228,"lat":42.470322}},
 {"id":7258393,"name":"Northwest Harborcreek","state":"PA","coord":{"lon":-79.994629,"lat":42.149441}},
 {"id":7258394,"name":"Northwest Ithaca","state":"NY","coord":{"lon":-76.541451,"lat":42.470589}},
-{"id":7258438,"name":"Paramount-Long Meadow","state":"MD","coord":{"lon":-77.692902,"lat":39.68042}},
 {"id":7258514,"name":"Pymatuning Central","state":"PA","coord":{"lon":-80.479599,"lat":41.585461}},
 {"id":7258517,"name":"Quantico Station","state":"VA","coord":{"lon":-77.318336,"lat":38.522629}},
-{"id":7258540,"name":"Remsenburg-Speonk","state":"NY","coord":{"lon":-72.696732,"lat":40.82642}},
 {"id":7258553,"name":"Rising Sun-Lebanon","state":"DE","coord":{"lon":-75.504883,"lat":39.09977}},
 {"id":7258576,"name":"Rosendale Village","state":"NY","coord":{"lon":-74.073776,"lat":41.85038}},
 {"id":7258581,"name":"Leisure World","state":"MD","coord":{"lon":-77.068977,"lat":39.102299}},
@@ -17326,37 +17103,22 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":7258652,"name":"Glens Falls North","state":"NY","coord":{"lon":-73.68251,"lat":43.33506}},
 {"id":7258676,"name":"Greenport West","state":"NY","coord":{"lon":-72.371948,"lat":41.10178}},
 {"id":7258686,"name":"Guilford","state":"PA","coord":{"lon":-77.601051,"lat":39.915409}},
-{"id":7258740,"name":"Holiday City South","state":"NJ","coord":{"lon":-74.237778,"lat":39.953239}},
-{"id":7258741,"name":"Holiday City-Berkeley","state":"NJ","coord":{"lon":-74.27803,"lat":39.963799}},
-{"id":7258752,"name":"Horseheads North","state":"NY","coord":{"lon":-76.807823,"lat":42.19278}},
-{"id":7258777,"name":"Jamestown West","state":"NY","coord":{"lon":-79.281097,"lat":42.088509}},
-{"id":7258782,"name":"Jefferson Valley-Yorktown","state":"NY","coord":{"lon":-73.800659,"lat":41.31797}},
 {"id":7258847,"name":"Lebanon South","state":"PA","coord":{"lon":-76.406441,"lat":40.328041}},
-{"id":7258852,"name":"Leisure Village West-Pine Lake Park","state":"NJ","coord":{"lon":-74.266289,"lat":40.004162}},
-{"id":7258855,"name":"Leith-Hatfield","state":"PA","coord":{"lon":-79.731331,"lat":39.877441}},
 {"id":7258901,"name":"Lynnwood-Pricedale","state":"PA","coord":{"lon":-79.851349,"lat":40.130711}},
 {"id":7258945,"name":"Saugerties South","state":"NY","coord":{"lon":-73.950668,"lat":42.06139}},
-{"id":7258973,"name":"Shanor-Northvue","state":"PA","coord":{"lon":-79.915619,"lat":40.91045}},
 {"id":7259013,"name":"South Park Township","state":"PA","coord":{"lon":-79.994049,"lat":40.298641}},
-{"id":7259124,"name":"Village Green-Green Ridge","state":"PA","coord":{"lon":-75.425484,"lat":39.863628}},
 {"id":7259151,"name":"Weissport East","state":"PA","coord":{"lon":-75.686432,"lat":40.836971}},
 {"id":7259197,"name":"Whitesboro-Burleigh","state":"NJ","coord":{"lon":-74.865379,"lat":39.043049}},
 {"id":7259199,"name":"Whittingham","state":"NJ","coord":{"lon":-74.445107,"lat":40.329819}},
-{"id":7259200,"name":"Wickerham Manor-Fisher","state":"PA","coord":{"lon":-79.906837,"lat":40.17749}},
-{"id":7259210,"name":"Wilson-Conococheague","state":"MD","coord":{"lon":-77.831573,"lat":39.653511}},
 {"id":7259226,"name":"Woodside East","state":"DE","coord":{"lon":-75.537483,"lat":39.067558}},
 {"id":7259267,"name":"Fort Riley","state":"KS","coord":{"lon":-96.813919,"lat":39.110809}},
 {"id":7259287,"name":"Granville South","state":"OH","coord":{"lon":-82.541656,"lat":40.052071}},
 {"id":7259330,"name":"K. I. Sawyer Air Force Base","state":"MI","coord":{"lon":-87.386322,"lat":46.346512}},
 {"id":7259359,"name":"Legend Lake","state":"WI","coord":{"lon":-88.54406,"lat":44.890949}},
-{"id":7259362,"name":"Level Park-Oak Park","state":"MI","coord":{"lon":-85.266502,"lat":42.364182}},
-{"id":7259381,"name":"Manitou Beach-Devils Lake","state":"MI","coord":{"lon":-84.286163,"lat":41.975651}},
 {"id":7259396,"name":"Minot Air Force Base","state":"ND","coord":{"lon":-101.339142,"lat":48.420872}},
-{"id":7259400,"name":"Montrose-Ghent","state":"OH","coord":{"lon":-81.643784,"lat":41.153801}},
 {"id":7259417,"name":"North Spearfish","state":"SD","coord":{"lon":-103.893898,"lat":44.512218}},
 {"id":7259430,"name":"Offutt Air Force Base","state":"NE","coord":{"lon":-95.920952,"lat":41.120239}},
 {"id":7259489,"name":"Scott Air Force Base","state":"IL","coord":{"lon":-89.850349,"lat":38.542702}},
-{"id":7259498,"name":"Shorewood-Tower Hills-Harbert","state":"MI","coord":{"lon":-86.61409,"lat":41.881691}},
 {"id":7259538,"name":"Barnes Lake-Millers Lake","state":"MI","coord":{"lon":-83.312302,"lat":43.179562}},
 {"id":7259582,"name":"Champion Heights","state":"OH","coord":{"lon":-80.845947,"lat":41.289989}},
 {"id":7259593,"name":"Comstock Northwest","state":"MI","coord":{"lon":-85.517593,"lat":42.321819}},
@@ -17367,97 +17129,64 @@ cities = {"stations": [{"id":4070245,"name":"Jones Crossroads","state":"AL","coo
 {"id":7259697,"name":"East Bronson","state":"FL","coord":{"lon":-82.590401,"lat":29.45928}},
 {"id":7259720,"name":"Eglin Air Force Base","state":"FL","coord":{"lon":-86.550262,"lat":30.45907}},
 {"id":7259771,"name":"Fort Knox","state":"KY","coord":{"lon":-85.963631,"lat":37.891129}},
-{"id":7259773,"name":"Fort Pierce North","state":"FL","coord":{"lon":-80.359299,"lat":27.47364}},
-{"id":7259774,"name":"Fort Pierce South","state":"FL","coord":{"lon":-80.354843,"lat":27.40962}},
+{"id":7259773,"name":"Fort Pierce","state":"FL","coord":{"lon":-80.359299,"lat":27.47364}},
 {"id":7259777,"name":"Fort Rucker","state":"AL","coord":{"lon":-85.715378,"lat":31.342819}},
 {"id":7259778,"name":"Fort Stewart","state":"GA","coord":{"lon":-81.610008,"lat":31.872169}},
-{"id":7259881,"name":"Hutchinson Island South","state":"FL","coord":{"lon":-80.220451,"lat":27.29949}},
+{"id":7259881,"name":"Hutchinson Island","state":"FL","coord":{"lon":-80.220451,"lat":27.29949}},
 {"id":7259891,"name":"Inverness Highlands","state":"FL","coord":{"lon":-82.376877,"lat":28.864201}},
 {"id":7260057,"name":"Cocoa West","state":"FL","coord":{"lon":-80.771088,"lat":28.359421}},
 {"id":7260063,"name":"Columbus Air Force Base","state":"MS","coord":{"lon":-88.450638,"lat":33.641521}},
-{"id":7260093,"name":"Samsula-Spruce Creek","state":"FL","coord":{"lon":-81.06192,"lat":29.04932}},
 {"id":7260133,"name":"Slater-Marietta","state":"SC","coord":{"lon":-82.492653,"lat":35.034721}},
 {"id":7260157,"name":"Southeast Arcadia","state":"FL","coord":{"lon":-81.852097,"lat":27.186291}},
 {"id":7260256,"name":"Watts Mills","state":"SC","coord":{"lon":-81.985802,"lat":34.516411}},
 {"id":7260333,"name":"Kings Bay Base","state":"GA","coord":{"lon":-81.564232,"lat":30.79932}},
-{"id":7260357,"name":"Lake Murray of Richland","state":"SC","coord":{"lon":-81.264503,"lat":34.12048}},
-{"id":7260358,"name":"Lake Norman of Catawba","state":"NC","coord":{"lon":-81.016541,"lat":35.580429}},
 {"id":7260435,"name":"Meridian Station","state":"MS","coord":{"lon":-88.618492,"lat":32.550491}},
 {"id":7260457,"name":"Monarch Mill","state":"SC","coord":{"lon":-81.584999,"lat":34.716099}},
 {"id":7260490,"name":"New Port Richey East","state":"FL","coord":{"lon":-82.692612,"lat":28.260269}},
 {"id":7260514,"name":"North Weeki Wachee","state":"FL","coord":{"lon":-82.558884,"lat":28.55014}},
 {"id":7260518,"name":"Oak Grove","state":"SC","coord":{"lon":-81.14286,"lat":33.9809}},
 {"id":7260641,"name":"Robins Air Force Base","state":"GA","coord":{"lon":-83.584442,"lat":32.609112}},
-{"id":7260679,"name":"Clarkston Heights-Vineland","state":"WA","coord":{"lon":-117.083,"lat":46.387421}},
 {"id":7260752,"name":"Air Force Academy","state":"CO","coord":{"lon":-104.863747,"lat":38.994251}},
 {"id":7260760,"name":"Alamosa East","state":"CO","coord":{"lon":-105.842171,"lat":37.477348}},
-{"id":7260797,"name":"Antelope Valley-Crestview","state":"WY","coord":{"lon":-105.474091,"lat":44.22488}},
 {"id":7260833,"name":"Ault Field","state":"WA","coord":{"lon":-122.674408,"lat":48.33812}},
 {"id":7260845,"name":"Bangor Trident Base","state":"WA","coord":{"lon":-122.714462,"lat":47.72274}},
 {"id":7260863,"name":"Beale Air Force Base","state":"CA","coord":{"lon":-121.354439,"lat":39.109169}},
-{"id":7260882,"name":"Bertsch-Oceanview","state":"CA","coord":{"lon":-124.158752,"lat":41.752499}},
 {"id":7260952,"name":"Bret Harte","state":"CA","coord":{"lon":-121.005188,"lat":37.60207}},
 {"id":7260997,"name":"Camp Pendleton","state":"CA","coord":{"lon":-117.379288,"lat":33.228439}},
 {"id":7261002,"name":"Cannon Air Force Base","state":"NM","coord":{"lon":-103.317734,"lat":34.386581}},
 {"id":7261032,"name":"Cascade-Chipita Park","state":"CO","coord":{"lon":-105.002373,"lat":38.943539}},
 {"id":7261098,"name":"Edwards Air Force Base","state":"CA","coord":{"lon":-117.929451,"lat":34.904491}},
-{"id":7261137,"name":"Erlands Point-Kitsap Lake","state":"WA","coord":{"lon":-122.702248,"lat":47.597191}},
 {"id":7261152,"name":"Fairchild Air Force Base","state":"WA","coord":{"lon":-117.648262,"lat":47.61879}},
-{"id":7261199,"name":"Lucas Valley-Marinwood","state":"CA","coord":{"lon":-122.5755,"lat":38.040112}},
-{"id":7261222,"name":"Maple Heights-Lake Desire","state":"WA","coord":{"lon":-122.097359,"lat":47.44413}},
 {"id":7261226,"name":"March Air Force Base","state":"CA","coord":{"lon":-117.2631,"lat":33.89209}},
 {"id":7261282,"name":"Fort Bliss","state":"TX","coord":{"lon":-106.412239,"lat":31.81357}},
 {"id":7261292,"name":"Fort Lewis","state":"WA","coord":{"lon":-122.576942,"lat":47.107868}},
-{"id":7261327,"name":"Garden Home-Whitford","state":"OR","coord":{"lon":-122.758911,"lat":45.464001}},
 {"id":7261393,"name":"Gunbarrel","state":"CO","coord":{"lon":-105.171066,"lat":40.063351}},
 {"id":7261423,"name":"Helena Valley","state":"MT","coord":{"lon":-111.921562,"lat":46.615269}},
-{"id":7261425,"name":"Helena West Side","state":"MT","coord":{"lon":-112.113037,"lat":46.596722}},
-{"id":7261437,"name":"Highlands-Baywood Park","state":"CA","coord":{"lon":-122.345062,"lat":37.52272}},
 {"id":7261441,"name":"Hilmar-Irwin","state":"CA","coord":{"lon":-120.850418,"lat":37.404541}},
 {"id":7261464,"name":"Idyllwild-Pine Cove","state":"CA","coord":{"lon":-116.725868,"lat":33.744289}},
-{"id":7261578,"name":"Lagunitas-Forest Knolls","state":"CA","coord":{"lon":-122.691238,"lat":38.017929}},
-{"id":7261592,"name":"Lake Marcel-Stillwater","state":"WA","coord":{"lon":-121.915131,"lat":47.692631}},
-{"id":7261595,"name":"Lake Morton-Berrydale","state":"WA","coord":{"lon":-122.102859,"lat":47.332512}},
-{"id":7261608,"name":"Lakeland North","state":"WA","coord":{"lon":-122.276947,"lat":47.333431}},
-{"id":7261609,"name":"Lakeland South","state":"WA","coord":{"lon":-122.283257,"lat":47.278431}},
+{"id":7261609,"name":"Lakeland","state":"WA","coord":{"lon":-122.283257,"lat":47.278431}},
 {"id":7261643,"name":"Leadville North","state":"CO","coord":{"lon":-106.301376,"lat":39.257599}},
 {"id":7261646,"name":"LeChee","state":"AZ","coord":{"lon":-111.43277,"lat":36.87101}},
-{"id":7261649,"name":"Lemoore Station","state":"CA","coord":{"lon":-119.904762,"lat":36.26326}},
-{"id":7261794,"name":"Skyline-Ganipa","state":"NM","coord":{"lon":-107.61396,"lat":35.032791}},
 {"id":7261797,"name":"Smith Valley","state":"NV","coord":{"lon":-119.344254,"lat":38.78421}},
 {"id":7261826,"name":"South Wenatchee","state":"WA","coord":{"lon":-120.289581,"lat":47.390121}},
 {"id":7261991,"name":"North Lakeport","state":"CA","coord":{"lon":-122.90538,"lat":39.08831}},
 {"id":7262019,"name":"Oatfield","state":"OR","coord":{"lon":-122.600067,"lat":45.414181}},
 {"id":7262027,"name":"Ohkay Owingeh","state":"NM","coord":{"lon":-106.06897,"lat":36.050819}},
 {"id":7262050,"name":"Oroville East","state":"CA","coord":{"lon":-121.475189,"lat":39.511261}},
-{"id":7262053,"name":"Otis Orchards-East Farms","state":"WA","coord":{"lon":-117.07975,"lat":47.709881}},
-{"id":7262138,"name":"Poplar-Cotton Center","state":"CA","coord":{"lon":-119.149193,"lat":36.056351}},
 {"id":7262139,"name":"Port Angeles East","state":"WA","coord":{"lon":-123.371719,"lat":48.10667}},
-{"id":7262141,"name":"Port Hadlock-Irondale","state":"WA","coord":{"lon":-122.785294,"lat":48.03273}},
 {"id":7262259,"name":"Roseburg North","state":"OR","coord":{"lon":-123.303307,"lat":43.264519}},
-{"id":7262460,"name":"View Park-Windsor Hills","state":"CA","coord":{"lon":-118.348351,"lat":33.99551}},
 {"id":7262470,"name":"Walla Walla East","state":"WA","coord":{"lon":-118.304031,"lat":46.051842}},
 {"id":7262480,"name":"Warren Air Force Base","state":"WY","coord":{"lon":-104.86216,"lat":41.149269}},
 {"id":7262495,"name":"West Clarkston-Highland","state":"WA","coord":{"lon":-117.06395,"lat":46.40287}},
-{"id":7262498,"name":"West Haven-Sylvan","state":"OR","coord":{"lon":-122.768089,"lat":45.516129}},
 {"id":7262504,"name":"West Modesto","state":"CA","coord":{"lon":-121.039139,"lat":37.617538}},
 {"id":7262510,"name":"West Pleasant View","state":"CO","coord":{"lon":-105.17852,"lat":39.732559}},
-{"id":7262515,"name":"West Side Highway","state":"WA","coord":{"lon":-122.917152,"lat":46.18399}},
-{"id":7262521,"name":"Westhaven-Moonstone","state":"CA","coord":{"lon":-124.102386,"lat":41.044891}},
 {"id":7262586,"name":"Yosemite Valley","state":"CA","coord":{"lon":-119.577881,"lat":37.740749}},
-{"id":7262635,"name":"Sunnyside-Tahoe City","state":"CA","coord":{"lon":-120.161201,"lat":39.15023}},
 {"id":7262653,"name":"Taft Mosswood","state":"CA","coord":{"lon":-121.283157,"lat":37.913849}},
-{"id":7262659,"name":"Tamalpais-Homestead Valley","state":"CA","coord":{"lon":-122.536247,"lat":37.878342}},
-{"id":7262660,"name":"Tanglewilde-Thompson Place","state":"WA","coord":{"lon":-122.780807,"lat":47.051159}},
 {"id":7262697,"name":"Haiku-Pauwela","state":"HI","coord":{"lon":-156.305084,"lat":20.921869}},
-{"id":7262713,"name":"Hickam Housing","state":"HI","coord":{"lon":-157.958786,"lat":21.33798}},
 {"id":7262717,"name":"Honaunau-Napoopoo","state":"HI","coord":{"lon":-155.864655,"lat":19.45627}},
 {"id":7262725,"name":"Kahaluu-Keauhou","state":"HI","coord":{"lon":-155.961716,"lat":19.57181}},
-{"id":7262734,"name":"Kaneohe Station","state":"HI","coord":{"lon":-157.751328,"lat":21.445311}},
-{"id":7262771,"name":"Napili-Honokowai","state":"HI","coord":{"lon":-156.670456,"lat":20.970751}},
 {"id":7262791,"name":"Royal Kunia","state":"HI","coord":{"lon":-158.026703,"lat":21.393921}},
 {"id":7262796,"name":"Waihee-Waiehu","state":"HI","coord":{"lon":-156.507584,"lat":20.92494}},
-{"id":7262802,"name":"Wailua Homesteads","state":"HI","coord":{"lon":-159.378021,"lat":22.066931}},
 {"id":7262813,"name":"Wheeler Air Force Base","state":"HI","coord":{"lon":-158.035156,"lat":21.47546}},
 {"id":7262859,"name":"Farm Loop","state":"AK","coord":{"lon":-149.142151,"lat":61.638908}},
 {"id":7262897,"name":"Knik-Fairview","state":"AK","coord":{"lon":-149.600113,"lat":61.512619}}
