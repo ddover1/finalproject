@@ -15908,7 +15908,6 @@ cities = {"stations": [{"id":4215307,"name":"Pennick","state":"GA","coord":{"lon
 ,{"id":5521912,"name":"Fritch","state":"TX","coord":{"lon":-101.603233,"lat":35.639771}}
 ,{"id":5521972,"name":"Gail","state":"TX","coord":{"lon":-101.445412,"lat":32.770378}}
 ,{"id":5522004,"name":"Garden City","state":"TX","coord":{"lon":-101.481232,"lat":31.864019}}
-,{"id":5522019,"name":"Gardendale","state":"TX","coord":{"lon":-102.38015,"lat":32.020401}}
 ,{"id":5522392,"name":"Grape Creek","state":"TX","coord":{"lon":-100.5476,"lat":31.579321}}
 ,{"id":5522580,"name":"Guthrie","state":"TX","coord":{"lon":-100.322891,"lat":33.62064}}
 ,{"id":5522714,"name":"Hale Center","state":"TX","coord":{"lon":-101.843788,"lat":34.06424}}
@@ -16090,7 +16089,6 @@ cities = {"stations": [{"id":4215307,"name":"Pennick","state":"GA","coord":{"lon
 {"id":5573817,"name":"Willow Creek","state":"CA","coord":{"lon":-123.631439,"lat":40.939579}},
 {"id":5574093,"name":"Yreka","state":"CA","coord":{"lon":-122.634468,"lat":41.73542}},
 {"id":5574199,"name":"Akron","state":"CO","coord":{"lon":-103.214378,"lat":40.160542}},
-{"id":5574368,"name":"Aristocrat Ranchettes","state":"CO","coord":{"lon":-104.762466,"lat":40.10915}},
 {"id":5574410,"name":"Ault","state":"CO","coord":{"lon":-104.731911,"lat":40.582481}},
 {"id":5574704,"name":"Berthoud","state":"CO","coord":{"lon":-105.081093,"lat":40.308319}},
 {"id":5575194,"name":"Brush","state":"CO","coord":{"lon":-103.62384,"lat":40.258869}},
@@ -16396,7 +16394,6 @@ cities = {"stations": [{"id":4215307,"name":"Pennick","state":"GA","coord":{"lon
 ,{"id":5722088,"name":"Damascus","state":"OR","coord":{"lon":-122.458977,"lat":45.417622}}
 ,{"id":5722326,"name":"Dayton","state":"OR","coord":{"lon":-123.07621,"lat":45.220669}}
 ,{"id":5722917,"name":"Depoe Bay","state":"OR","coord":{"lon":-124.063171,"lat":44.808449}}
-,{"id":5722960,"name":"Deschutes River Woods","state":"OR","coord":{"lon":-121.35836,"lat":43.991508}}
 ,{"id":5723833,"name":"Drain","state":"OR","coord":{"lon":-123.318703,"lat":43.65873}}
 ,{"id":5724352,"name":"Dundee","state":"OR","coord":{"lon":-123.010941,"lat":45.278172}}
 ,{"id":5724361,"name":"Dunes City","state":"OR","coord":{"lon":-124.11512,"lat":43.883179}}

@@ -1,0 +1,6 @@
+.main, .heading {
+  flex-direction: column;
+  }
+.citylist, .menu {
+  clear: both;
+  }  

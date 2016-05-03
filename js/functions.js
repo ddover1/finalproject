@@ -9,30 +9,32 @@
   var clouds = new Array;     var current = new Object;       var fromFile = new Boolean;         
   var day =  new Array;       var weather = new Object;       var locationAdded = new Boolean;    
   var high = new Array;       var cities = new Object;        var locationDeleted = new Boolean;  
-  var low =  new Array;       var forecast = new Object;
+  var low =  new Array;       var forecast = new Object;      var landscape = new Boolean;
   var slot = new Array;           
   var stations = new Array;
-   
+
+window.onorientationchange = readDeviceOrientation;
+
+function readDeviceOrientation() {
+  landscape = (Math.abs(window.orientation) === 90) ? true : false;
+}
+
 function Initial_Load() {
+  readDeviceOrientation();
   menuSymbol = document.querySelector('.trigger').innerText;
   xSymbol = document.querySelector('.xTrigger').innerText;
-  locationIndex = -2;
+  locationIndex = -1;
   Display_Date();
   Check_Saved_Locations();   
   Get_Location(); 
-  document.getElementById("previous").disabled = (locationIndex <= -1) ? true : false; 
+  document.getElementById("previous").disabled = (locationIndex == -1) ? true : false; 
   document.getElementById("next").disabled = (locationIndex < numLocations - 1) ? false : true; 
   }
   
 function Refresh_Display() {
-  if (locationIndex == -2) {
-    document.getElementById("DateTime").innerHTML = "Location cannot be determined and no locations have been saved"; }
-  else if (locationIndex == -1) {
-    Display_Date();
-    Get_Location(); }
-  else {
-    Display_Date();
-    Retrieve_Saved_Weather(); }
+  Display_Date();
+  if (locationIndex == -1) Get_Location(); 
+    else Retrieve_Saved_Weather(); 
   }
   
 function Next_Location() {
@@ -46,8 +48,8 @@ function Next_Location() {
 function Previous_Location() {
   locationIndex--;
   Display_Date();
-  if (locationIndex == -1) { Get_Location(); }
-    else { Retrieve_Saved_Weather(); }
+  if (locationIndex == -1) Get_Location(); 
+    else Retrieve_Saved_Weather(); 
   document.getElementById("previous").disabled = (locationIndex == -1) ? true : false; 
   document.getElementById("next").disabled = (locationIndex < numLocations - 1) ? false : true; 
   }
@@ -88,32 +90,25 @@ function Check_Saved_Locations() {
   } 
 
 function Get_Location() {
-navigator.geolocation.getCurrentPosition(Retrieve_PlaceName, Show_Error);
+  navigator.geolocation.getCurrentPosition(Retrieve_PlaceName, Show_Error);
   }
 
 function Show_Error(error) {
   switch(error.code) {
     case error.PERMISSION_DENIED:
-      alert("Permission to determine location denied.");
-      break;
+      alert("Permission to determine location denied.");   break;
     case error.POSITION_UNAVAILABLE:
-      alert("Location information unavailable.");
-      break;
-    case error.TIMEOUT:
-      alert("Request to get location timed out.");
-      break;
+      alert("Location information unavailable.");          break;
+    case error.TIMEOUT: 
+      alert("Request to get location timed out.");         break;
     case error.UNKNOWN_ERROR:
-      alert("An unknown error occurred while determining your position.");
-      break;
+      alert("An unknown error occurred while determining your position.");      break;
     }
   }
 
 function Retrieve_PlaceName (position) {
-  locationIndex = -1;
   latitude = position.coords.latitude;
   longitude = position.coords.longitude;
-  /* latitude = 40.02;
-  longitude = -105.27;   */
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status >= 200 && xhttp.status < 400) {
@@ -188,17 +183,17 @@ function Determine_Sky_Cover(skyCover, rain, snow, precipChance) {
         else if (skyCover < 66) { skyCondition = "Partly Cloudy"; }
           else if (skyCover < 91) { skyCondition = "Mostly Cloudy"; }
             else { skyCondition = "Overcast"; } 
-  if (rain && snow) skyCondition += ', Rain/Snow';			
-    else if (rain) skyCondition += ', Rain';			
-      else if (snow) skyCondition += ', Snow';	
-  if (precipChance >= .8) { chance = " 90%"; }
-    else if (precipChance >= .7) { chance = " 80%"; }
-      else if (precipChance >= .6) { chance = " 60%"; }
-        else if (precipChance >= .4) { chance = " 50%"; }
-          else if (precipChance >= .3) { chance = " 30%"; }
-            else if (precipChance >= .1) { chance = " 20%"; }
+  if (skyCover >= 14) {
+    if (rain && snow) skyCondition += ', Rain/Snow';			
+      else if (rain) skyCondition += ', Rain';			
+        else if (snow) skyCondition += ', Snow';	
+    if (precipChance > .8) { chance = " 90%"; }
+      else if (precipChance > .7) { chance = " 60%"; }
+        else if (precipChance > .5) { chance = " 50%"; }
+          else if (precipChance > .25) { chance = " 30%"; }
+            else if (precipChance > .1) { chance = " 20%"; }
               else {chance = ""; }
-  skyCondition += chance;	  
+    skyCondition += chance;	}
   return skyCondition;		
   }
 
@@ -284,10 +279,8 @@ triggerEl.addEventListener('click', function(event) {
   Create_Menu();
   document.querySelector('.container').classList.toggle('nav-is-open');
   if (!document.querySelector('.container').classList.contains('nav-is-open')) {
-    if (locationAdded) {
-	  locationIndex = numLocations - 1; }
-    else if (locationDeleted) {
-      locationIndex = -1; }
+    if (locationAdded) locationIndex = numLocations - 1; 
+      else if (locationDeleted) locationIndex = -1;
     Refresh_Display(); 
     document.querySelector(".location").value = ""; 
     document.getElementById("citylist").innerHTML = "";  
@@ -318,8 +311,7 @@ function Show_Locations(inputString) {
     document.getElementById("citylist").innerHTML = ""; 
     return; }
   cityMatches = cities.stations.filter(Check_Locations);
-  var y = '<li>&#20;</li>'; 
-  y += '<li><em><strong>Select Location to Add:</strong></em></li>'; 
+  var y = '<li><em><strong>Select Location to Add:</strong></em></li>';; 
   y += '<li>&#20;</li>';
   for (x = 0; x < cityMatches.length; x++) {
     y += '<li><a href="#" onclick="Save_Location(' + x + ')";>' + cityMatches[x].name + ", " + cityMatches[x].state + '</a></li>'; } 
@@ -355,6 +347,8 @@ function Create_Menu() {
     y += '<li><a href="#" class="delete" onclick="Delete_Location(' + i + ')";>' + stations[i].city + '</a></li>'; } 
   y += '<li>&#20;</li>';
   y += '<li><em><strong>Input a New Location:</strong></em></li>'; 
+  y += '<li>&#20;</li>';
+  y += '<input type="text" size="20" class="location" onkeyup="Show_Locations(this.value)">'
   y += '<li>&#20;</li>';
   document.getElementById("menu").innerHTML = y; 
   }

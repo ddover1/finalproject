@@ -3,21 +3,24 @@
 <head>
   <meta charset="utf-8">
   <title>Weather - Short and Sweet</title>
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" type="text/css" href="css/wxreset.css">
   <link rel="stylesheet" type="text/css" href="css/wxstyles.css">
+  <link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css">
+  <link rel="stylesheet" media="all and (orientation:landscape)" href="css/landscape.css">
 </head>
 <body onload="Initial_Load();">
   <div class="container">
   <ul class="nav"> 
-    <div id="menu"></div>
-	<input type="text" size="20" class="location" onkeyup="Show_Locations(this.value)">
-    <div id="citylist"></div>
+    <div id="menu" class="menu"></div>
+    <div id="citylist" class="citylist"></div>
   </ul>   
     <div class="header">
       <h1>Short & Sweet Weather</h1>
-      <h2 id="DateTime"></h2>
-      <h2 id ="location"></h2>
+	  <div class="heading"> 
+        <div id="DateTime"></div>
+        <div id ="location"></div>
+      </div> <!-- heading -->
     </div> <!-- header -->
     <div class="main">
       <div class="current-weather">  
@@ -25,17 +28,19 @@
 		<div class="display-box">
           <div id="temp" class="current-data"></div>
 		  <div id="humidity" class="current-data"></div>
-		</div>  
+		</div> <!-- box -->
 		<div class="display-box">
           <div id="wind" class="current-data"></div>
-		</div>  
+		</div> <!-- box -->  
 		<div class="display-box">
           <div id="sky" class="current-data"></div>
 		  <div id="precip" class="current-data"></div>
-		</div>  
-      </div> <!-- current -->
-      <h3>5-Day Forecast:</h3>
-	  <table id="forecast" class="forecast"></table><br/>
+		</div> <!-- box -->  
+      </div> <!-- current-weather -->
+      <div class="forecast-weather">  
+        <h3>5-Day Forecast:</h3>
+	    <table id="forecast" class="forecast"></table><br/>
+      </div> <!-- forecast-weather -->
     </div> <!-- main -->
     <div class="buttons">
       <a class="trigger" href="#">&#9776;</a> 

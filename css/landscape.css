@@ -1,0 +1,19 @@
+.main, .heading {
+  flex-direction: row;
+  justify-content: space-around;
+  -webkit-justify-content: space-around; 
+  }
+.display-box {
+  flex-direction: column;
+  }
+.nav {
+  width: 70%;
+  max-width: 25rem;
+  }
+.citylist {
+  margin: 0 2rem 0 0;
+  float: right;
+  }
+.menu {
+  float: left;
+  }
