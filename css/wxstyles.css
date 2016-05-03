@@ -3,17 +3,40 @@
 	 Final Project
 	 May 11, 2016    */
 .container {
+  orientation:portrait;
   overflow: hidden;
+  width: 100%;
   max-width: 350px;
   margin: 0 auto 0 auto;
   padding: 0; 
   background-color: azure;
   }
-.current-weather {
+@media screen and (min-width: 500px) {
+  .container {
+    max-width: 770px;
+    } }  
+.main, .heading {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between; 
+  }
+ .heading {
+  margin: .2rem 1rem;
+  }
+  .current-weather {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
   color: blue;
+  }
+.forecast-weather {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  }
+.forecast {
+  margin: 0;
   }
 .display-box, .buttons{
   margin: 0 2rem;
@@ -25,6 +48,7 @@
 .buttons {
   margin: 0 1.5rem 0 3rem;
   padding: 0 0 1rem 0;
+  max-width: 15rem;
   }
 .xTrigger {
   display: none;
@@ -36,10 +60,10 @@
   font-weight: 300;
   font-size: 120%;
   }
-h1, h2, h3 {
+h1, h3, #location, #DateTime {
   color: #8a0000;
-  vertical-align: middle; 
   padding: .1rem 0;
+  margin: .1rem;
   text-align: center;
   }
 h1 {
@@ -47,7 +71,7 @@ h1 {
   font-size: 170%;
   font-weight: 800;
   } 
-h2 {
+#location, #DateTime {
   font-weight: 300;
   font-size: 140%;
   vertical-align: middle; 
@@ -57,10 +81,6 @@ h3 {
   font-weight: 600;
   font-style: italic;
   padding: .3rem 0 .2rem 0;
-  } 
-h4 {
-  font-size: 120%;
-  font-weight: 300;
   } 
 tr {
   height: 1.3rem;
@@ -77,13 +97,17 @@ th {
 table {
   margin: .5rem 0 0 .1rem;
   }	
+.menu, .citylist {
+  max-width: 12rem;
+  }
 .nav {
   list-style: none;
   background-color: #f7f790;
   padding: .5rem;
   position: absolute;
   height: 100%;
-  width: 55%;
+  width: 75%;
+  max-width: 12rem;
   transform: translate(-100%,0);
   transition: transform 0.5s;
 }
@@ -100,6 +124,7 @@ table {
   text-decoration: none;
   position: absolute;
   left: .4em;
+  margin: 0;
   }
 .container {
   position: relative;
