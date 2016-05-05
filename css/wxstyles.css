@@ -3,18 +3,30 @@
 	 Final Project
 	 May 11, 2016    */
 .container {
-  orientation:portrait;
   overflow: hidden;
   width: 100%;
-  max-width: 350px;
+  max-width: 700px;
   margin: 0 auto 0 auto;
   padding: 0; 
-  background-color: azure;
+  background-color: #e6f3ff;
+  position: relative; 
   }
-@media screen and (min-width: 500px) {
-  .container {
-    max-width: 770px;
-    } }  
+.current-weather {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  color: #0000ff;
+  }
+.footer {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  }
+.forecast-weather {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  }
 .main, .heading {
   display: -webkit-flex;
   display: flex;
@@ -24,21 +36,7 @@
  .heading {
   margin: .2rem 1rem;
   }
-  .current-weather {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  color: blue;
-  }
-.forecast-weather {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  }
-.forecast {
-  margin: 0;
-  }
-.display-box, .buttons{
+.weather-box, .buttons {
   margin: 0 2rem;
   display: -webkit-flex;
   display: flex;
@@ -47,40 +45,40 @@
   }
 .buttons {
   margin: 0 1.5rem 0 3rem;
-  padding: 0 0 1rem 0;
+  padding-bottom: 1rem;
   max-width: 15rem;
   }
-.xTrigger {
-  display: none;
+.forecast {
+  margin: 0;
   }
 .current-data {
-  margin: .3em;
+  margin: .3rem;
   padding: 0;
-  height: 1em;
+  height: 1rem;
   font-weight: 300;
   font-size: 120%;
   }
-h1, h3, #location, #DateTime {
+.banner, .section-label, #location, #DateTime {
   color: #8a0000;
   padding: .1rem 0;
   margin: .1rem;
   text-align: center;
   }
-h1 {
+.banner {
   font-family: calibri, Arial, sans-serif;
   font-size: 170%;
   font-weight: 800;
+  } 
+.section-label {
+  font-size: 120%;
+  font-weight: 600;
+  font-style: italic;
+  padding: .3rem 0 .2rem 0;
   } 
 #location, #DateTime {
   font-weight: 300;
   font-size: 140%;
   vertical-align: middle; 
-  } 
-h3 {
-  font-size: 120%;
-  font-weight: 600;
-  font-style: italic;
-  padding: .3rem 0 .2rem 0;
   } 
 tr {
   height: 1.3rem;
@@ -97,38 +95,43 @@ th {
 table {
   margin: .5rem 0 0 .1rem;
   }	
-.menu, .citylist {
-  max-width: 12rem;
-  }
+img {
+  width: 100%;
+  height: auto;
+}
+
 .nav {
   list-style: none;
   background-color: #f7f790;
   padding: .5rem;
   position: absolute;
   height: 100%;
-  width: 75%;
-  max-width: 12rem;
+  width: 60%;
   transform: translate(-100%,0);
   transition: transform 0.5s;
 }
 .nav a {
-  color: blue;
+  color: #0000ff;
   text-decoration: none;
 }
-.delete  a{
-  color: red;
+.menu, .citylist {
+  max-width: 12rem;
   }
 .trigger {
-  color: #000;
+  color: #000000;
   font-size: 1.5rem;
   text-decoration: none;
-  position: absolute;
-  left: .4em;
+  position: relative;
+  left: .4rem;
   margin: 0;
   }
-.container {
-  position: relative;
-} 
+.xTrigger {
+  display: none;
+  }
 .container.nav-is-open .nav {
   transform: translate(0,0);
 }
+.WXimage {
+  margin: .3rem 2.5rem;
+  max-width: 60%;
+  }

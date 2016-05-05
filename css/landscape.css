@@ -1,19 +1,45 @@
-.main, .heading {
-  flex-direction: row;
-  justify-content: space-around;
-  -webkit-justify-content: space-around; 
+html {                  /* phone */
+  font-size: 90%;
   }
-.display-box {
+.weather-box {   
   flex-direction: column;
   }
 .nav {
-  width: 70%;
+  width: 75%;
   max-width: 25rem;
   }
 .citylist {
-  margin: 0 2rem 0 0;
+  margin-right: 2rem;
   float: right;
   }
 .menu {
   float: left;
   }
+@media screen and (min-width: 768px) {  /* tablet */
+  html {
+    font-size: 125%;
+    }
+  .container {
+    max-width: 1024px;
+    } 
+  .main, .heading {   
+    flex-direction: row;
+    justify-content: space-around;
+    -webkit-justify-content: space-around; 
+    padding: 0 5rem;
+    }
+  .buttons {
+    padding: 0 0 1rem 5rem;
+    max-width: 20rem;
+    }
+  .WXimage {
+    padding-left: 9rem;
+	
+    }
+  .trigger {
+    left: 5.4rem;
+    }
+  .banner {
+    margin-top: 1.5rem;
+    }
+  }  

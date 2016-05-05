@@ -6,20 +6,22 @@
   var firstHour;     var longitude;        var latitude;   
   var userInput;     var menuSymbol;       var xSymbol;
            
-  var clouds = new Array;     var current = new Object;       var fromFile = new Boolean;         
-  var day =  new Array;       var weather = new Object;       var locationAdded = new Boolean;    
-  var high = new Array;       var cities = new Object;        var locationDeleted = new Boolean;  
-  var low =  new Array;       var forecast = new Object;      var landscape = new Boolean;
-  var slot = new Array;           
-  var stations = new Array;
+  var day =  new Array;        var phone = new Boolean;             var cities = new Object;
+  var high = new Array;        var fromFile = new Boolean;          var weather = new Object;
+  var low =  new Array;        var landscape = new Boolean;         var current = new Object;
+  var slot = new Array;        var locationAdded = new Boolean;     var forecast = new Object;
+  var clouds = new Array;      var locationDeleted = new Boolean;  
+  var stations = new Array;    
 
 window.onorientationchange = readDeviceOrientation;
 
 function readDeviceOrientation() {
   landscape = (Math.abs(window.orientation) === 90) ? true : false;
+  if (locationIndex != undefined) Refresh_Display();
 }
 
 function Initial_Load() {
+  phone = (screen.width < 768) ? true : false;
   readDeviceOrientation();
   menuSymbol = document.querySelector('.trigger').innerText;
   xSymbol = document.querySelector('.xTrigger').innerText;
@@ -104,6 +106,12 @@ function Show_Error(error) {
     case error.UNKNOWN_ERROR:
       alert("An unknown error occurred while determining your position.");      break;
     }
+  document.getElementById("location").innerHTML = "Geoloaction Unavailable"; 
+  document.getElementById("temp").innerHTML = ""; 
+  document.getElementById("humidity").innerHTML = "";
+  document.getElementById("wind").innerHTML = ""; 
+  document.getElementById("sky").innerHTML = "";
+  document.getElementById("forecast").innerHTML = "";
   }
 
 function Retrieve_PlaceName (position) {
@@ -174,6 +182,34 @@ function Load_Weather_Data (temp, humidity, degrees, speed, clouds, rain3h, snow
   snow = (snow3h != undefined) ? true : false;			
   skyCondition = Determine_Sky_Cover(clouds, rain, snow, 0);
   document.getElementById("sky").innerHTML = "Sky: " + skyCondition; 
+  Display_Image(clouds, rain, snow);
+  }
+
+function Display_Image(clouds, rain, snow) {
+  var y = '<img ';
+  if (phone) { // is  phone
+    if (clouds < 14)  y += 'src="pictures/sun small.jpg" width="64" height="45" alt="sun"'; 
+      else if (snow) y += 'src="pictures/snow small.jpg" width="64" height="45" alt="snow"';
+        else if (rain) y += 'src="pictures/rain small.jpg" width="64" height="45" alt="rain"';
+          else if (clouds < 91) y += 'src="pictures/cloudy small.jpg" width="64" height="45" alt="clouds"';
+            else y += 'src="pictures/overcast small.jpg" width="64" height="45" alt="overcast"';
+	}
+  else if (landscape && !phone) { // is landscape and tablet
+    if (clouds < 14)  y += 'src="pictures/sun large.jpg" width="128" height="90" alt="sun"'; 
+      else if (snow) y += 'src="pictures/snow large.jpg" width="128" height="90" alt="snow"';
+        else if (rain) y += 'src="pictures/rain large.jpg" width="128" height="90" alt="rain"';
+          else if (clouds < 91) y += 'src="pictures/cloudy large.jpg" width="128" height="90" alt="clouds"';
+            else y += 'src="pictures/overcast large.jpg" width="128" height="90" alt="overcast"';
+	}
+  else if (!landscape && !phone) { // is portrait and tablet
+    if (clouds < 14)  y += 'src="pictures/sun large.jpg" width="256" height="180" alt="sun"'; 
+      else if (snow) y += 'src="pictures/snow large.jpg" width="256" height="180" alt="snow"';
+        else if (rain) y += 'src="pictures/rain large.jpg" width="256" height="180" alt="rain"';
+          else if (clouds < 91) y += 'src="pictures/cloudy large.jpg" width="256" height="80"  alt="clouds"';
+            else y += 'src="pictures/overcast large.jpg" width="256" height="180"  alt="overcast"';
+	}
+  y += ' class="WXimage">';
+  document.getElementById("WXimage").innerHTML = y; 
   }
 
 function Determine_Sky_Cover(skyCover, rain, snow, precipChance) {
@@ -315,6 +351,7 @@ function Show_Locations(inputString) {
   y += '<li>&#20;</li>';
   for (x = 0; x < cityMatches.length; x++) {
     y += '<li><a href="#" onclick="Save_Location(' + x + ')";>' + cityMatches[x].name + ", " + cityMatches[x].state + '</a></li>'; } 
+  if (cityMatches == 0) y += '<li><strong>' + inputString + '</strong> not found.</li>';	
   document.getElementById("citylist").innerHTML = y; 
   }
 
@@ -344,11 +381,11 @@ function Create_Menu() {
   var y = '<li><em><strong>Select Location to Delete:</strong></em></li>'; 
   y += '<li>&#20;</li>';
   for (i = 0; i < numLocations; i++) {
-    y += '<li><a href="#" class="delete" onclick="Delete_Location(' + i + ')";>' + stations[i].city + '</a></li>'; } 
+    y += '<li><a href="#" onclick="Delete_Location(' + i + ')";>' + stations[i].city + '</a></li>'; } 
   y += '<li>&#20;</li>';
   y += '<li><em><strong>Input a New Location:</strong></em></li>'; 
   y += '<li>&#20;</li>';
-  y += '<input type="text" size="20" class="location" onkeyup="Show_Locations(this.value)">'
+  y += '<input type="text" size="20" class="location" autofocus placeholder="City" onkeyup="Show_Locations(this.value)">'
   y += '<li>&#20;</li>';
   document.getElementById("menu").innerHTML = y; 
   }

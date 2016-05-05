@@ -16,7 +16,7 @@
     <div id="citylist" class="citylist"></div>
   </ul>   
     <div class="header">
-      <h1>Short & Sweet Weather</h1>
+      <div class="banner">Short & Sweet Weather</div>
 	  <div class="heading"> 
         <div id="DateTime"></div>
         <div id ="location"></div>
@@ -24,32 +24,33 @@
     </div> <!-- header -->
     <div class="main">
       <div class="current-weather">  
-        <h3>Current Conditions:</h3>
-		<div class="display-box">
+        <div class="section-label">Current Conditions:</div>
+		<div class="weather-box">
           <div id="temp" class="current-data"></div>
 		  <div id="humidity" class="current-data"></div>
 		</div> <!-- box -->
-		<div class="display-box">
+		<div class="weather-box">
           <div id="wind" class="current-data"></div>
 		</div> <!-- box -->  
-		<div class="display-box">
+		<div class="weather-box">
           <div id="sky" class="current-data"></div>
 		  <div id="precip" class="current-data"></div>
 		</div> <!-- box -->  
       </div> <!-- current-weather -->
       <div class="forecast-weather">  
-        <h3>5-Day Forecast:</h3>
+        <div class="section-label">5-Day Forecast:</div>
 	    <table id="forecast" class="forecast"></table><br/>
       </div> <!-- forecast-weather -->
     </div> <!-- main -->
     <div class="buttons">
-      <a class="trigger" href="#">&#9776;</a> 
-      <a class="xTrigger" href="#">&#10005;</a> 
       <input type="button" onclick="Refresh_Display();" value="Refresh"/>
       <input type="button" onclick="Previous_Location();" value="Previous" id="previous"/> 
       <input type="button" onclick="Next_Location();" value="Next" id="next"/> 
     </div> <!-- buttons -->
     <div class="footer">
+      <a class="trigger" href="#">&#9776;</a> 
+      <a class="xTrigger" href="#">&#10005;</a> 
+	  <div id="WXimage"></div> 
     </div> <!-- footer -->
   </div> <!-- container -->
   <script src="js/functions.js"></script>

@@ -1,6 +1,44 @@
-.main, .heading {
+html {                  /* phone */
+  font-size: 100%;
+  }
+.weather-box {   
+  flex-direction: row;
+  }
+.nav {
+  max-width: 14rem;
+  }
+.citylist {
+  margin-right: 2rem;
+  }
+.main, .heading { 
   flex-direction: column;
   }
 .citylist, .menu {
   clear: both;
   }  
+@media screen and (min-width: 768px) {  /* tablet */
+  html {
+    font-size: 115%;
+    }
+  .container {
+    max-width: 768px;
+    } 
+  .main, .heading {
+    padding: 0 10rem;
+    }
+  .buttons {
+    padding: 0 0 1rem 10rem;
+    max-width: 24rem;
+    }
+  .WXimage {
+    padding-left: 13rem;
+    max-width: 50%;
+    }
+  .trigger {
+    left: 10.4rem;
+    }
+  .banner {
+    margin-top: 1.5rem;
+    }
+  } 
+
