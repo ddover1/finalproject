@@ -2,9 +2,10 @@
   var Month = ["January", "February", "March", "April", "May", "June", "July", "August",
                "September", "October", "November", "December"];
 			   
-  var DayToday;      var numLocations;     var locationIndex;      
-  var firstHour;     var longitude;        var latitude;   
-  var userInput;     var menuSymbol;       var xSymbol;
+  var DayToday;      var numLocations;     var locationIndex;       
+  var HourNow;       var firstHour;        var userInput; 
+  var longitude;     var latitude;   
+  var menuSymbol;    var xSymbol;
            
   var day =  new Array;        var phone = new Boolean;             var cities = new Object;
   var high = new Array;        var fromFile = new Boolean;          var weather = new Object;
@@ -13,16 +14,22 @@
   var clouds = new Array;      var locationDeleted = new Boolean;  
   var stations = new Array;    
 
-window.onorientationchange = readDeviceOrientation;
+window.onorientationchange = Read_Orientation;
+window.addEventListener('resize', Set_Device);
 
-function readDeviceOrientation() {
+function Set_Device() {
+  if (screen.width < 768) return;
+  phone = (window.innerWidth < 430 || window.innerHeight < 430) ? true : false;
+  Refresh_Display();
+}
+function Read_Orientation() {
   landscape = (Math.abs(window.orientation) === 90) ? true : false;
   if (locationIndex != undefined) Refresh_Display();
 }
 
 function Initial_Load() {
   phone = (screen.width < 768) ? true : false;
-  readDeviceOrientation();
+  Read_Orientation();
   menuSymbol = document.querySelector('.trigger').innerText;
   xSymbol = document.querySelector('.xTrigger').innerText;
   locationIndex = -1;
@@ -64,11 +71,11 @@ function Display_Date() {
   HourNow = now.getHours();
   MinutesNow = now.getMinutes();
   AmPm = (HourNow < 12) ? "am" : "pm";
-  if (HourNow > 12) HourNow = HourNow - 12;
-  if (HourNow == 0) HourNow = 12;
+  DisplayHour = (HourNow > 12) ? HourNow - 12 : HourNow;
+  if (HourNow == 0) DisplayHour = 12;
   if (MinutesNow < 10) MinutesNow = "0" + MinutesNow;
-  strDate = DayOfWeek[DayToday] + ", " + Month[MonthToday] + " " + DateToday;
-  strTime = HourNow + ":" + MinutesNow + AmPm;
+  var strDate = DayOfWeek[DayToday] + ", " + Month[MonthToday] + " " + DateToday;
+  var strTime = DisplayHour + ":" + MinutesNow + AmPm;
   document.getElementById("DateTime").innerHTML = strDate + " at " + strTime;
   }
 
@@ -188,25 +195,21 @@ function Load_Weather_Data (temp, humidity, degrees, speed, clouds, rain3h, snow
 function Display_Image(clouds, rain, snow) {
   var y = '<img ';
   if (phone) { // is  phone
-    if (clouds < 14)  y += 'src="pictures/sun small.jpg" width="64" height="45" alt="sun"'; 
-      else if (snow) y += 'src="pictures/snow small.jpg" width="64" height="45" alt="snow"';
-        else if (rain) y += 'src="pictures/rain small.jpg" width="64" height="45" alt="rain"';
-          else if (clouds < 91) y += 'src="pictures/cloudy small.jpg" width="64" height="45" alt="clouds"';
-            else y += 'src="pictures/overcast small.jpg" width="64" height="45" alt="overcast"';
+    if (clouds < 14 && HourNow > 6 && HourNow < 21)  y += 'src="pictures/sun small.jpg" alt="sun"'; 
+      else if (clouds < 14)  y += 'src="pictures/moon small.jpg" alt="moon"'; 
+        else if (snow) y += 'src="pictures/snow small.jpg" alt="snow"';
+          else if (rain) y += 'src="pictures/rain small.jpg" alt="rain"';
+            else if (clouds < 66) y += 'src="pictures/cloudy small.jpg" alt="clouds"';
+              else y += 'src="pictures/overcast small.jpg" alt="overcast"';
 	}
-  else if (landscape && !phone) { // is landscape and tablet
-    if (clouds < 14)  y += 'src="pictures/sun large.jpg" width="128" height="90" alt="sun"'; 
-      else if (snow) y += 'src="pictures/snow large.jpg" width="128" height="90" alt="snow"';
-        else if (rain) y += 'src="pictures/rain large.jpg" width="128" height="90" alt="rain"';
-          else if (clouds < 91) y += 'src="pictures/cloudy large.jpg" width="128" height="90" alt="clouds"';
-            else y += 'src="pictures/overcast large.jpg" width="128" height="90" alt="overcast"';
-	}
-  else if (!landscape && !phone) { // is portrait and tablet
-    if (clouds < 14)  y += 'src="pictures/sun large.jpg" width="256" height="180" alt="sun"'; 
-      else if (snow) y += 'src="pictures/snow large.jpg" width="256" height="180" alt="snow"';
-        else if (rain) y += 'src="pictures/rain large.jpg" width="256" height="180" alt="rain"';
-          else if (clouds < 91) y += 'src="pictures/cloudy large.jpg" width="256" height="80"  alt="clouds"';
-            else y += 'src="pictures/overcast large.jpg" width="256" height="180"  alt="overcast"';
+  else { // is landscape
+    if (clouds < 14 && HourNow > 6 && HourNow < 21)  y += 'src="pictures/sun large.jpg" alt="sun"'; 
+      else if (clouds < 14)  y += 'src="pictures/moon large.jpg" alt="moon"'; 
+        else if (snow) y += 'src="pictures/snow large.jpg" alt="snow"';
+          else if (rain) y += 'src="pictures/rain large.jpg" alt="rain"';
+            else if (clouds < 66 && HourNow > 6 && HourNow < 21) y += 'src="pictures/cloudy large.jpg" alt="clouds"';
+              else if (clouds < 66) y += 'src="pictures/cloudy moon large.jpg" alt="clouds"';
+                else y += 'src="pictures/overcast large.jpg" alt="overcast"';
 	}
   y += ' class="WXimage">';
   document.getElementById("WXimage").innerHTML = y; 
@@ -249,6 +252,9 @@ function Retrieve_Forecast(id, temp) {
   }
 
 function Examine_Forecast_Data() {
+  if (forecast.list == undefined) {
+    day[0] = "Undefined";
+	return; }
   firstForecast = String(forecast.list[0].dt_txt);
   firstHour = firstForecast.slice(11, 13);
   if (firstHour == "00") { slot = [2,10,18,26,34,39]; }
@@ -278,6 +284,11 @@ function Examine_Forecast_Data() {
 
 function Create_Forecast_Table(currentTemp) {
   var y = "<tr><th></th><th>LO</th><th>HI</th><th>Sky - Precip Chance</th></tr>";
+  if (day[0] == "Undefined") { 
+    y += '<td></td><td colspan="4"><strong>Forecast Unavailable</strong></td>';
+    document.getElementById("forecast").innerHTML = y; 
+	return;
+    }
   for (i = 0; i <= 4; i++) {
     highToday = (day[0] == "Today:" && i == 0) ? parseInt(currentTemp) : -200; 
     lowToday = (day[0] == "Today:" && i == 0) ? parseInt(currentTemp) : 200;
@@ -347,11 +358,10 @@ function Show_Locations(inputString) {
     document.getElementById("citylist").innerHTML = ""; 
     return; }
   cityMatches = cities.stations.filter(Check_Locations);
-  var y = '<li><em><strong>Select Location to Add:</strong></em></li>';; 
-  y += '<li>&#20;</li>';
+  var y = '<em><strong>Select Location to Add:</strong></em><br/><br/>';; 
   for (x = 0; x < cityMatches.length; x++) {
-    y += '<li><a href="#" onclick="Save_Location(' + x + ')";>' + cityMatches[x].name + ", " + cityMatches[x].state + '</a></li>'; } 
-  if (cityMatches == 0) y += '<li><strong>' + inputString + '</strong> not found.</li>';	
+    y += '<a href="#" onclick="Save_Location(' + x + ')";>' + cityMatches[x].name + ", " + cityMatches[x].state + '</a><br/>'; } 
+  if (cityMatches == 0) y += '<strong>' + inputString + '</strong> not found.';	
   document.getElementById("citylist").innerHTML = y; 
   }
 
@@ -378,14 +388,10 @@ function Save_Location(x) {
   }
  
 function Create_Menu() {
-  var y = '<li><em><strong>Select Location to Delete:</strong></em></li>'; 
-  y += '<li>&#20;</li>';
+  var y = '<em><strong>Select Location to Delete:</strong></em><br/><br/>'; 
   for (i = 0; i < numLocations; i++) {
-    y += '<li><a href="#" onclick="Delete_Location(' + i + ')";>' + stations[i].city + '</a></li>'; } 
-  y += '<li>&#20;</li>';
-  y += '<li><em><strong>Input a New Location:</strong></em></li>'; 
-  y += '<li>&#20;</li>';
-  y += '<input type="text" size="20" class="location" autofocus placeholder="City" onkeyup="Show_Locations(this.value)">'
-  y += '<li>&#20;</li>';
+    y += '<a href="#" onclick="Delete_Location(' + i + ')";>' + stations[i].city + '</a><br/>'; } 
+  y += '<br/><em><strong>Input a New Location:</strong></em><br/><br/>'; 
+  y += '<input type="text" size="16" autofocus placeholder="City" onkeyup="Show_Locations(this.value)"><br/><br/>'
   document.getElementById("menu").innerHTML = y; 
   }

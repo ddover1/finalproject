@@ -58,7 +58,7 @@
   font-weight: 300;
   font-size: 120%;
   }
-.banner, .section-label, #location, #DateTime {
+.banner, .section-label, .location, .DateTime {
   color: #8a0000;
   padding: .1rem 0;
   margin: .1rem;
@@ -75,7 +75,7 @@
   font-style: italic;
   padding: .3rem 0 .2rem 0;
   } 
-#location, #DateTime {
+.location, .DateTime {
   font-weight: 300;
   font-size: 140%;
   vertical-align: middle; 
@@ -133,5 +133,5 @@ img {
 }
 .WXimage {
   margin: .3rem 2.5rem;
-  max-width: 60%;
+  max-width: 25%;
   }
